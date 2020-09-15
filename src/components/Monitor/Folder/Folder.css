@@ -1,0 +1,11 @@
+.folderOrFile{
+    margin-left: 20px;
+}
+
+.folderOrFile:hover {
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+.folderOrFile div{
+    cursor: default;
+}

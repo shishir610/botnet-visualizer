@@ -1,0 +1,13 @@
+{
+  "desktop": [
+    ["folder", "Malware"],
+    ["antivirus", "Antivirus"],
+    ["folder", "Personal"],
+    ["folder", "Confidential"],
+    ["trash", "Trash"]
+  ],
+  "malware": [
+    ["folder", "Types"],
+    ["folder", "Popular"]
+  ]
+}
