@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 
-const Topbar = () => {
+const Topbar = ({name}) => {
   return (
     <Row
       style={{ margin: 0, height: "30px", alignItems: "center" }}
@@ -23,7 +23,7 @@ const Topbar = () => {
           style={{ marginTop: "2.5px", marginLeft: "5px" }}
         />
         <p style={{ lineHeight: "15px", marginLeft: "5px", marginBottom: "0" }}>
-          Malware
+          {name}
         </p>
         <img
           src="./assets/next.png"

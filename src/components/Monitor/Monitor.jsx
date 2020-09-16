@@ -2,14 +2,22 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Monitor.css";
 import Window from "./Window/Window";
+import VirusWindow from './Window/VirusWindow'
 import Folder from "./Folder/Folder";
 import Views from "../../Views.json";
 
 const Monitor = () => {
   const [view, setView] = useState("desktop");
-  const [windowShow, setWindowShow] = useState(true);
+  const [windowShow, setWindowShow] = useState(false);
+  const [virus, setVirus] = useState("virus");
+  const [virusWindow, setVirusWindow] = useState(false);
 
   useEffect(() => {}, []);
+
+  const setVirusClick = (name) => {
+    setVirus(name);
+    setVirusWindow(true);
+  };
 
   const setDifferentView = (name) => {
     setView(name);
@@ -29,6 +37,7 @@ const Monitor = () => {
                     name={folder[1]}
                     setView={setDifferentView}
                     color="white"
+                    disabled={view != "desktop"}
                   />
                 );
               })}
@@ -42,8 +51,24 @@ const Monitor = () => {
                   justifyContent: "center",
                 }}
               >
-                <Window folders={Views[view]} />
+                <Window
+                  folders={Views[view]}
+                  name={view[0].toUpperCase() + view.slice(1)}
+                  setView={setDifferentView}
+                  setVirusClick={setVirusClick}
+                />
               </Col>
+            )}
+            {virusWindow && (
+              <div
+                style={{
+                  position: "absolute",
+                  left: "40%",
+                  top: "25%"
+                }}
+              >
+                <VirusWindow name={virus}/>
+              </div>
             )}
           </Row>
         </Container>
