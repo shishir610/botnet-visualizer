@@ -3,6 +3,7 @@
     ["folder", "Malware"],
     ["antivirus", "Antivirus"],
     ["folder", "Personal"],
+    ["mail", "Mail"],
     ["folder", "Confidential"],
     ["trash", "Trash"]
   ],
@@ -18,5 +19,8 @@
     ["trojan", "Trojan Horse"],
     ["virus", "Virus"],
     ["worm", "Worm"]
+  ],
+  "popular": [
+    
   ]
 }

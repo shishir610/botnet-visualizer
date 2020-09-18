@@ -25,7 +25,7 @@ const Monitor = () => {
   };
 
   return (
-    <Container>
+    <Container style={{maxWidth:""}}>
       <Row className="justify-content-center">
         <Container className="monitor">
           <Row style={{ height: "600px" }}>
