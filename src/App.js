@@ -1,11 +1,11 @@
 import React from 'react';
 import Monitor from './components/Monitor/Monitor'
-import Zoomer from './components/Zoomer/Zoomer'
+import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
 
 function App() {
   return (
     // <Monitor />
-    <Zoomer />
+    <NetworkMeshWrapper />
   );
 }
 
