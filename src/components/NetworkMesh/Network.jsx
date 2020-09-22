@@ -741,6 +741,7 @@ export default function Network() {
         transform="translate(-54.54 -19.74)"
         style={{fill:"#fff",stroke:"#000",strokeMiterlimit:"10",strokeWidth:"0.5px"}}
       />
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC3">
         <path
           d="M318.05,88.75a.13.13,0,0,1-.13.2H305.79c-.12,0-.15-.06-.06-.14l1.94-1.74a.67.67,0,0,1,.38-.15h9a.37.37,0,0,1,.31.2l.69,1.63Z"
@@ -823,6 +824,8 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC2">
         <path
           d="M304.75,48.55a.14.14,0,0,1-.14.2H292.48c-.12,0-.14-.06-.05-.14l1.93-1.74a.7.7,0,0,1,.39-.15h9a.37.37,0,0,1,.31.2l.69,1.63Z"
@@ -905,6 +908,8 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC1">
         <path
           d="M244.65,32.26a.13.13,0,0,1-.13.2H232.39c-.12,0-.15-.07-.06-.14l1.94-1.74a.67.67,0,0,1,.38-.15h9a.34.34,0,0,1,.3.2l.7,1.63Z"
@@ -987,6 +992,8 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC7">
         <path
           d="M204.61,46.3a.13.13,0,0,1-.13.2H192.35c-.12,0-.15-.07-.06-.15l1.94-1.74a.66.66,0,0,1,.38-.14h9a.34.34,0,0,1,.3.2l.7,1.63Z"
@@ -1069,6 +1076,8 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC6">
         <path
           d="M186.33,84.93a.13.13,0,0,1-.13.2H174.07c-.12,0-.15-.07-.06-.14L176,83.25a.67.67,0,0,1,.38-.15h9a.34.34,0,0,1,.3.2l.7,1.63Z"
@@ -1151,6 +1160,8 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC5">
         <path
           d="M211.23,127.05a.13.13,0,0,1-.13.2H199c-.12,0-.14-.07-.05-.15l1.94-1.74a.66.66,0,0,1,.38-.14h9a.36.36,0,0,1,.3.2l.69,1.63Z"
@@ -1233,6 +1244,7 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
       <g id="Device2-6" data-name="Device2">
         <path
           d="M147.58,240.55c0,.11,0,.2-.14.2H135.31c-.12,0-.14-.07-.05-.15l1.94-1.74a.66.66,0,0,1,.38-.14h9a.37.37,0,0,1,.31.2l.69,1.63Z"
@@ -1479,6 +1491,7 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      <a onClick={() => console.log("Clicked")} style={{cursor:"pointer"}}>
       <g id="PC4">
         <path
           d="M295.58,127.12a.14.14,0,0,1-.14.21H283.31c-.12,0-.15-.07-.06-.15l1.94-1.74a.69.69,0,0,1,.39-.14h9a.37.37,0,0,1,.31.2l.69,1.62Z"
@@ -1561,6 +1574,7 @@ export default function Network() {
           style={{fill:"#4d4d4d"}}
         />
       </g>
+      </a>
       <g id="Device2-9" data-name="Device2">
         <path
           d="M368.61,144.11a.14.14,0,0,1-.14.2H356.34c-.12,0-.14-.06,0-.14l1.93-1.74a.7.7,0,0,1,.39-.15h9a.37.37,0,0,1,.31.2l.69,1.63Z"

@@ -18,7 +18,14 @@ const Folder = ({ type, name, setView, color, disabled, setVirusClick }) => {
     <div
       className={`folderOrFile ${color === "black" && "folderOrFileWindow"}`}
     >
-      <a onDoubleClick={VIRUSES.includes(name) ? () => setVirusClick(type) : () => setView(name.toLowerCase())} disabled={disabled}>
+      <a
+        onDoubleClick={
+          VIRUSES.includes(name)
+            ? () => setVirusClick(type)
+            : () => setView(name.toLowerCase())
+        }
+        disabled={disabled}
+      >
         <Row style={{ justifyContent: "center", margin: "0" }}>
           <img src={`./assets/${type}.png`} width="50px" />
         </Row>
