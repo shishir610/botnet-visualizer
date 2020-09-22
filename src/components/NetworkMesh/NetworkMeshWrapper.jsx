@@ -14,7 +14,7 @@ const NetworkMeshWrapper = () => {
       clearInterval(interval);
     };
   }, []);
-  return <NetworkMesh time={time} />;
+  return <NetworkMesh />;
 };
 
 export default NetworkMeshWrapper;
