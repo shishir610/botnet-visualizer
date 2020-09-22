@@ -5,15 +5,15 @@ const NetworkMeshWrapper = () => {
   const [time, setTime] = useState(Date.now());
 
   const update = () => {
-    setTime(Date.now());
+    //THIS IS WHERE THE SIMULATION RUNS
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => update(), 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => update(), 1000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
   return <NetworkMesh />;
 };
 
