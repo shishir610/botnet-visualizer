@@ -3,3 +3,7 @@
     background-color: #61ace0;
     margin-bottom: 10px;
 }
+
+a {
+    cursor: pointer;
+}

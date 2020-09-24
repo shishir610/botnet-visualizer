@@ -12,10 +12,8 @@ const DeviceDetails = ({ target, show }) => {
     setAntivirusActive(event.target.checked);
   };
 
-  console.log(target, show)
-
   return (
-    <Overlay target={target} show={show} placement="bottom">
+    <Overlay target={target} show={show} placement="top">
       {(props) => (
         <Popover id="popover-basic" {...props}>
           <Container style={{ width: "200px" }}>
