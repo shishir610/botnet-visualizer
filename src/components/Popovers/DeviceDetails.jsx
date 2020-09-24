@@ -3,23 +3,19 @@ import { Container, Overlay, Popover, Row } from "react-bootstrap";
 import Switch from "@material-ui/core/Switch";
 import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
-import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 
-const DeviceDetails = ({ target }) => {
+const DeviceDetails = ({ target, show }) => {
   const [antivirusActive, setAntivirusActive] = useState(false);
 
   const handleChange = (event) => {
     setAntivirusActive(event.target.checked);
   };
 
+  console.log(target, show)
+
   return (
-    <Overlay
-      //target={target.current}
-      //show={show}
-      target={target}
-      show={true}
-      placement="bottom"
-    >
+    <Overlay target={target} show={show} placement="bottom">
       {(props) => (
         <Popover id="popover-basic" {...props}>
           <Container style={{ width: "200px" }}>
