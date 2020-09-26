@@ -6,16 +6,16 @@ import NavigationBar from './components/Navigation/NavigationBar'
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(true)
+  const [networkView, setNetworkView] = useState(false)
 
   return (
     <Container fluid>
       <NavigationBar />
       <Row>
         {networkView ?
-          <NetworkMeshWrapper />
+          <NetworkMeshWrapper setNetworkView={setNetworkView}/>
           :
-          <Monitor />
+          <Monitor setNetworkView={setNetworkView}/>
         }
       </Row>
     </Container>

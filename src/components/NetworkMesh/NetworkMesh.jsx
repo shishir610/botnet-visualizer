@@ -13,7 +13,7 @@ let PCREFS = [],
   SWITCHREFS = [],
   ROUTERREFS = [];
 
-function NetworkMesh(props) {
+function NetworkMesh({ setNetworkView }) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
   const [popoverIndex, setPopoverIndex] = useState(0);
@@ -100,9 +100,13 @@ function NetworkMesh(props) {
                 handleDeviceClick={handleDeviceClick}
                 show={popoverShow}
                 target={
-                  DEVICEMAPPER[device].length !== 0 &&
-                  DEVICEMAPPER[device][popoverIndex]
+                  DEVICEMAPPER[device].length !== 0 && device !== "Server"
+                    ? DEVICEMAPPER[device][popoverIndex]
+                    : DEVICEMAPPER[device]
                 }
+                device={device}
+                ServerRef={ServerRef}
+                setNetworkView={setNetworkView}
               />
             </TransformComponent>
           </TransformWrapper>

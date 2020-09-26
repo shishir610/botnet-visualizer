@@ -13,7 +13,6 @@ const VIRUSES = [
 ];
 
 const Folder = ({ type, name, setView, color, disabled, setVirusClick }) => {
-  console.log(name);
   return (
     <div
       className={`folderOrFile ${color === "black" && "folderOrFileWindow"}`}

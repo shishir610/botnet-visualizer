@@ -4,8 +4,9 @@ import Switch from "@material-ui/core/Switch";
 import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
+import DomainIcon from "@material-ui/icons/Domain";
 
-const DeviceDetails = ({ target, show }) => {
+const DeviceDetails = ({ target, show, device, setNetworkView }) => {
   const [antivirusActive, setAntivirusActive] = useState(false);
 
   const handleChange = (event) => {
@@ -18,13 +19,18 @@ const DeviceDetails = ({ target, show }) => {
         <Popover id="popover-basic" {...props}>
           <Container style={{ width: "200px" }}>
             <Row style={{ margin: "10px" }} className="justify-content-center">
-              <Button
-                endIcon={<DesktopWindowsIcon />}
-                variant="outlined"
-                color="primary"
-              >
-                Access
-              </Button>
+              {["PC", "Server"].includes(device) && (
+                <Button
+                  endIcon={
+                    device === "PC" ? <DesktopWindowsIcon /> : <DomainIcon />
+                  }
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setNetworkView(false)}
+                >
+                  Access
+                </Button>
+              )}
             </Row>
             <Row className="justify-content-center">
               <FormControlLabel
@@ -35,7 +41,6 @@ const DeviceDetails = ({ target, show }) => {
                     onChange={handleChange}
                     name="antivirusActive"
                     value={antivirusActive}
-                    inputProps={{ "aria-label": "secondary checkbox" }}
                   />
                 }
                 label="Antivirus"

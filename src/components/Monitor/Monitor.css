@@ -4,7 +4,8 @@
     border: solid 1em #333;
     border-radius: .5em;
     margin-top: 20px;
-    background-image: url('../../Homescreen.jpg');
+    /* background-image: url('../../Homescreen.jpg'); */
+    background-color: rgb(98, 98, 98);
 }
 
 .stand {
@@ -13,7 +14,7 @@
     background-color: #333;
 }
 
-.holder{
+.holder {
     width: 800px;
     height: 30px;
     background-color: #333;
@@ -21,7 +22,7 @@
     margin-bottom: 50px;
 }
 
-.window{
+.window {
     margin: 0;
     height: 500px;
     width: 700px;
@@ -30,15 +31,85 @@
     border: 3px solid #43dde6;
 }
 
-.fileNameArea{
+.fileNameArea {
     display: flex;
     width: 400px;
-    height:20px;
+    height: 20px;
     background-color: white;
     align-items: center;
     margin-left: 10px;
 }
 
-.topbar{
+.topbar {
     background-color: #43dde6;
+}
+
+.ircWindow {
+    margin: 0;
+    height: 600px;
+    width: 850px;
+    background-color: #000;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+}
+
+.ircHeader {
+    background-color: #fff;
+    margin: 0%;
+    padding: 5px 0 8px 0;
+}
+
+.ircMainContent {
+    height: 500px;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+#candidateList {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#candidateList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#candidateList::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#candidateList::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.chatStart {
+    color: #63de00;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.ircTextInput {
+    margin: 0;
+    border-top: 4px solid grey;
+}
+
+input#chatInput {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #63de00;
+    border: none;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 18px;
+    width: 500px;
+}
+
+input#chatInput:focus {
+    outline: none;
 }
