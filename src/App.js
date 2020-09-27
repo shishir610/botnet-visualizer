@@ -6,7 +6,7 @@ import NavigationBar from './components/Navigation/NavigationBar'
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(false)
+  const [networkView, setNetworkView] = useState(true)
 
   return (
     <Container fluid>

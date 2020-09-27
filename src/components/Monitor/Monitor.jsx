@@ -12,7 +12,7 @@ const Monitor = () => {
   const [windowShow, setWindowShow] = useState(false);
   const [virus, setVirus] = useState("virus");
   const [virusWindow, setVirusWindow] = useState(false);
-  const [showIRCWindow, setShowIRCWindow] = useState(true);
+  const [showIRCWindow, setShowIRCWindow] = useState(false);
 
   useEffect(() => {}, []);
 

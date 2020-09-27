@@ -3551,306 +3551,606 @@ const Network = ({
             />
           </g>
         </a>
-        <path
-          id="prefix___x36_0"
-          className="prefix__st20"
-          d="M179.72 210.44l66.12 34.55"
-        />
-        <path
-          id="prefix___x35_9"
-          className="prefix__st20"
-          d="M185.73 295.58l60.29-36.13"
-        />
-        <path
-          id="prefix___x35_8"
-          className="prefix__st20"
-          d="M260.82 269.6l2.7 42.29"
-        />
-        <path
-          id="prefix___x35_7"
-          className="prefix__st20"
-          d="M278.41 258.82l56.33 29.84"
-        />
-        <path
-          id="prefix___x35_6"
-          className="prefix__st20"
-          d="M278.41 246.18l86.9-36.29"
-        />
-        <path
-          id="prefix___x35_5"
-          className="prefix__st20"
-          d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
-        />
-        <path
-          id="prefix___x35_4"
-          className="prefix__st20"
-          d="M162.57 109.22l13.73 83.74"
-        />
-        <path
-          id="prefix___x35_3"
-          className="prefix__st20"
-          d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
-        />
-        <path
-          id="prefix___x35_2"
-          className="prefix__st20"
-          d="M89.35 295.89l70.72-.11"
-        />
-        <path
-          id="prefix___x35_1"
-          className="prefix__st20"
-          d="M173.78 305.57l-24 56.26"
-        />
-        <path
-          id="prefix___x35_0"
-          className="prefix__st20"
-          d="M261.38 329.53l2.14 46.43"
-        />
-        <path
-          id="prefix___x34_9"
-          className="prefix__st20"
-          d="M348.86 305.57l26.02 36.95"
-        />
-        <path
-          id="prefix___x34_8"
-          className="prefix__st20"
-          d="M361.87 296.89h33.2"
-        />
-        <path
-          id="prefix___x34_7"
-          className="prefix__st20"
-          d="M429.61 140.89l-44.36 52.95"
-        />
-        <path
-          id="prefix___x34_6"
-          className="prefix__st20"
-          d="M348.07 105.33l24.71 85.9"
-        />
-        <path
-          id="prefix___x34_5"
-          className="prefix__st20"
-          d="M382.07 361.83l.5 17.51"
-        />
-        <path
-          id="prefix___x34_4"
-          className="prefix__st20"
-          d="M388.38 359.71l22.06 16.25"
-        />
-        <path
-          id="prefix___x34_3"
-          className="prefix__st20"
-          d="M395.07 353.32l26.16.75"
-        />
-        <path
-          id="prefix___x34_2"
-          className="prefix__st20"
-          d="M237.67 366.98l17.18 14.75"
-        />
-        <path
-          id="prefix___x34_1"
-          className="prefix__st20"
-          d="M226.54 388.33l25.4.81"
-        />
-        <path
-          id="prefix___x34_0"
-          className="prefix__st20"
-          d="M252.98 393.96l-20.37 18.03"
-        />
-        <path
-          id="prefix___x33_9"
-          className="prefix__st20"
-          d="M261.81 404.65v17.16"
-        />
-        <path
-          id="prefix___x33_8"
-          className="prefix__st20"
-          d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
-        />
-        <path
-          id="prefix___x33_7"
-          className="prefix__st20"
-          d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
-        />
-        <path
-          id="prefix___x33_6"
-          className="prefix__st20"
-          d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
-        />
-        <path
-          id="prefix___x33_5"
-          className="prefix__st20"
-          d="M109.37 387.56l20.98-9.67"
-        />
-        <path
-          id="prefix___x33_4"
-          className="prefix__st20"
-          d="M136.08 378.95l-4.68 13.57"
-        />
-        <path
-          id="prefix___x33_3"
-          className="prefix__st20"
-          d="M130.92 371.08l-18.5-3.98"
-        />
-        <path
-          id="prefix___x33_2"
-          className="prefix__st20"
-          d="M414.87 305.57l17.18 6.32"
-        />
-        <path
-          id="prefix___x33_1"
-          className="prefix__st20"
-          d="M420.18 291.89l12.42-11.06"
-        />
-        <path
-          id="prefix___x33_0"
-          className="prefix__st20"
-          d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
-        />
-        <path
-          id="prefix___x32_9"
-          className="prefix__st20"
-          d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
-        />
-        <path
-          id="prefix___x32_8"
-          className="prefix__st20"
-          d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
-        />
-        <path
-          id="prefix___x32_7"
-          className="prefix__st20"
-          d="M78.03 305.57l9.16 14.05"
-        />
-        <path
-          id="prefix___x32_6"
-          className="prefix__st20"
-          d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
-        />
-        <path
-          id="prefix___x32_5"
-          className="prefix__st20"
-          d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
-        />
-        <path
-          id="prefix___x32_4"
-          className="prefix__st20"
-          d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
-        />
-        <path
-          id="prefix___x32_3"
-          className="prefix__st20"
-          d="M262.06 179.38l16.35 6.93"
-        />
-        <path
-          id="prefix___x32_2"
-          className="prefix__st20"
-          d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
-        />
-        <path
-          id="prefix___x32_1"
-          className="prefix__st20"
-          d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
-        />
-        <path
-          id="prefix___x32_0"
-          className="prefix__st20"
-          d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
-        />
-        <path
-          id="prefix___x31_9"
-          className="prefix__st20"
-          d="M97.15 193.24l-9.7 10.81"
-        />
-        <path
-          id="prefix___x31_8"
-          className="prefix__st20"
-          d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
-        />
-        <path
-          id="prefix___x31_7"
-          className="prefix__st20"
-          d="M438 139.19l5.98 16.91"
-        />
-        <path
-          id="prefix___x31_6"
-          className="prefix__st20"
-          d="M448.88 135.63l11.95 5.26"
-        />
-        <path
-          id="prefix___x31_5"
-          className="prefix__st20"
-          d="M448.88 122.76l15.66-10.12"
-        />
-        <path
-          id="prefix___x31_4"
-          className="prefix__st20"
-          d="M328.76 72.54l8.71 9.87"
-        />
-        <path
-          id="prefix___x31_3"
-          className="prefix__st20"
-          d="M317.36 89.56l18.41 2.61"
-        />
-        <path
-          id="prefix___x31_2"
-          className="prefix__st20"
-          d="M338.7 99.44l-8.38 10.96"
-        />
-        <path
-          id="prefix___x31_1"
-          className="prefix__st20"
-          d="M353.81 98.68l9.84 11.72"
-        />
-        <path
-          id="prefix___x31_0"
-          className="prefix__st20"
-          d="M370.78 91.55l-14.25.23"
-        />
-        <path
-          id="prefix___x39_"
-          className="prefix__st20"
-          d="M366.43 75l-13.81 7.41"
-        />
-        <path
-          id="prefix___x38_"
-          className="prefix__st20"
-          d="M346.49 64.21l-.63 16.24"
-        />
-        <path
-          id="prefix___x37_"
-          className="prefix__st20"
-          d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
-        />
-        <path
-          id="prefix___x36_"
-          className="prefix__st20"
-          d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
-        />
-        <path
-          id="prefix___x35_"
-          className="prefix__st20"
-          d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
-        />
-        <path
-          id="prefix___x34_"
-          className="prefix__st20"
-          d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
-        />
-        <path
-          id="prefix___x33_"
-          className="prefix__st20"
-          d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
-        />
-        <path
-          id="prefix___x32_"
-          className="prefix__st20"
-          d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
-        />
-        <path
-          id="prefix___x31_"
-          className="prefix__st20"
-          d="M157.21 59.06L161.8 78"
-        />
+        <a id="60">
+          <path
+            id="prefix___x36_0"
+            className="prefix__st20"
+            d="M179.72 210.44l66.12 34.55"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M179.72 210.44l66.12 34.55"/>
+          </circle>
+        </a>
+        <a id="59">
+          <path
+            id="prefix___x35_9"
+            className="prefix__st20"
+            d="M185.73 295.58l60.29-36.13"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M185.73 295.58l60.29-36.13"/>
+          </circle>
+        </a>
+        <a id="58">
+          <path
+            id="prefix___x35_8"
+            className="prefix__st20"
+            d="M260.82 269.6l2.7 42.29"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M260.82 269.6l2.7 42.29"/>
+          </circle>
+        </a>
+        <a id="57">
+          <path
+            id="prefix___x35_7"
+            className="prefix__st20"
+            d="M278.41 258.82l56.33 29.84"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M278.41 258.82l56.33 29.84"/>
+          </circle>
+        </a>
+        <a id="56">
+          <path
+            id="prefix___x35_6"
+            className="prefix__st20"
+            d="M278.41 246.18l86.9-36.29"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M278.41 246.18l86.9-36.29"/>
+          </circle>
+        </a>
+        <a id="55">
+          <path
+            id="prefix___x35_5"
+            className="prefix__st20"
+            d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"/>
+          </circle>
+        </a>
+        <a id="54">
+          <path
+            id="prefix___x35_4"
+            className="prefix__st20"
+            d="M162.57 109.22l13.73 83.74"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M162.57 109.22l13.73 83.74"/>
+          </circle>
+        </a>
+        <a id="53">
+          <path
+            id="prefix___x35_3"
+            className="prefix__st20"
+            d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"/>
+          </circle>
+        </a>
+        <a id="52">
+          <path
+            id="prefix___x35_2"
+            className="prefix__st20"
+            d="M89.35 295.89l70.72-.11"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M89.35 295.89l70.72-.11"/>
+          </circle>
+        </a>
+        <a id="51">
+          <path
+            id="prefix___x35_1"
+            className="prefix__st20"
+            d="M173.78 305.57l-24 56.26"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M173.78 305.57l-24 56.26"/>
+          </circle>
+        </a>
+        <a id="50">
+          <path
+            id="prefix___x35_0"
+            className="prefix__st20"
+            d="M261.38 329.53l2.14 46.43"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M261.38 329.53l2.14 46.43"/>
+          </circle>
+        </a>
+        <a id="49">
+          <path
+            id="prefix___x34_9"
+            className="prefix__st20"
+            d="M348.86 305.57l26.02 36.95"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M348.86 305.57l26.02 36.95"/>
+          </circle>
+        </a>
+        <a id="48">
+          <path
+            id="prefix___x34_8"
+            className="prefix__st20"
+            d="M361.87 296.89h33.2"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M361.87 296.89h33.2"/>
+          </circle>
+        </a>
+        <a id="47">
+          <path
+            id="prefix___x34_7"
+            className="prefix__st20"
+            d="M429.61 140.89l-44.36 52.95"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M429.61 140.89l-44.36 52.95"/>
+          </circle>
+        </a>
+        <a id="46">
+          <path
+            id="prefix___x34_6"
+            className="prefix__st20"
+            d="M348.07 105.33l24.71 85.9"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M348.07 105.33l24.71 85.9"/>
+          </circle>
+        </a>
+        <a id="45">
+          <path
+            id="prefix___x34_5"
+            className="prefix__st20"
+            d="M382.07 361.83l.5 17.51"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M382.07 361.83l.5 17.51"/>
+          </circle>
+        </a>
+        <a id="44">
+          <path
+            id="prefix___x34_4"
+            className="prefix__st20"
+            d="M388.38 359.71l22.06 16.25"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M388.38 359.71l22.06 16.25"/>
+          </circle>
+        </a>
+        <a id="43">
+          <path
+            id="prefix___x34_3"
+            className="prefix__st20"
+            d="M395.07 353.32l26.16.75"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M395.07 353.32l26.16.75"/>
+          </circle>
+        </a>
+        <a id="42">
+          <path
+            id="prefix___x34_2"
+            className="prefix__st20"
+            d="M237.67 366.98l17.18 14.75"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M237.67 366.98l17.18 14.75"/>
+          </circle>
+        </a>
+        <a id="41">
+          <path
+            id="prefix___x34_1"
+            className="prefix__st20"
+            d="M226.54 388.33l25.4.81"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M226.54 388.33l25.4.81"/>
+          </circle>
+        </a>
+        <a id="40">
+          <path
+            id="prefix___x34_0"
+            className="prefix__st20"
+            d="M252.98 393.96l-20.37 18.03"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M252.98 393.96l-20.37 18.03"/>
+          </circle>
+        </a>
+        <a id="39">
+          <path
+            id="prefix___x33_9"
+            className="prefix__st20"
+            d="M261.81 404.65v17.16"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M261.81 404.65v17.16"/>
+          </circle>
+        </a>
+        <a id="38">
+          <path
+            id="prefix___x33_8"
+            className="prefix__st20"
+            d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"/>
+          </circle>
+        </a>
+        <a id="37">
+          <path
+            id="prefix___x33_7"
+            className="prefix__st20"
+            d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"/>
+          </circle>
+        </a>
+        <a id="36">
+          <path
+            id="prefix___x33_6"
+            className="prefix__st20"
+            d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+          </circle>
+        </a>
+        <a id="35">
+          <path
+            id="prefix___x33_5"
+            className="prefix__st20"
+            d="M109.37 387.56l20.98-9.67"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M109.37 387.56l20.98-9.67"/>
+          </circle>
+        </a>
+        <a id="34">
+          <path
+            id="prefix___x33_4"
+            className="prefix__st20"
+            d="M136.08 378.95l-4.68 13.57"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M136.08 378.95l-4.68 13.57"/>
+          </circle>
+        </a>
+        <a id="33">
+          <path
+            id="prefix___x33_3"
+            className="prefix__st20"
+            d="M130.92 371.08l-18.5-3.98"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M130.92 371.08l-18.5-3.98"/>
+          </circle>
+        </a>
+        <a id="32">
+          <path
+            id="prefix___x33_2"
+            className="prefix__st20"
+            d="M414.87 305.57l17.18 6.32"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M414.87 305.57l17.18 6.32"/>
+          </circle>
+        </a>
+        <a id="31">
+          <path
+            id="prefix___x33_1"
+            className="prefix__st20"
+            d="M420.18 291.89l12.42-11.06"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M420.18 291.89l12.42-11.06"/>
+          </circle>
+        </a>
+        <a id="30">
+          <path
+            id="prefix___x33_0"
+            className="prefix__st20"
+            d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"/>
+          </circle>
+        </a>
+        <a id="29">
+          <path
+            id="prefix___x32_9"
+            className="prefix__st20"
+            d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M33.25 293.32c8.81.09 17.61.17 26.42.26"/>
+          </circle>
+        </a>
+        <a id="28">
+          <path
+            id="prefix___x32_8"
+            className="prefix__st20"
+            d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"/>
+          </circle>
+        </a>
+        <a id="27">
+          <path
+            id="prefix___x32_7"
+            className="prefix__st20"
+            d="M78.03 305.57l9.16 14.05"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M78.03 305.57l9.16 14.05"/>
+          </circle>
+        </a>
+        <a id="26">
+          <path
+            id="prefix___x32_6"
+            className="prefix__st20"
+            d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+          </circle>
+        </a>
+        <a id="25">
+          <path
+            id="prefix___x32_5"
+            className="prefix__st20"
+            d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"/>
+          </circle>
+        </a>
+        <a id="24">
+          <path
+            id="prefix___x32_4"
+            className="prefix__st20"
+            d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"/>
+          </circle>
+        </a>
+        <a id="23">
+          <path
+            id="prefix___x32_3"
+            className="prefix__st20"
+            d="M262.06 179.38l16.35 6.93"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M262.06 179.38l16.35 6.93"/>
+          </circle>
+        </a>
+        <a id="22">
+          <path
+            id="prefix___x32_2"
+            className="prefix__st20"
+            d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"/>
+          </circle>
+        </a>
+        <a id="21">
+          <path
+            id="prefix___x32_1"
+            className="prefix__st20"
+            d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"/>
+          </circle>
+        </a>
+        <a id="20">
+          <path
+            id="prefix___x32_0"
+            className="prefix__st20"
+            d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M69.71 181.32c6.47.28 12.93.55 19.4.83"/>
+          </circle>
+        </a>
+        <a id="19">
+          <path
+            id="prefix___x31_9"
+            className="prefix__st20"
+            d="M97.15 193.24l-9.7 10.81"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M97.15 193.24l-9.7 10.81"/>
+          </circle>
+        </a>
+        <a id="18">
+          <path
+            id="prefix___x31_8"
+            className="prefix__st20"
+            d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"/>
+          </circle>
+        </a>
+        <a id="17">
+          <path
+            id="prefix___x31_7"
+            className="prefix__st20"
+            d="M438 139.19l5.98 16.91"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M438 139.19l5.98 16.91"/>
+          </circle>
+        </a>
+        <a id="16">
+          <path
+            id="prefix___x31_6"
+            className="prefix__st20"
+            d="M448.88 135.63l11.95 5.26"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M448.88 135.63l11.95 5.26"/>
+          </circle>
+        </a>
+        <a id="15">
+          <path
+            id="prefix___x31_5"
+            className="prefix__st20"
+            d="M448.88 122.76l15.66-10.12"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M448.88 122.76l15.66-10.12"/>
+          </circle>
+        </a>
+        <a id="14">
+          <path
+            id="prefix___x31_4"
+            className="prefix__st20"
+            d="M328.76 72.54l8.71 9.87"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M328.76 72.54l8.71 9.87"/>
+          </circle>
+        </a>
+        <a id="13">
+          <path
+            id="prefix___x31_3"
+            className="prefix__st20"
+            d="M317.36 89.56l18.41 2.61"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M317.36 89.56l18.41 2.61"/>
+          </circle>
+        </a>
+        <a id="12">
+          <path
+            id="prefix___x31_2"
+            className="prefix__st20"
+            d="M338.7 99.44l-8.38 10.96"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M338.7 99.44l-8.38 10.96"/>
+          </circle>
+        </a>
+        <a id="11">
+          <path
+            id="prefix___x31_1"
+            className="prefix__st20"
+            d="M353.81 98.68l9.84 11.72"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M353.81 98.68l9.84 11.72"/>
+          </circle>
+        </a>
+        <a id="10">
+          <path
+            id="prefix___x31_0"
+            className="prefix__st20"
+            d="M370.78 91.55l-14.25.23"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M370.78 91.55l-14.25.23"/>
+          </circle>
+        </a>
+        <a id="9">
+          <path
+            id="prefix___x39_"
+            className="prefix__st20"
+            d="M366.43 75l-13.81 7.41"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M366.43 75l-13.81 7.41"/>
+          </circle>
+        </a>
+        <a id="8">
+          <path
+            id="prefix___x38_"
+            className="prefix__st20"
+            d="M346.49 64.21l-.63 16.24"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M346.49 64.21l-.63 16.24"/>
+          </circle>
+        </a>
+        <a id="7">
+          <path
+            id="prefix___x37_"
+            className="prefix__st20"
+            d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"/>
+          </circle>
+        </a>
+        <a id="6">
+          <path
+            id="prefix___x36_"
+            className="prefix__st20"
+            d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M125.7 92.28c8.81.09 17.61.17 26.42.26"/>
+          </circle>
+        </a>
+        <a id="5">
+          <path
+            id="prefix___x35_"
+            className="prefix__st20"
+            d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"/>
+          </circle>
+        </a>
+        <a id="4">
+          <path
+            id="prefix___x34_"
+            className="prefix__st20"
+            d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"/>
+          </circle>
+        </a>
+        <a id="3">
+          <path
+            id="prefix___x33_"
+            className="prefix__st20"
+            d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"/>
+          </circle>
+        </a>
+        <a id="2">
+          <path
+            id="prefix___x32_"
+            className="prefix__st20"
+            d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+          </circle>
+        </a>
+        <a id="1">
+          <path
+            id="prefix___x31_"
+            className="prefix__st20"
+            d="M157.21 59.06L161.8 78"
+          />
+          <circle r="2" fill="lightgreen">
+            <animateMotion dur="1s" repeatCount="indefinite" path="M157.21 59.06L161.8 78"/>
+          </circle>
+        </a>
       </svg>
       <DeviceDetails
         show={show}

@@ -1,0 +1,156 @@
+{
+  "id": "Server",
+  "type": "Server",
+  "children": [
+    {
+      "id": "Switch1",
+      "type": "Switch",
+      "path": 56,
+      "children": [
+        {
+          "id": "Router2",
+          "type": "Router",
+          "path": 46,
+          "children": [
+            { "id": "PC8", "type": "PC", "path": 8 },
+            { "id": "PC9", "type": "PC", "path": 9 },
+            { "id": "PC10", "type": "PC", "path": 10 },
+            { "id": "PC11", "type": "PC", "path": 11 },
+            { "id": "PC12", "type": "PC", "path": 12 },
+            { "id": "PC13", "type": "PC", "path": 13 },
+            { "id": "PC14", "type": "PC", "path": 14 }
+          ]
+        },
+        {
+          "id": "Router3",
+          "type": "Router",
+          "path": 47,
+          "children": [
+            { "id": "PC15", "type": "PC", "path": 15 },
+            { "id": "PC16", "type": "PC", "path": 16 },
+            { "id": "PC17", "type": "PC", "path": 17 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Switch2",
+      "type": "Switch",
+      "path": 57,
+      "children": [
+        {
+          "id": "Router4",
+          "type": "Router",
+          "path": 48,
+          "children": [
+            { "id": "PC31", "type": "PC", "path": 31 },
+            { "id": "PC32", "type": "PC", "path": 32 }
+          ]
+        },
+        {
+          "id": "Router5",
+          "type": "Router",
+          "path": 49,
+          "children": [
+            { "id": "PC43", "type": "PC", "path": 43 },
+            { "id": "PC44", "type": "PC", "path": 44 },
+            { "id": "PC45", "type": "PC", "path": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Switch3",
+      "type": "Switch",
+      "path": 58,
+      "children": [
+        {
+          "id": "Router6",
+          "type": "Router",
+          "path": 50,
+          "children": [
+            { "id": "PC36", "type": "PC", "path": 36 },
+            { "id": "PC37", "type": "PC", "path": 37 },
+            { "id": "PC38", "type": "PC", "path": 38 },
+            { "id": "PC39", "type": "PC", "path": 39 },
+            { "id": "PC40", "type": "PC", "path": 40 },
+            { "id": "PC41", "type": "PC", "path": 41 },
+            { "id": "PC42", "type": "PC", "path": 42 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Switch4",
+      "type": "Switch",
+      "path": 59,
+      "children": [
+        {
+          "id": "Router7",
+          "type": "Router",
+          "path": 51,
+          "children": [
+            { "id": "PC33", "type": "PC", "path": 33 },
+            { "id": "PC34", "type": "PC", "path": 34 },
+            { "id": "PC35", "type": "PC", "path": 35 }
+          ]
+        },
+        {
+          "id": "Router8",
+          "type": "Router",
+          "path": 52,
+          "children": [
+            { "id": "PC25", "type": "PC", "path": 25 },
+            { "id": "PC26", "type": "PC", "path": 26 },
+            { "id": "PC27", "type": "PC", "path": 27 },
+            { "id": "PC28", "type": "PC", "path": 28 },
+            { "id": "PC29", "type": "PC", "path": 29 },
+            { "id": "PC30", "type": "PC", "path": 30 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Switch5",
+      "type": "Switch",
+      "path": 60,
+      "children": [
+        {
+          "id": "Router9",
+          "type": "Router",
+          "path": 53,
+          "children": [
+            { "id": "PC18", "type": "PC", "path": 18 },
+            { "id": "PC19", "type": "PC", "path": 19 },
+            { "id": "PC20", "type": "PC", "path": 20 }
+          ]
+        },
+        {
+          "id": "Router10",
+          "type": "Router",
+          "path": 54,
+          "children": [
+            { "id": "PC1", "type": "PC", "path": 1 },
+            { "id": "PC2", "type": "PC", "path": 2 },
+            { "id": "PC3", "type": "PC", "path": 3 },
+            { "id": "PC4", "type": "PC", "path": 4 },
+            { "id": "PC5", "type": "PC", "path": 5 },
+            { "id": "PC6", "type": "PC", "path": 6 },
+            { "id": "PC7", "type": "PC", "path": 7 }
+          ]
+        },
+        {
+          "id": "Router1",
+          "type": "Router",
+          "path": 55,
+          "children": [
+            { "id": "PC21", "type": "PC", "path": 21 },
+            { "id": "PC22", "type": "PC", "path": 22 },
+            { "id": "PC23", "type": "PC", "path": 23 },
+            { "id": "PC24", "type": "PC", "path": 24 }
+          ]
+        }
+      ]
+    }
+  ]
+}
