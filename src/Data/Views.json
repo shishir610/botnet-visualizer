@@ -8,18 +8,12 @@
     ["undo", "Show Network"]
   ],
   "malware": [
-    ["folder", "Types"],
-    ["folder", "Popular"]
-  ],
-  "types": [
-    ["ransomware", "Ransomware"],
-    ["spyware", "Spyware"],
-    ["trojan", "Trojan Horse"],
+    ["worm", "Worm"],
     ["virus", "Virus"],
-    ["worm", "Worm"]
+    ["trojan", "Trojan Horse"]
   ],
   "trash": [],
   "popular": [],
   "mail": [],
-  "personal" : []
+  "personal": []
 }

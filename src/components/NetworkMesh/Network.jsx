@@ -1,10 +1,17 @@
 import * as React from "react";
 
 const red = "#ffb174";
-const rightDirection = "0;1"
-const reverseDirection = "1;0"
+const rightDirection = "0;1";
+const reverseDirection = "1;0";
+const run = true
 
-const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
+const Network = ({
+  addToRefs,
+  handleDeviceClick,
+  ServerRef,
+  handleDeviceEnter,
+  handleDeviceLeave,
+}) => {
   return (
     <React.Fragment>
       <svg
@@ -21,7 +28,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             ".prefix__st0{fill:#6e6e6e}.prefix__st1,.prefix__st2,.prefix__st3{fill:#5dace2;stroke:#afafaf;stroke-width:.5;stroke-miterlimit:10}.prefix__st2,.prefix__st3{fill:#c8ff00;stroke:#717171;stroke-width:.06}.prefix__st3{fill:#4d4d4d;stroke:#d9f1ff;stroke-width:.37}.prefix__st4{fill:#515151}.prefix__st5{fill:#c6c6c6}.prefix__st10{fill:#9cd7ff}.prefix__st11{fill:#afafaf}.prefix__st12{fill:#5dace2}.prefix__st13{fill:none;stroke:#8d8d8d;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st14{fill:#717171}.prefix__st15{fill:gray}.prefix__st16{fill:#61ace0}.prefix__st17{fill:#c9c9c9}.prefix__st18{fill:none;stroke:#717171;stroke-width:.11;stroke-linecap:round;stroke-miterlimit:10}.prefix__st19{fill:#4d4d4d}.prefix__st20{fill:#7fe723;stroke:#7fe723;stroke-width:.8;stroke-miterlimit:10}"
           }
         </style>
-        <a id="Switch5" onClick={() => handleDeviceClick("Switch", 5)}>
+        <a
+          id="Switch5"
+          onClick={() => handleDeviceClick("Switch", 5)}
+          onMouseEnter={() => handleDeviceEnter("Switch", 5)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Switch5" ref={addToRefs} className="Switch">
             <path
               className="prefix__st0"
@@ -41,7 +53,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Switch4" onClick={() => handleDeviceClick("Switch", 4)}>
+        <a
+          id="Switch4"
+          onClick={() => handleDeviceClick("Switch", 4)}
+          onMouseEnter={() => handleDeviceEnter("Switch", 4)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Switch4" ref={addToRefs} className="Switch">
             <path
               className="prefix__st0"
@@ -61,7 +78,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Switch3" onClick={() => handleDeviceClick("Switch", 3)}>
+        <a
+          id="Switch3"
+          onClick={() => handleDeviceClick("Switch", 3)}
+          onMouseEnter={() => handleDeviceEnter("Switch", 3)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Switch3" ref={addToRefs} className="Switch">
             <path
               className="prefix__st0"
@@ -81,7 +103,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Switch2" onClick={() => handleDeviceClick("Switch", 2)}>
+        <a
+          id="Switch2"
+          onClick={() => handleDeviceClick("Switch", 2)}
+          onMouseEnter={() => handleDeviceEnter("Switch", 2)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Switch2" ref={addToRefs} className="Switch">
             <path
               className="prefix__st0"
@@ -101,7 +128,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Switch1" onClick={() => handleDeviceClick("Switch", 1)}>
+        <a
+          id="Switch1"
+          onClick={() => handleDeviceClick("Switch", 1)}
+          onMouseEnter={() => handleDeviceEnter("Switch", 1)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Switch1" ref={addToRefs} className="Switch">
             <path
               className="prefix__st0"
@@ -121,7 +153,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Server" onClick={() => handleDeviceClick("Server", 1)}>
+        <a
+          id="Server"
+          onClick={() => handleDeviceClick("Server", 1)}
+          onMouseEnter={() => handleDeviceEnter("Server", 1)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Server" ref={ServerRef}>
             <path
               className="prefix__st4"
@@ -166,7 +203,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router10" onClick={() => handleDeviceClick("Router", 10)}>
+        <a
+          id="Router10"
+          onClick={() => handleDeviceClick("Router", 10)}
+          onMouseEnter={() => handleDeviceEnter("Router", 10)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router10" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -202,7 +244,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router9" onClick={() => handleDeviceClick("Router", 9)}>
+        <a
+          id="Router9"
+          onClick={() => handleDeviceClick("Router", 9)}
+          onMouseEnter={() => handleDeviceEnter("Router", 9)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router9" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -238,7 +285,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router8" onClick={() => handleDeviceClick("Router", 8)}>
+        <a
+          id="Router8"
+          onClick={() => handleDeviceClick("Router", 8)}
+          onMouseEnter={() => handleDeviceEnter("Router", 8)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router8" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -274,7 +326,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router7" onClick={() => handleDeviceClick("Router", 7)}>
+        <a
+          id="Router7"
+          onClick={() => handleDeviceClick("Router", 7)}
+          onMouseEnter={() => handleDeviceEnter("Router", 7)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router7" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -310,7 +367,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router6" onClick={() => handleDeviceClick("Router", 6)}>
+        <a
+          id="Router6"
+          onClick={() => handleDeviceClick("Router", 6)}
+          onMouseEnter={() => handleDeviceEnter("Router", 6)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router6" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -346,7 +408,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router5" onClick={() => handleDeviceClick("Router", 5)}>
+        <a
+          id="Router5"
+          onClick={() => handleDeviceClick("Router", 5)}
+          onMouseEnter={() => handleDeviceEnter("Router", 5)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router5" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -382,7 +449,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router4" onClick={() => handleDeviceClick("Router", 4)}>
+        <a
+          id="Router4"
+          onClick={() => handleDeviceClick("Router", 4)}
+          onMouseEnter={() => handleDeviceEnter("Router", 4)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router4" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -418,7 +490,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router3" onClick={() => handleDeviceClick("Router", 3)}>
+        <a
+          id="Router3"
+          onClick={() => handleDeviceClick("Router", 3)}
+          onMouseEnter={() => handleDeviceEnter("Router", 3)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router3" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -454,7 +531,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router2" onClick={() => handleDeviceClick("Router", 2)}>
+        <a
+          id="Router2"
+          onClick={() => handleDeviceClick("Router", 2)}
+          onMouseEnter={() => handleDeviceEnter("Router", 2)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router2" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -490,7 +572,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="Router1" onClick={() => handleDeviceClick("Router", 1)}>
+        <a
+          id="Router1"
+          onClick={() => handleDeviceClick("Router", 1)}
+          onMouseEnter={() => handleDeviceEnter("Router", 1)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__Router1" ref={addToRefs} className="Router">
             <path
               style={{ fill: red }}
@@ -526,7 +613,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC45" onClick={() => handleDeviceClick("PC", 45)}>
+        <a
+          id="PC45"
+          onClick={() => handleDeviceClick("PC", 45)}
+          onMouseEnter={() => handleDeviceEnter("PC", 45)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC45" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -561,6 +653,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M378.4 387.92c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M378.51 388.01c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -594,7 +687,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC44" onClick={() => handleDeviceClick("PC", 44)}>
+        <a
+          id="PC44"
+          onClick={() => handleDeviceClick("PC", 44)}
+          onMouseEnter={() => handleDeviceEnter("PC", 44)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC44" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -629,6 +727,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M416.12 376.72c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M416.23 376.8c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -662,7 +761,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC43" onClick={() => handleDeviceClick("PC", 43)}>
+        <a
+          id="PC43"
+          onClick={() => handleDeviceClick("PC", 43)}
+          onMouseEnter={() => handleDeviceEnter("PC", 43)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC43" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -697,6 +801,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M427.35 350.4c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M427.45 350.48c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -730,7 +835,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC42" onClick={() => handleDeviceClick("PC", 42)}>
+        <a
+          id="PC42"
+          onClick={() => handleDeviceClick("PC", 42)}
+          onMouseEnter={() => handleDeviceEnter("PC", 42)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC42" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -765,6 +875,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M224.26 355.06c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M224.36 355.14c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -798,7 +909,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC41" onClick={() => handleDeviceClick("PC", 41)}>
+        <a
+          id="PC41"
+          onClick={() => handleDeviceClick("PC", 41)}
+          onMouseEnter={() => handleDeviceEnter("PC", 41)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC41" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -833,6 +949,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M213.75 383.23c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M213.85 383.32c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -866,7 +983,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC40" onClick={() => handleDeviceClick("PC", 40)}>
+        <a
+          id="PC40"
+          onClick={() => handleDeviceClick("PC", 40)}
+          onMouseEnter={() => handleDeviceEnter("PC", 40)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC40" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -901,6 +1023,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M218.87 414.52c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M218.98 414.6c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -934,7 +1057,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC39" onClick={() => handleDeviceClick("PC", 39)}>
+        <a
+          id="PC39"
+          onClick={() => handleDeviceClick("PC", 39)}
+          onMouseEnter={() => handleDeviceEnter("PC", 39)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC39" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -969,6 +1097,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M256.12 425.84c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M256.23 425.93c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1002,7 +1131,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC38" onClick={() => handleDeviceClick("PC", 38)}>
+        <a
+          id="PC38"
+          onClick={() => handleDeviceClick("PC", 38)}
+          onMouseEnter={() => handleDeviceEnter("PC", 38)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC38" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1037,6 +1171,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M289.87 419.18c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M289.98 419.27c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1070,7 +1205,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC37" onClick={() => handleDeviceClick("PC", 37)}>
+        <a
+          id="PC37"
+          onClick={() => handleDeviceClick("PC", 37)}
+          onMouseEnter={() => handleDeviceEnter("PC", 37)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC37" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1105,6 +1245,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M307.29 389.44c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M307.4 389.53c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1138,7 +1279,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC36" onClick={() => handleDeviceClick("PC", 36)}>
+        <a
+          id="PC36"
+          onClick={() => handleDeviceClick("PC", 36)}
+          onMouseEnter={() => handleDeviceEnter("PC", 36)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC36" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1173,6 +1319,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M296.98 358.29c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M297.09 358.38c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1206,7 +1353,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC35" onClick={() => handleDeviceClick("PC", 35)}>
+        <a
+          id="PC35"
+          onClick={() => handleDeviceClick("PC", 35)}
+          onMouseEnter={() => handleDeviceEnter("PC", 35)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC35" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1241,6 +1393,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M96.57 383.2c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M96.67 383.29c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1274,7 +1427,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC34" onClick={() => handleDeviceClick("PC", 34)}>
+        <a
+          id="PC34"
+          onClick={() => handleDeviceClick("PC", 34)}
+          onMouseEnter={() => handleDeviceEnter("PC", 34)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC34" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1309,6 +1467,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M122.96 397.05c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M123.06 397.14c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1342,7 +1501,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC33" onClick={() => handleDeviceClick("PC", 33)}>
+        <a
+          id="PC33"
+          onClick={() => handleDeviceClick("PC", 33)}
+          onMouseEnter={() => handleDeviceEnter("PC", 33)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC33" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1377,6 +1541,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M94.99 363.53c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M95.1 363.62c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1410,7 +1575,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC32" onClick={() => handleDeviceClick("PC", 32)}>
+        <a
+          id="PC32"
+          onClick={() => handleDeviceClick("PC", 32)}
+          onMouseEnter={() => handleDeviceEnter("PC", 32)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC32" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1445,6 +1615,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M438.23 308.22c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M438.34 308.31c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1478,7 +1649,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC31" onClick={() => handleDeviceClick("PC", 31)}>
+        <a
+          id="PC31"
+          onClick={() => handleDeviceClick("PC", 31)}
+          onMouseEnter={() => handleDeviceEnter("PC", 31)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC31" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1513,6 +1689,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M438.2 269.89c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M438.3 269.98c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1546,7 +1723,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC30" onClick={() => handleDeviceClick("PC", 30)}>
+        <a
+          id="PC30"
+          onClick={() => handleDeviceClick("PC", 30)}
+          onMouseEnter={() => handleDeviceEnter("PC", 30)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC30" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1581,6 +1763,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M30.76 259.19c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M30.86 259.28c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1614,7 +1797,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC29" onClick={() => handleDeviceClick("PC", 29)}>
+        <a
+          id="PC29"
+          onClick={() => handleDeviceClick("PC", 29)}
+          onMouseEnter={() => handleDeviceEnter("PC", 29)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC29" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1649,6 +1837,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M14.08 288.21c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M14.19 288.29c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1682,7 +1871,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC28" onClick={() => handleDeviceClick("PC", 28)}>
+        <a
+          id="PC28"
+          onClick={() => handleDeviceClick("PC", 28)}
+          onMouseEnter={() => handleDeviceEnter("PC", 28)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC28" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1717,6 +1911,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M33.38 320.84c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M33.48 320.93c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1750,7 +1945,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC27" onClick={() => handleDeviceClick("PC", 27)}>
+        <a
+          id="PC27"
+          onClick={() => handleDeviceClick("PC", 27)}
+          onMouseEnter={() => handleDeviceEnter("PC", 27)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC27" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1785,6 +1985,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M87.38 323.28c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M87.48 323.37c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1818,7 +2019,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC26" onClick={() => handleDeviceClick("PC", 26)}>
+        <a
+          id="PC26"
+          onClick={() => handleDeviceClick("PC", 26)}
+          onMouseEnter={() => handleDeviceEnter("PC", 26)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC26" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1853,6 +2059,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M105.85 260.01c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M105.95 260.1c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1886,7 +2093,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC25" onClick={() => handleDeviceClick("PC", 25)}>
+        <a
+          id="PC25"
+          onClick={() => handleDeviceClick("PC", 25)}
+          onMouseEnter={() => handleDeviceEnter("PC", 25)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC25" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1921,6 +2133,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M68.06 247.67c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M68.16 247.75c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1954,7 +2167,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC24" onClick={() => handleDeviceClick("PC", 24)}>
+        <a
+          id="PC24"
+          onClick={() => handleDeviceClick("PC", 24)}
+          onMouseEnter={() => handleDeviceEnter("PC", 24)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC24" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -1989,6 +2207,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M247.96 201.12c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M248.07 201.21c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2022,7 +2241,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC23" onClick={() => handleDeviceClick("PC", 23)}>
+        <a
+          id="PC23"
+          onClick={() => handleDeviceClick("PC", 23)}
+          onMouseEnter={() => handleDeviceEnter("PC", 23)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC23" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2057,6 +2281,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M281.75 188.6c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M281.86 188.69c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2090,7 +2315,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC22" onClick={() => handleDeviceClick("PC", 22)}>
+        <a
+          id="PC22"
+          onClick={() => handleDeviceClick("PC", 22)}
+          onMouseEnter={() => handleDeviceEnter("PC", 22)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC22" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2125,6 +2355,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M282.15 154.71c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M282.26 154.8c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2158,7 +2389,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC21" onClick={() => handleDeviceClick("PC", 21)}>
+        <a
+          id="PC21"
+          onClick={() => handleDeviceClick("PC", 21)}
+          onMouseEnter={() => handleDeviceEnter("PC", 21)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC21" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2193,6 +2429,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M247.78 133.02c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M247.89 133.11c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2226,7 +2463,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC20" onClick={() => handleDeviceClick("PC", 20)}>
+        <a
+          id="PC20"
+          onClick={() => handleDeviceClick("PC", 20)}
+          onMouseEnter={() => handleDeviceEnter("PC", 20)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC20" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2261,6 +2503,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M55.66 175.03c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M55.76 175.11c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2294,7 +2537,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC19" onClick={() => handleDeviceClick("PC", 19)}>
+        <a
+          id="PC19"
+          onClick={() => handleDeviceClick("PC", 19)}
+          onMouseEnter={() => handleDeviceEnter("PC", 19)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC19" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2329,6 +2577,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M76.5 207.76c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M76.6 207.84c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2362,7 +2611,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC18" onClick={() => handleDeviceClick("PC", 18)}>
+        <a
+          id="PC18"
+          onClick={() => handleDeviceClick("PC", 18)}
+          onMouseEnter={() => handleDeviceEnter("PC", 18)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC18" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2397,6 +2651,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M87.45 149.79c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37V155c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M87.56 149.88c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2430,7 +2685,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC17" onClick={() => handleDeviceClick("PC", 17)}>
+        <a
+          id="PC17"
+          onClick={() => handleDeviceClick("PC", 17)}
+          onMouseEnter={() => handleDeviceEnter("PC", 17)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC17" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2465,6 +2725,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M439.28 161.01c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M439.39 161.09c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2498,7 +2759,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC16" onClick={() => handleDeviceClick("PC", 16)}>
+        <a
+          id="PC16"
+          onClick={() => handleDeviceClick("PC", 16)}
+          onMouseEnter={() => handleDeviceEnter("PC", 16)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC16" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2533,6 +2799,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M466.47 141.74c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M466.58 141.83c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2566,7 +2833,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC15" onClick={() => handleDeviceClick("PC", 15)}>
+        <a
+          id="PC15"
+          onClick={() => handleDeviceClick("PC", 15)}
+          onMouseEnter={() => handleDeviceEnter("PC", 15)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC15" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2601,6 +2873,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M470.53 106.47c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M470.64 106.55c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2634,7 +2907,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC14" onClick={() => handleDeviceClick("PC", 14)}>
+        <a
+          id="PC14"
+          onClick={() => handleDeviceClick("PC", 14)}
+          onMouseEnter={() => handleDeviceEnter("PC", 14)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC14" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2669,6 +2947,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M315.95 63.28c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M316.06 63.37c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2702,7 +2981,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC13" onClick={() => handleDeviceClick("PC", 13)}>
+        <a
+          id="PC13"
+          onClick={() => handleDeviceClick("PC", 13)}
+          onMouseEnter={() => handleDeviceEnter("PC", 13)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC13" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2737,6 +3021,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M303.17 84.78c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M303.28 84.86c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2770,7 +3055,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC12" onClick={() => handleDeviceClick("PC", 12)}>
+        <a
+          id="PC12"
+          onClick={() => handleDeviceClick("PC", 12)}
+          onMouseEnter={() => handleDeviceEnter("PC", 12)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC12" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2805,6 +3095,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M318.79 113.33c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M318.89 113.41c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2838,7 +3129,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC11" onClick={() => handleDeviceClick("PC", 11)}>
+        <a
+          id="PC11"
+          onClick={() => handleDeviceClick("PC", 11)}
+          onMouseEnter={() => handleDeviceEnter("PC", 11)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC11" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2873,6 +3169,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M365.93 112.73c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M366.04 112.82c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2906,7 +3203,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC10" onClick={() => handleDeviceClick("PC", 10)}>
+        <a
+          id="PC10"
+          onClick={() => handleDeviceClick("PC", 10)}
+          onMouseEnter={() => handleDeviceEnter("PC", 10)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC10" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -2941,6 +3243,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M376.24 87.7c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37V87.7z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M376.34 87.79c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2974,7 +3277,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC9" onClick={() => handleDeviceClick("PC", 9)}>
+        <a
+          id="PC9"
+          onClick={() => handleDeviceClick("PC", 9)}
+          onMouseEnter={() => handleDeviceEnter("PC", 9)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC9" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3009,6 +3317,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M369.8 63.57c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M369.91 63.65c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3042,7 +3351,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC8" onClick={() => handleDeviceClick("PC", 8)}>
+        <a
+          id="PC8"
+          onClick={() => handleDeviceClick("PC", 8)}
+          onMouseEnter={() => handleDeviceEnter("PC", 8)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC8" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3077,6 +3391,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M341.65 51.54c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M341.75 51.62c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3110,7 +3425,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC7" onClick={() => handleDeviceClick("PC", 7)}>
+        <a
+          id="PC7"
+          onClick={() => handleDeviceClick("PC", 7)}
+          onMouseEnter={() => handleDeviceEnter("PC", 7)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC7" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3145,6 +3465,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M120.69 57.22c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M120.8 57.31c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3178,7 +3499,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC6" onClick={() => handleDeviceClick("PC", 6)}>
+        <a
+          id="PC6"
+          onClick={() => handleDeviceClick("PC", 6)}
+          onMouseEnter={() => handleDeviceEnter("PC", 6)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC6" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3213,6 +3539,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M106.53 87.16c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M106.63 87.25c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37H107a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3246,7 +3573,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC5" onClick={() => handleDeviceClick("PC", 5)}>
+        <a
+          id="PC5"
+          onClick={() => handleDeviceClick("PC", 5)}
+          onMouseEnter={() => handleDeviceEnter("PC", 5)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC5" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3281,6 +3613,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M125.82 119.8c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M125.93 119.89c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3314,7 +3647,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC4" onClick={() => handleDeviceClick("PC", 4)}>
+        <a
+          id="PC4"
+          onClick={() => handleDeviceClick("PC", 4)}
+          onMouseEnter={() => handleDeviceEnter("PC", 4)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC4" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3349,6 +3687,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M191.18 119.86c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M191.29 119.95c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3382,7 +3721,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC3" onClick={() => handleDeviceClick("PC", 3)}>
+        <a
+          id="PC3"
+          onClick={() => handleDeviceClick("PC", 3)}
+          onMouseEnter={() => handleDeviceEnter("PC", 3)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC3" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3417,6 +3761,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M208.6 90.12c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M208.71 90.21c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3450,7 +3795,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC2" onClick={() => handleDeviceClick("PC", 2)}>
+        <a
+          id="PC2"
+          onClick={() => handleDeviceClick("PC", 2)}
+          onMouseEnter={() => handleDeviceEnter("PC", 2)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC2" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3485,6 +3835,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M198.29 58.97c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M198.4 59.06c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3518,7 +3869,12 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
             />
           </g>
         </a>
-        <a id="PC1" onClick={() => handleDeviceClick("PC", 1)}>
+        <a
+          id="PC1"
+          onClick={() => handleDeviceClick("PC", 1)}
+          onMouseEnter={() => handleDeviceEnter("PC", 1)}
+          onMouseLeave={handleDeviceLeave}
+        >
           <g id="prefix__PC1" ref={addToRefs} className="PC">
             <path
               className="prefix__st11"
@@ -3553,6 +3909,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M151.72 46.35c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st16"
               d="M151.83 46.43c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3594,9 +3951,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M179.72 210.44l66.12 34.55"
+              path={run ? "M179.72 210.44l66.12 34.55" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3612,9 +3969,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M185.73 295.58l60.29-36.13"
+              path={run ? "M185.73 295.58l60.29-36.13" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3630,9 +3987,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M260.82 269.6l2.7 42.29"
+              path={run ? "M260.82 269.6l2.7 42.29" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3648,9 +4005,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M278.41 258.82l56.33 29.84"
+              path={run ? "M278.41 258.82l56.33 29.84" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3666,9 +4023,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M278.41 246.18l86.9-36.29"
+              path={run ? "M278.41 246.18l86.9-36.29" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3684,9 +4041,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
+              path={run ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3702,9 +4059,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M162.57 109.22l13.73 83.74"
+              path={run ? "M162.57 109.22l13.73 83.74" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3720,9 +4077,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
+              path={run ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3738,9 +4095,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M89.35 295.89l70.72-.11"
+              path={run ? "M89.35 295.89l70.72-.11" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3756,9 +4113,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M173.78 305.57l-24 56.26"
+              path={run ? "M173.78 305.57l-24 56.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3774,9 +4131,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M261.38 329.53l2.14 46.43"
+              path={run ? "M261.38 329.53l2.14 46.43" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3792,9 +4149,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M348.86 305.57l26.02 36.95"
+              path={run ? "M348.86 305.57l26.02 36.95" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3810,9 +4167,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M361.87 296.89h33.2"
+              path={run ? "M361.87 296.89h33.2" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3828,9 +4185,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M429.61 140.89l-44.36 52.95"
+              path={run ? "M429.61 140.89l-44.36 52.95" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3846,9 +4203,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M348.07 105.33l24.71 85.9"
+              path={run ? "M348.07 105.33l24.71 85.9" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3864,9 +4221,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M382.07 361.83l.5 17.51"
+              path={run ? "M382.07 361.83l.5 17.51" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3882,9 +4239,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M388.38 359.71l22.06 16.25"
+              path={run ? "M388.38 359.71l22.06 16.25" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3900,9 +4257,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M395.07 353.32l26.16.75"
+              path={run ? "M395.07 353.32l26.16.75" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3918,9 +4275,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M237.67 366.98l17.18 14.75"
+              path={run ? "M237.67 366.98l17.18 14.75" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3936,9 +4293,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M226.54 388.33l25.4.81"
+              path={run ? "M226.54 388.33l25.4.81" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3954,9 +4311,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M252.98 393.96l-20.37 18.03"
+              path={run ? "M252.98 393.96l-20.37 18.03" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3972,9 +4329,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M261.81 404.65v17.16"
+              path={run ? "M261.81 404.65v17.16" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3990,9 +4347,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
+              path={run ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4008,9 +4365,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
+              path={run ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4026,9 +4383,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
+              path={run ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4044,9 +4401,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M109.37 387.56l20.98-9.67"
+              path={run ? "M109.37 387.56l20.98-9.67" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4062,9 +4419,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M136.08 378.95l-4.68 13.57"
+              path={run ? "M136.08 378.95l-4.68 13.57" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4080,9 +4437,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M130.92 371.08l-18.5-3.98"
+              path={run ? "M130.92 371.08l-18.5-3.98" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4098,9 +4455,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M414.87 305.57l17.18 6.32"
+              path={run ? "M414.87 305.57l17.18 6.32" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4116,9 +4473,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M420.18 291.89l12.42-11.06"
+              path={run ? "M420.18 291.89l12.42-11.06" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4134,9 +4491,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
+              path={run ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4152,9 +4509,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M33.25 293.32c8.81.09 17.61.17 26.42.26"
+              path={run ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4170,9 +4527,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
+              path={run ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4188,9 +4545,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M78.03 305.57l9.16 14.05"
+              path={run ? "M78.03 305.57l9.16 14.05" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4206,9 +4563,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
+              path={run ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4224,9 +4581,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
+              path={run ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4242,9 +4599,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
+              path={run ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4260,9 +4617,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M262.06 179.38l16.35 6.93"
+              path={run ? "M262.06 179.38l16.35 6.93" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4278,9 +4635,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
+              path={run ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4296,9 +4653,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
+              path={run ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4314,9 +4671,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M69.71 181.32c6.47.28 12.93.55 19.4.83"
+              path={run ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4332,9 +4689,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M97.15 193.24l-9.7 10.81"
+              path={run ? "M97.15 193.24l-9.7 10.81" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4350,9 +4707,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
+              path={run ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4368,9 +4725,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M438 139.19l5.98 16.91"
+              path={run ? "M438 139.19l5.98 16.91" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4386,9 +4743,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M448.88 135.63l11.95 5.26"
+              path={run ? "M448.88 135.63l11.95 5.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4404,9 +4761,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M448.88 122.76l15.66-10.12"
+              path={run ? "M448.88 122.76l15.66-10.12" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4422,9 +4779,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M328.76 72.54l8.71 9.87"
+              path={run ? "M328.76 72.54l8.71 9.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4440,9 +4797,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M317.36 89.56l18.41 2.61"
+              path={run ? "M317.36 89.56l18.41 2.61" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4458,9 +4815,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M338.7 99.44l-8.38 10.96"
+              path={run ? "M338.7 99.44l-8.38 10.96" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4476,9 +4833,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M353.81 98.68l9.84 11.72"
+              path={run ? "M353.81 98.68l9.84 11.72" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4494,9 +4851,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M370.78 91.55l-14.25.23"
+              path={run ? "M370.78 91.55l-14.25.23" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4512,9 +4869,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M366.43 75l-13.81 7.41"
+              path={run ? "M366.43 75l-13.81 7.41" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4530,9 +4887,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M346.49 64.21l-.63 16.24"
+              path={run ? "M346.49 64.21l-.63 16.24" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4548,9 +4905,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
+              path={run ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4566,9 +4923,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M125.7 92.28c8.81.09 17.61.17 26.42.26"
+              path={run ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4584,9 +4941,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
+              path={run ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4602,9 +4959,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
+              path={run ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4620,9 +4977,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
+              path={run ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4638,9 +4995,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
+              path={run ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4656,9 +5013,9 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
           />
           <circle r="2" fill="lightgreen">
             <animateMotion
-              dur="1s"
+              dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path="M157.21 59.06L161.8 78"
+              path={run ? "M157.21 59.06L161.8 78" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"

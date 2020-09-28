@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Folder from "../Folder/Folder";
+import Info from "../../Popovers/Info";
 
 const Content = ({ folders, setView, setVirusClick }) => {
   return (
@@ -16,7 +17,13 @@ const Content = ({ folders, setView, setVirusClick }) => {
           />
         );
       })}
-      {folders.length === 0 && 'Folder is Empty'}
+      <Info
+        content="These are the three main types of malware, however, 
+      they are not the only ones. Others include Spyware, Ransomware, Adware.
+      Not included since they have similar propogation vectors"
+        virusWindow={true}
+      />
+      {folders.length === 0 && "Folder is Empty"}
     </Row>
   );
 };

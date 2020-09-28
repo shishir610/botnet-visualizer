@@ -5,6 +5,7 @@ import Network from "./Network";
 import "./Network.css";
 import Candidates from "../../Data/Candidates.json";
 import DeviceDetails from "../Popovers/DeviceDetails";
+import DeviceHover from "../Popovers/DeviceHover";
 
 const TOTALDEVICES = {
   PC: 45,
@@ -21,6 +22,7 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
   const [popoverIndex, setPopoverIndex] = useState(0);
   const [device, setDevice] = useState("PC");
   const [deviceName, setDeviceName] = useState("");
+  const [DHShow, setDHShow] = useState(false);
 
   //Refs to PCs, Routers, Switches and Server
   const PCRefs = useRef([]);
@@ -47,6 +49,17 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
     setDevice(device);
     setDeviceName(Candidates[id - 1].name);
     device === "Server" && setIsServer(true);
+  };
+
+  const handleDeviceEnter = (device, id) => {
+    const totalDevices = TOTALDEVICES[device];
+    setPopoverIndex(totalDevices - id);
+    setDHShow(true);
+    setDevice(device);
+  };
+
+  const handleDeviceLeave = () => {
+    setDHShow(false);
   };
 
   const addToRefs = (e) => {
@@ -84,7 +97,7 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
 
   return (
     <React.Fragment>
-      <Container style={{marginTop:"50px"}}>
+      <Container style={{ marginTop: "50px" }}>
         <Row className="justify-content-center">
           <TransformWrapper
             wheel={{ step: 1, disabled: popoverShow }}
@@ -98,35 +111,55 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
                 addToRefs={addToRefs}
                 handleDeviceClick={handleDeviceClick}
                 ServerRef={ServerRef}
+                handleDeviceEnter={handleDeviceEnter}
+                handleDeviceLeave={handleDeviceLeave}
               />
             </TransformComponent>
           </TransformWrapper>
         </Row>
-      <Toast
-        style={{
-          position: "absolute",
-          top: "15px",
-          right: "15px",
-          width: "200px",
-        }}
-        show={popoverShow}
-        onClose={togglePopoverShow}
-      >
-        <Toast.Body>Close the overlay before zooming and panning.</Toast.Body>
-      </Toast>
+        <Toast
+          style={{
+            position: "absolute",
+            top: "15px",
+            right: "15px",
+            width: "200px",
+          }}
+          show={popoverShow}
+          onClose={togglePopoverShow}
+        >
+          <Toast.Body>Close the overlay before zooming and panning.</Toast.Body>
+        </Toast>
       </Container>
-      <DeviceDetails
-        name={deviceName}
-        show={popoverShow}
-        target={
-          DEVICEMAPPER[device].length !== 0 && device !== "Server"
-            ? DEVICEMAPPER[device][popoverIndex]
-            : DEVICEMAPPER[device]
-        }
-        device={device}
-        setNetworkView={setNetworkView}
-        setPopoverShow={setPopoverShow}
-      />
+      {popoverShow && (
+        <DeviceDetails
+          name={deviceName}
+          show={popoverShow}
+          target={
+            popoverShow &&
+            DEVICEMAPPER[device].length !== 0 &&
+            device !== "Server"
+              ? DEVICEMAPPER[device][popoverIndex]
+              : DEVICEMAPPER[device]
+          }
+          device={device}
+          setNetworkView={setNetworkView}
+          setPopoverShow={setPopoverShow}
+        />
+      )}
+      {DHShow && (
+        <DeviceHover
+          name={deviceName}
+          show={DHShow}
+          target={
+            DHShow && DEVICEMAPPER[device].length !== 0 && device !== "Server"
+              ? DEVICEMAPPER[device][popoverIndex]
+              : DEVICEMAPPER[device]
+          }
+          device={device}
+          setNetworkView={setNetworkView}
+          setPopoverShow={setPopoverShow}
+        />
+      )}
     </React.Fragment>
   );
 }
