@@ -4,9 +4,10 @@ import Monitor from './components/Monitor/Monitor'
 import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
 import NavigationBar from './components/Navigation/NavigationBar'
 import './App.css'
+import Info from './components/Popovers/Info'
 
 function App() {
-  const [networkView, setNetworkView] = useState(false)
+  const [networkView, setNetworkView] = useState(true)
   const [isServer, setIsServer] = useState(false)
 
   return (

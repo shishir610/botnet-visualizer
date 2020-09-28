@@ -84,7 +84,7 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
 
   return (
     <React.Fragment>
-      <Container>
+      <Container style={{marginTop:"50px"}}>
         <Row className="justify-content-center">
           <TransformWrapper
             wheel={{ step: 1, disabled: popoverShow }}
@@ -102,7 +102,6 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
             </TransformComponent>
           </TransformWrapper>
         </Row>
-      </Container>
       <Toast
         style={{
           position: "absolute",
@@ -113,11 +112,9 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
         show={popoverShow}
         onClose={togglePopoverShow}
       >
-        <Toast.Header>
-          <span style={{ width: "400px" }}></span>
-        </Toast.Header>
         <Toast.Body>Close the overlay before zooming and panning.</Toast.Body>
       </Toast>
+      </Container>
       <DeviceDetails
         name={deviceName}
         show={popoverShow}
@@ -128,6 +125,7 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
         }
         device={device}
         setNetworkView={setNetworkView}
+        setPopoverShow={setPopoverShow}
       />
     </React.Fragment>
   );

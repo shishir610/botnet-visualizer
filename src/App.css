@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     height: 50px;
     background-color: #61ace0;
     margin-bottom: 10px;
@@ -8,6 +8,40 @@ a {
     cursor: pointer;
 }
 
-body{
+body {
     overflow-y: hidden;
+    font-family: Poppins;
+}
+
+.extra-info {
+    display: none;
+    line-height: 20px;
+    font-size: 15px;
+    position: absolute;
+    left: 30px;
+    width: 200px;
+    padding: 10px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.371);
+    font-family: Poppins;
+}
+
+.info:hover .extra-info {
+    display: block;
+}
+
+.info {
+    font-size: 20px;
+    padding-left: 5px;
+    width: 20px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    background-color: #f0f0f0;
+}
+
+.info:hover {
+    background-color: #f0f0f0;
 }

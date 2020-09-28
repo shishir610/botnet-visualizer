@@ -1,0 +1,26 @@
+.closeDD {
+    height: 2px;
+    opacity: 0.5;
+}
+
+.closeDD:hover {
+    opacity: 1;
+}
+
+.closeDD:before, .closeDD:after {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #000;
+}
+
+.closeDD:before {
+    transform: rotate(45deg);
+}
+
+.closeDD:after {
+    transform: rotate(-45deg);
+}

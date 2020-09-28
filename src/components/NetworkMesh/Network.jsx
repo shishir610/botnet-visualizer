@@ -1,5 +1,9 @@
 import * as React from "react";
 
+const red = "#ffb174";
+const rightDirection = "0;1"
+const reverseDirection = "1;0"
+
 const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
   return (
     <React.Fragment>
@@ -14,7 +18,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
       >
         <style>
           {
-            ".prefix__st0{fill:#6e6e6e}.prefix__st1,.prefix__st2,.prefix__st3{fill:#5dace2;stroke:#afafaf;stroke-width:.5;stroke-miterlimit:10}.prefix__st2,.prefix__st3{fill:#c8ff00;stroke:#717171;stroke-width:.06}.prefix__st3{fill:#4d4d4d;stroke:#d9f1ff;stroke-width:.37}.prefix__st4{fill:#515151}.prefix__st5{fill:#c6c6c6}.prefix__st10{fill:#9cd7ff}.prefix__st11{fill:#afafaf}.prefix__st12{fill:#5dace2}.prefix__st13{fill:none;stroke:#8d8d8d;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st14{fill:#717171}.prefix__st15{fill:gray}.prefix__st16{fill:#61ace0}.prefix__st17{fill:#c9c9c9}.prefix__st18{fill:none;stroke:#717171;stroke-width:.11;stroke-linecap:round;stroke-miterlimit:10}.prefix__st19{fill:#4d4d4d}.prefix__st20{fill:#fff;stroke:#000;stroke-width:.5;stroke-miterlimit:10}"
+            ".prefix__st0{fill:#6e6e6e}.prefix__st1,.prefix__st2,.prefix__st3{fill:#5dace2;stroke:#afafaf;stroke-width:.5;stroke-miterlimit:10}.prefix__st2,.prefix__st3{fill:#c8ff00;stroke:#717171;stroke-width:.06}.prefix__st3{fill:#4d4d4d;stroke:#d9f1ff;stroke-width:.37}.prefix__st4{fill:#515151}.prefix__st5{fill:#c6c6c6}.prefix__st10{fill:#9cd7ff}.prefix__st11{fill:#afafaf}.prefix__st12{fill:#5dace2}.prefix__st13{fill:none;stroke:#8d8d8d;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st14{fill:#717171}.prefix__st15{fill:gray}.prefix__st16{fill:#61ace0}.prefix__st17{fill:#c9c9c9}.prefix__st18{fill:none;stroke:#717171;stroke-width:.11;stroke-linecap:round;stroke-miterlimit:10}.prefix__st19{fill:#4d4d4d}.prefix__st20{fill:#7fe723;stroke:#7fe723;stroke-width:.8;stroke-miterlimit:10}"
           }
         </style>
         <a id="Switch5" onClick={() => handleDeviceClick("Switch", 5)}>
@@ -165,14 +169,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router10" onClick={() => handleDeviceClick("Router", 10)}>
           <g id="prefix__Router10" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M157.1 94.17c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M158.73 93.42c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M160.37 92.67c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -185,6 +192,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M167.56 96.15l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M164.87 96.15l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -197,14 +205,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router9" onClick={() => handleDeviceClick("Router", 9)}>
           <g id="prefix__Router9" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M92.79 185.43c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M94.42 184.69c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M96.05 183.93c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -217,6 +228,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M103.25 187.41l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M100.56 187.41l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -229,14 +241,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router8" onClick={() => handleDeviceClick("Router", 8)}>
           <g id="prefix__Router8" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M66.58 295.22c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92s-6.56-.01-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M68.22 294.47c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54s-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M69.85 293.72c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -249,6 +264,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M77.05 297.19l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.23h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M74.36 297.19l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.23h-.03.03zm-.15 0h-.01.01z"
             />
@@ -261,14 +277,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router7" onClick={() => handleDeviceClick("Router", 7)}>
           <g id="prefix__Router7" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M135.63 370.7c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M137.26 369.95c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M138.9 369.2c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -281,6 +300,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M146.09 372.68l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M143.4 372.68l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -293,14 +313,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router6" onClick={() => handleDeviceClick("Router", 6)}>
           <g id="prefix__Router6" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M258.74 390.23c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M260.37 389.48c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54s-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M262.01 388.73c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -313,6 +336,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M269.2 392.21l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M266.51 392.21l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -325,14 +349,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router5" onClick={() => handleDeviceClick("Router", 5)}>
           <g id="prefix__Router5" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M376.22 353.69c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M377.85 352.94c-.74-1.66.02-3.61 1.68-4.35s3.61.02 4.35 1.68c.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M379.49 352.19c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -345,6 +372,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M386.68 355.67l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M383.99 355.67l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -357,14 +385,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router4" onClick={() => handleDeviceClick("Router", 4)}>
           <g id="prefix__Router4" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M403.44 296.73c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M405.08 295.99c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M406.71 295.23c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -377,6 +408,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M413.91 298.71l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.01-.16-.1-.32-.24-.4zm-5.69-.24h-.05.05zm-.28 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M411.21 298.71l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.02-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -389,14 +421,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router3" onClick={() => handleDeviceClick("Router", 3)}>
           <g id="prefix__Router3" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M431.33 129.04c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M432.97 128.29c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M434.6 127.54c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -409,6 +444,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M441.8 131.02l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M439.11 131.02l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -421,14 +457,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router2" onClick={() => handleDeviceClick("Router", 2)}>
           <g id="prefix__Router2" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M340.01 91.45c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M341.65 90.7c-.74-1.66.02-3.61 1.68-4.35s3.61.02 4.35 1.68c.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M343.28 89.95c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -441,6 +480,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M350.48 93.43l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M347.79 93.43l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -453,14 +493,17 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
         <a id="Router1" onClick={() => handleDeviceClick("Router", 1)}>
           <g id="prefix__Router1" ref={addToRefs} className="Router">
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M247.81 174.62c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92s-6.56-.01-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M249.44 173.87c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st10"
               d="M251.07 173.12c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -473,6 +516,7 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               d="M258.27 176.6l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47V177a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
+              style={{ fill: red }}
               className="prefix__st12"
               d="M255.58 176.6l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -3553,7 +3597,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M179.72 210.44l66.12 34.55"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x36_0" />
           </circle>
         </a>
         <a id="59">
@@ -3567,7 +3615,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M185.73 295.58l60.29-36.13"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_9" />
           </circle>
         </a>
         <a id="58">
@@ -3581,7 +3633,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M260.82 269.6l2.7 42.29"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_8" />
           </circle>
         </a>
         <a id="57">
@@ -3595,7 +3651,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M278.41 258.82l56.33 29.84"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_7" />
           </circle>
         </a>
         <a id="56">
@@ -3609,7 +3669,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M278.41 246.18l86.9-36.29"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_6" />
           </circle>
         </a>
         <a id="55">
@@ -3623,7 +3687,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_5" />
           </circle>
         </a>
         <a id="54">
@@ -3637,7 +3705,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M162.57 109.22l13.73 83.74"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_4" />
           </circle>
         </a>
         <a id="53">
@@ -3651,7 +3723,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_3" />
           </circle>
         </a>
         <a id="52">
@@ -3665,7 +3741,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M89.35 295.89l70.72-.11"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_2" />
           </circle>
         </a>
         <a id="51">
@@ -3679,7 +3759,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M173.78 305.57l-24 56.26"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_1" />
           </circle>
         </a>
         <a id="50">
@@ -3693,7 +3777,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M261.38 329.53l2.14 46.43"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_0" />
           </circle>
         </a>
         <a id="49">
@@ -3707,7 +3795,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M348.86 305.57l26.02 36.95"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_9" />
           </circle>
         </a>
         <a id="48">
@@ -3721,7 +3813,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M361.87 296.89h33.2"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_8" />
           </circle>
         </a>
         <a id="47">
@@ -3735,7 +3831,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M429.61 140.89l-44.36 52.95"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_7" />
           </circle>
         </a>
         <a id="46">
@@ -3749,7 +3849,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M348.07 105.33l24.71 85.9"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_6" />
           </circle>
         </a>
         <a id="45">
@@ -3763,7 +3867,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M382.07 361.83l.5 17.51"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_5" />
           </circle>
         </a>
         <a id="44">
@@ -3777,7 +3885,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M388.38 359.71l22.06 16.25"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_4" />
           </circle>
         </a>
         <a id="43">
@@ -3791,7 +3903,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M395.07 353.32l26.16.75"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_3" />
           </circle>
         </a>
         <a id="42">
@@ -3805,7 +3921,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M237.67 366.98l17.18 14.75"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_2" />
           </circle>
         </a>
         <a id="41">
@@ -3819,7 +3939,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M226.54 388.33l25.4.81"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_1" />
           </circle>
         </a>
         <a id="40">
@@ -3833,7 +3957,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M252.98 393.96l-20.37 18.03"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_0" />
           </circle>
         </a>
         <a id="39">
@@ -3847,7 +3975,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M261.81 404.65v17.16"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_9" />
           </circle>
         </a>
         <a id="38">
@@ -3861,7 +3993,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_8" />
           </circle>
         </a>
         <a id="37">
@@ -3875,7 +4011,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_7" />
           </circle>
         </a>
         <a id="36">
@@ -3889,7 +4029,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_6" />
           </circle>
         </a>
         <a id="35">
@@ -3903,7 +4047,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M109.37 387.56l20.98-9.67"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_5" />
           </circle>
         </a>
         <a id="34">
@@ -3917,7 +4065,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M136.08 378.95l-4.68 13.57"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_4" />
           </circle>
         </a>
         <a id="33">
@@ -3931,7 +4083,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M130.92 371.08l-18.5-3.98"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_3" />
           </circle>
         </a>
         <a id="32">
@@ -3945,7 +4101,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M414.87 305.57l17.18 6.32"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_2" />
           </circle>
         </a>
         <a id="31">
@@ -3959,7 +4119,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M420.18 291.89l12.42-11.06"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_1" />
           </circle>
         </a>
         <a id="30">
@@ -3973,7 +4137,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_0" />
           </circle>
         </a>
         <a id="29">
@@ -3987,7 +4155,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M33.25 293.32c8.81.09 17.61.17 26.42.26"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_9" />
           </circle>
         </a>
         <a id="28">
@@ -4001,7 +4173,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_8" />
           </circle>
         </a>
         <a id="27">
@@ -4015,7 +4191,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M78.03 305.57l9.16 14.05"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_7" />
           </circle>
         </a>
         <a id="26">
@@ -4029,7 +4209,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_6" />
           </circle>
         </a>
         <a id="25">
@@ -4043,7 +4227,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_5" />
           </circle>
         </a>
         <a id="24">
@@ -4057,7 +4245,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_4" />
           </circle>
         </a>
         <a id="23">
@@ -4071,7 +4263,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M262.06 179.38l16.35 6.93"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_3" />
           </circle>
         </a>
         <a id="22">
@@ -4085,7 +4281,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_2" />
           </circle>
         </a>
         <a id="21">
@@ -4099,7 +4299,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_1" />
           </circle>
         </a>
         <a id="20">
@@ -4113,7 +4317,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M69.71 181.32c6.47.28 12.93.55 19.4.83"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_0" />
           </circle>
         </a>
         <a id="19">
@@ -4127,7 +4335,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M97.15 193.24l-9.7 10.81"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_9" />
           </circle>
         </a>
         <a id="18">
@@ -4141,7 +4353,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_8" />
           </circle>
         </a>
         <a id="17">
@@ -4155,7 +4371,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M438 139.19l5.98 16.91"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_7" />
           </circle>
         </a>
         <a id="16">
@@ -4169,7 +4389,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M448.88 135.63l11.95 5.26"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_6" />
           </circle>
         </a>
         <a id="15">
@@ -4183,7 +4407,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M448.88 122.76l15.66-10.12"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_5" />
           </circle>
         </a>
         <a id="14">
@@ -4197,7 +4425,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M328.76 72.54l8.71 9.87"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_4" />
           </circle>
         </a>
         <a id="13">
@@ -4211,7 +4443,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M317.36 89.56l18.41 2.61"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_3" />
           </circle>
         </a>
         <a id="12">
@@ -4225,7 +4461,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M338.7 99.44l-8.38 10.96"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_2" />
           </circle>
         </a>
         <a id="11">
@@ -4239,7 +4479,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M353.81 98.68l9.84 11.72"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_1" />
           </circle>
         </a>
         <a id="10">
@@ -4253,7 +4497,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M370.78 91.55l-14.25.23"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_0" />
           </circle>
         </a>
         <a id="9">
@@ -4267,7 +4515,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M366.43 75l-13.81 7.41"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x39_" />
           </circle>
         </a>
         <a id="8">
@@ -4281,7 +4533,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M346.49 64.21l-.63 16.24"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x38_" />
           </circle>
         </a>
         <a id="7">
@@ -4295,7 +4551,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x37_" />
           </circle>
         </a>
         <a id="6">
@@ -4309,7 +4569,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M125.7 92.28c8.81.09 17.61.17 26.42.26"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x36_" />
           </circle>
         </a>
         <a id="5">
@@ -4323,7 +4587,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x35_" />
           </circle>
         </a>
         <a id="4">
@@ -4337,7 +4605,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x34_" />
           </circle>
         </a>
         <a id="3">
@@ -4351,7 +4623,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x33_" />
           </circle>
         </a>
         <a id="2">
@@ -4365,7 +4641,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x32_" />
           </circle>
         </a>
         <a id="1">
@@ -4379,7 +4659,11 @@ const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
               dur="1s"
               repeatCount="indefinite"
               path="M157.21 59.06L161.8 78"
+              calcMode="linear"
+              keyPoints={rightDirection}
+              keyTimes="0;1"
             />
+            <mpath xlinkHref="#prefix___x31_" />
           </circle>
         </a>
       </svg>

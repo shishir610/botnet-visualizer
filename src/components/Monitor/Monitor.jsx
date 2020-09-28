@@ -8,9 +8,9 @@ import Folder from "./Folder/Folder";
 import Views from "../../Data/Views.json";
 
 const Monitor = ({ isServer, setNetworkView }) => {
-  const [view, setView] = useState("desktop");
+  const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
-  const [windowShow, setWindowShow] = useState(true);
+  const [windowShow, setWindowShow] = useState(false);
   const [virusWindow, setVirusWindow] = useState(false);
   const [showIRCWindow, setShowIRCWindow] = useState(false);
 

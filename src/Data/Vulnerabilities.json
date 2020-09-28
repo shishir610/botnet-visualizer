@@ -1,0 +1,14 @@
+{
+  "Router": {
+    "Router1": true,
+    "Router2": false,
+    "Router3": false,
+    "Router4": true,
+    "Router5": false,
+    "Router6": true,
+    "Router7": true,
+    "Router8": false,
+    "Router9": true,
+    "Router10": false
+  }
+}

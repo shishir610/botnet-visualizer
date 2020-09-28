@@ -5,8 +5,18 @@ import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import DomainIcon from "@material-ui/icons/Domain";
+import Info from "./Info";
+import IconInfoData from "../../Data/InfoIconData.json";
+import "./DeviceDetails.css";
 
-const DeviceDetails = ({ name, target, show, device, setNetworkView }) => {
+const DeviceDetails = ({
+  name,
+  target,
+  show,
+  device,
+  setNetworkView,
+  setPopoverShow,
+}) => {
   const [antivirusActive, setAntivirusActive] = useState(false);
 
   const handleChange = (event) => {
@@ -17,7 +27,12 @@ const DeviceDetails = ({ name, target, show, device, setNetworkView }) => {
     <Overlay target={target} show={show} placement="bottom">
       {(props) => (
         <Popover id="popover-basic" {...props}>
-          <Container style={{ width: "200px" }}>
+          <Container style={{ width: "200px", padding: "0" }}>
+            <a onClick={() => setPopoverShow(false)}>
+              <Row>
+                <a className="closeDD" />
+              </Row>
+            </a>
             {device === "PC" && (
               <Row
                 style={{ margin: "10px" }}
@@ -26,6 +41,9 @@ const DeviceDetails = ({ name, target, show, device, setNetworkView }) => {
                 Username: {name}
               </Row>
             )}
+            <Row className="justify-content-end">
+              <Info content={IconInfoData[device]} />
+            </Row>
             {["PC", "Server"].includes(device) && (
               <Row
                 style={{ margin: "10px" }}
