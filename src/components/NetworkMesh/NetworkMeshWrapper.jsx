@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NetworkMesh from "./NetworkMesh";
 
-const NetworkMeshWrapper = ({ setNetworkView }) => {
+const NetworkMeshWrapper = ({ setNetworkView, setIsServer }) => {
   const [time, setTime] = useState(Date.now());
 
   const update = () => {
@@ -14,7 +14,9 @@ const NetworkMeshWrapper = ({ setNetworkView }) => {
       clearInterval(interval);
     };
   }, []);
-  return <NetworkMesh setNetworkView={setNetworkView} />;
+  return (
+    <NetworkMesh setNetworkView={setNetworkView} setIsServer={setIsServer} />
+  );
 };
 
 export default NetworkMeshWrapper;

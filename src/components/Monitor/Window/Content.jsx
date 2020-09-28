@@ -16,6 +16,7 @@ const Content = ({ folders, setView, setVirusClick }) => {
           />
         );
       })}
+      {folders.length === 0 && 'Folder is Empty'}
     </Row>
   );
 };

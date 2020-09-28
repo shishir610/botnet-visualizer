@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Button } from "react-bootstrap";
 import "./VirusWindow.css";
 
-const VirusWindow = ({ name }) => {
+const VirusWindow = ({ name, handleClose }) => {
   return (
     <Container className="virusWindow">
       <Row className="topbarVirusWindow justify-content-end">
-        <a>
+        <a onClick={() => handleClose('virus')}>
           <img
             src="./assets/close.png"
             width="20px"

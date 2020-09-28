@@ -4,23 +4,21 @@
     ["antivirus", "Antivirus"],
     ["folder", "Personal"],
     ["mail", "Mail"],
-    ["folder", "Confidential"],
-    ["trash", "Trash"]
+    ["trash", "Trash"],
+    ["undo", "Show Network"]
   ],
   "malware": [
     ["folder", "Types"],
     ["folder", "Popular"]
   ],
   "types": [
-    ["adware", "AdWare"],
-    ["botnet", "Botnet"],
     ["ransomware", "Ransomware"],
     ["spyware", "Spyware"],
     ["trojan", "Trojan Horse"],
     ["virus", "Virus"],
     ["worm", "Worm"]
   ],
-  "popular": [
-    
-  ]
+  "trash": [],
+  "popular": [],
+  "mail": []
 }

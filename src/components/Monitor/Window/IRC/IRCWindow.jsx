@@ -1,15 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Candidates from "../../../Data/Candidates.json";
+import Candidates from "../../../../Data/Candidates.json";
+import CommandOptions from "./CommandOptions"
 
-const IRCWindow = ({ folders, name, setView, setVirusClick }) => {
+const IRCWindow = ({ handleClose }) => {
   const chatInput = useRef(null);
   const [input, setInput] = useState("");
 
   const handleKeyClick = (event) => {
     if (event.key === "Enter") {
       console.log("Enter clicked!");
-      console.log(input);
     }
   };
 
@@ -22,22 +22,34 @@ const IRCWindow = ({ folders, name, setView, setVirusClick }) => {
           style={{ marginRight: "10px" }}
         />
         mIRC - [#NULL (OG-SETUP)][57][+mMnstu]
+        <a onClick={() => handleClose("irc")}>
+          <img
+            src="./assets/close.png"
+            width="20px"
+            height="20px"
+            style={{ position: "absolute", right: "50px" }}
+          />
+        </a>
       </Row>
       <Row className="ircMainContent">
-        <Col>HEYy</Col>
+        <Col style={{ display: "flex", padding: "0" }}>
+          <CommandOptions input={input} />
+        </Col>
         <Col xs={2} id="candidateList">
           <div style={{ color: "tomato" }}>
-            <span style={{ color: "white", fontSize:"13px" }}>@ </span>
-            <span style={{fontSize:"15px"}}>b0TmASteR</span>
+            <span style={{ color: "white", fontSize: "13px" }}>@ </span>
+            <span style={{ fontSize: "15px" }}>b0TmASteR</span>
           </div>
-          {Candidates.map((candidate) => {
-            return (
-              <div style={{ color: candidate.color }}>
-                <span style={{ color: "white" }}>| </span>
-                {candidate.name}
-              </div>
-            );
-          })}
+          {Candidates.filter((candidate) => !candidate.activeAV).map(
+            (candidate) => {
+              return (
+                <div style={{ color: candidate.color }}>
+                  <span style={{ color: "white" }}>| </span>
+                  {candidate.name}
+                </div>
+              );
+            }
+          )}
         </Col>
       </Row>
       <Row className="ircTextInput">
@@ -51,7 +63,6 @@ const IRCWindow = ({ folders, name, setView, setVirusClick }) => {
           onKeyDown={handleKeyClick}
         />
       </Row>
-      <Row></Row>
     </Container>
   );
 };

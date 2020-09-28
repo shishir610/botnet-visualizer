@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 
-const Topbar = ({name}) => {
+const Topbar = ({ name, handleClose }) => {
   return (
     <Row
       style={{ margin: 0, height: "30px", alignItems: "center" }}
@@ -32,18 +32,14 @@ const Topbar = ({name}) => {
           style={{ marginTop: "2.5px", marginLeft: "5px" }}
         />
       </div>
-      <img
-        src="./assets/minus.png"
-        width="20px"
-        height="20px"
-        style={{ marginTop: "2.5px", marginLeft: "180px" }}
-      />
-      <img
-        src="./assets/close.png"
-        width="20px"
-        height="20px"
-        style={{ marginTop: "2.5px", marginLeft: "5px" }}
-      />
+      <a onClick={() => handleClose('window')}>
+        <img
+          src="./assets/close.png"
+          width="20px"
+          height="20px"
+          style={{ marginTop: "2.5px", marginLeft: "200px" }}
+        />
+      </a>
     </Row>
   );
 };

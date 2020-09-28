@@ -1,15 +1,6 @@
 import * as React from "react";
-import DeviceDetails from "../Popovers/DeviceDetails";
 
-const Network = ({
-  addToRefs,
-  handleDeviceClick,
-  show,
-  target,
-  device,
-  ServerRef,
-  setNetworkView,
-}) => {
+const Network = ({ addToRefs, handleDeviceClick, ServerRef }) => {
   return (
     <React.Fragment>
       <svg
@@ -3558,7 +3549,11 @@ const Network = ({
             d="M179.72 210.44l66.12 34.55"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M179.72 210.44l66.12 34.55"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M179.72 210.44l66.12 34.55"
+            />
           </circle>
         </a>
         <a id="59">
@@ -3568,7 +3563,11 @@ const Network = ({
             d="M185.73 295.58l60.29-36.13"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M185.73 295.58l60.29-36.13"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M185.73 295.58l60.29-36.13"
+            />
           </circle>
         </a>
         <a id="58">
@@ -3578,7 +3577,11 @@ const Network = ({
             d="M260.82 269.6l2.7 42.29"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M260.82 269.6l2.7 42.29"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M260.82 269.6l2.7 42.29"
+            />
           </circle>
         </a>
         <a id="57">
@@ -3588,7 +3591,11 @@ const Network = ({
             d="M278.41 258.82l56.33 29.84"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M278.41 258.82l56.33 29.84"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M278.41 258.82l56.33 29.84"
+            />
           </circle>
         </a>
         <a id="56">
@@ -3598,7 +3605,11 @@ const Network = ({
             d="M278.41 246.18l86.9-36.29"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M278.41 246.18l86.9-36.29"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M278.41 246.18l86.9-36.29"
+            />
           </circle>
         </a>
         <a id="55">
@@ -3608,7 +3619,11 @@ const Network = ({
             d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
+            />
           </circle>
         </a>
         <a id="54">
@@ -3618,7 +3633,11 @@ const Network = ({
             d="M162.57 109.22l13.73 83.74"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M162.57 109.22l13.73 83.74"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M162.57 109.22l13.73 83.74"
+            />
           </circle>
         </a>
         <a id="53">
@@ -3628,7 +3647,11 @@ const Network = ({
             d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
+            />
           </circle>
         </a>
         <a id="52">
@@ -3638,7 +3661,11 @@ const Network = ({
             d="M89.35 295.89l70.72-.11"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M89.35 295.89l70.72-.11"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M89.35 295.89l70.72-.11"
+            />
           </circle>
         </a>
         <a id="51">
@@ -3648,7 +3675,11 @@ const Network = ({
             d="M173.78 305.57l-24 56.26"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M173.78 305.57l-24 56.26"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M173.78 305.57l-24 56.26"
+            />
           </circle>
         </a>
         <a id="50">
@@ -3658,7 +3689,11 @@ const Network = ({
             d="M261.38 329.53l2.14 46.43"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M261.38 329.53l2.14 46.43"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M261.38 329.53l2.14 46.43"
+            />
           </circle>
         </a>
         <a id="49">
@@ -3668,7 +3703,11 @@ const Network = ({
             d="M348.86 305.57l26.02 36.95"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M348.86 305.57l26.02 36.95"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M348.86 305.57l26.02 36.95"
+            />
           </circle>
         </a>
         <a id="48">
@@ -3678,7 +3717,11 @@ const Network = ({
             d="M361.87 296.89h33.2"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M361.87 296.89h33.2"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M361.87 296.89h33.2"
+            />
           </circle>
         </a>
         <a id="47">
@@ -3688,7 +3731,11 @@ const Network = ({
             d="M429.61 140.89l-44.36 52.95"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M429.61 140.89l-44.36 52.95"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M429.61 140.89l-44.36 52.95"
+            />
           </circle>
         </a>
         <a id="46">
@@ -3698,7 +3745,11 @@ const Network = ({
             d="M348.07 105.33l24.71 85.9"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M348.07 105.33l24.71 85.9"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M348.07 105.33l24.71 85.9"
+            />
           </circle>
         </a>
         <a id="45">
@@ -3708,7 +3759,11 @@ const Network = ({
             d="M382.07 361.83l.5 17.51"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M382.07 361.83l.5 17.51"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M382.07 361.83l.5 17.51"
+            />
           </circle>
         </a>
         <a id="44">
@@ -3718,7 +3773,11 @@ const Network = ({
             d="M388.38 359.71l22.06 16.25"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M388.38 359.71l22.06 16.25"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M388.38 359.71l22.06 16.25"
+            />
           </circle>
         </a>
         <a id="43">
@@ -3728,7 +3787,11 @@ const Network = ({
             d="M395.07 353.32l26.16.75"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M395.07 353.32l26.16.75"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M395.07 353.32l26.16.75"
+            />
           </circle>
         </a>
         <a id="42">
@@ -3738,7 +3801,11 @@ const Network = ({
             d="M237.67 366.98l17.18 14.75"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M237.67 366.98l17.18 14.75"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M237.67 366.98l17.18 14.75"
+            />
           </circle>
         </a>
         <a id="41">
@@ -3748,7 +3815,11 @@ const Network = ({
             d="M226.54 388.33l25.4.81"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M226.54 388.33l25.4.81"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M226.54 388.33l25.4.81"
+            />
           </circle>
         </a>
         <a id="40">
@@ -3758,7 +3829,11 @@ const Network = ({
             d="M252.98 393.96l-20.37 18.03"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M252.98 393.96l-20.37 18.03"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M252.98 393.96l-20.37 18.03"
+            />
           </circle>
         </a>
         <a id="39">
@@ -3768,7 +3843,11 @@ const Network = ({
             d="M261.81 404.65v17.16"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M261.81 404.65v17.16"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M261.81 404.65v17.16"
+            />
           </circle>
         </a>
         <a id="38">
@@ -3778,7 +3857,11 @@ const Network = ({
             d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
+            />
           </circle>
         </a>
         <a id="37">
@@ -3788,7 +3871,11 @@ const Network = ({
             d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
+            />
           </circle>
         </a>
         <a id="36">
@@ -3798,7 +3885,11 @@ const Network = ({
             d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
+            />
           </circle>
         </a>
         <a id="35">
@@ -3808,7 +3899,11 @@ const Network = ({
             d="M109.37 387.56l20.98-9.67"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M109.37 387.56l20.98-9.67"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M109.37 387.56l20.98-9.67"
+            />
           </circle>
         </a>
         <a id="34">
@@ -3818,7 +3913,11 @@ const Network = ({
             d="M136.08 378.95l-4.68 13.57"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M136.08 378.95l-4.68 13.57"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M136.08 378.95l-4.68 13.57"
+            />
           </circle>
         </a>
         <a id="33">
@@ -3828,7 +3927,11 @@ const Network = ({
             d="M130.92 371.08l-18.5-3.98"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M130.92 371.08l-18.5-3.98"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M130.92 371.08l-18.5-3.98"
+            />
           </circle>
         </a>
         <a id="32">
@@ -3838,7 +3941,11 @@ const Network = ({
             d="M414.87 305.57l17.18 6.32"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M414.87 305.57l17.18 6.32"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M414.87 305.57l17.18 6.32"
+            />
           </circle>
         </a>
         <a id="31">
@@ -3848,7 +3955,11 @@ const Network = ({
             d="M420.18 291.89l12.42-11.06"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M420.18 291.89l12.42-11.06"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M420.18 291.89l12.42-11.06"
+            />
           </circle>
         </a>
         <a id="30">
@@ -3858,7 +3969,11 @@ const Network = ({
             d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
+            />
           </circle>
         </a>
         <a id="29">
@@ -3868,7 +3983,11 @@ const Network = ({
             d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M33.25 293.32c8.81.09 17.61.17 26.42.26"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M33.25 293.32c8.81.09 17.61.17 26.42.26"
+            />
           </circle>
         </a>
         <a id="28">
@@ -3878,7 +3997,11 @@ const Network = ({
             d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
+            />
           </circle>
         </a>
         <a id="27">
@@ -3888,7 +4011,11 @@ const Network = ({
             d="M78.03 305.57l9.16 14.05"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M78.03 305.57l9.16 14.05"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M78.03 305.57l9.16 14.05"
+            />
           </circle>
         </a>
         <a id="26">
@@ -3898,7 +4025,11 @@ const Network = ({
             d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
+            />
           </circle>
         </a>
         <a id="25">
@@ -3908,7 +4039,11 @@ const Network = ({
             d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
+            />
           </circle>
         </a>
         <a id="24">
@@ -3918,7 +4053,11 @@ const Network = ({
             d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
+            />
           </circle>
         </a>
         <a id="23">
@@ -3928,7 +4067,11 @@ const Network = ({
             d="M262.06 179.38l16.35 6.93"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M262.06 179.38l16.35 6.93"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M262.06 179.38l16.35 6.93"
+            />
           </circle>
         </a>
         <a id="22">
@@ -3938,7 +4081,11 @@ const Network = ({
             d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
+            />
           </circle>
         </a>
         <a id="21">
@@ -3948,7 +4095,11 @@ const Network = ({
             d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
+            />
           </circle>
         </a>
         <a id="20">
@@ -3958,7 +4109,11 @@ const Network = ({
             d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M69.71 181.32c6.47.28 12.93.55 19.4.83"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M69.71 181.32c6.47.28 12.93.55 19.4.83"
+            />
           </circle>
         </a>
         <a id="19">
@@ -3968,7 +4123,11 @@ const Network = ({
             d="M97.15 193.24l-9.7 10.81"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M97.15 193.24l-9.7 10.81"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M97.15 193.24l-9.7 10.81"
+            />
           </circle>
         </a>
         <a id="18">
@@ -3978,7 +4137,11 @@ const Network = ({
             d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
+            />
           </circle>
         </a>
         <a id="17">
@@ -3988,7 +4151,11 @@ const Network = ({
             d="M438 139.19l5.98 16.91"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M438 139.19l5.98 16.91"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M438 139.19l5.98 16.91"
+            />
           </circle>
         </a>
         <a id="16">
@@ -3998,7 +4165,11 @@ const Network = ({
             d="M448.88 135.63l11.95 5.26"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M448.88 135.63l11.95 5.26"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M448.88 135.63l11.95 5.26"
+            />
           </circle>
         </a>
         <a id="15">
@@ -4008,7 +4179,11 @@ const Network = ({
             d="M448.88 122.76l15.66-10.12"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M448.88 122.76l15.66-10.12"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M448.88 122.76l15.66-10.12"
+            />
           </circle>
         </a>
         <a id="14">
@@ -4018,7 +4193,11 @@ const Network = ({
             d="M328.76 72.54l8.71 9.87"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M328.76 72.54l8.71 9.87"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M328.76 72.54l8.71 9.87"
+            />
           </circle>
         </a>
         <a id="13">
@@ -4028,7 +4207,11 @@ const Network = ({
             d="M317.36 89.56l18.41 2.61"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M317.36 89.56l18.41 2.61"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M317.36 89.56l18.41 2.61"
+            />
           </circle>
         </a>
         <a id="12">
@@ -4038,7 +4221,11 @@ const Network = ({
             d="M338.7 99.44l-8.38 10.96"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M338.7 99.44l-8.38 10.96"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M338.7 99.44l-8.38 10.96"
+            />
           </circle>
         </a>
         <a id="11">
@@ -4048,7 +4235,11 @@ const Network = ({
             d="M353.81 98.68l9.84 11.72"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M353.81 98.68l9.84 11.72"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M353.81 98.68l9.84 11.72"
+            />
           </circle>
         </a>
         <a id="10">
@@ -4058,7 +4249,11 @@ const Network = ({
             d="M370.78 91.55l-14.25.23"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M370.78 91.55l-14.25.23"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M370.78 91.55l-14.25.23"
+            />
           </circle>
         </a>
         <a id="9">
@@ -4068,7 +4263,11 @@ const Network = ({
             d="M366.43 75l-13.81 7.41"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M366.43 75l-13.81 7.41"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M366.43 75l-13.81 7.41"
+            />
           </circle>
         </a>
         <a id="8">
@@ -4078,7 +4277,11 @@ const Network = ({
             d="M346.49 64.21l-.63 16.24"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M346.49 64.21l-.63 16.24"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M346.49 64.21l-.63 16.24"
+            />
           </circle>
         </a>
         <a id="7">
@@ -4088,7 +4291,11 @@ const Network = ({
             d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
+            />
           </circle>
         </a>
         <a id="6">
@@ -4098,7 +4305,11 @@ const Network = ({
             d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M125.7 92.28c8.81.09 17.61.17 26.42.26"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M125.7 92.28c8.81.09 17.61.17 26.42.26"
+            />
           </circle>
         </a>
         <a id="5">
@@ -4108,7 +4319,11 @@ const Network = ({
             d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
+            />
           </circle>
         </a>
         <a id="4">
@@ -4118,7 +4333,11 @@ const Network = ({
             d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
+            />
           </circle>
         </a>
         <a id="3">
@@ -4128,7 +4347,11 @@ const Network = ({
             d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
+            />
           </circle>
         </a>
         <a id="2">
@@ -4138,7 +4361,11 @@ const Network = ({
             d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
+            />
           </circle>
         </a>
         <a id="1">
@@ -4148,16 +4375,14 @@ const Network = ({
             d="M157.21 59.06L161.8 78"
           />
           <circle r="2" fill="lightgreen">
-            <animateMotion dur="1s" repeatCount="indefinite" path="M157.21 59.06L161.8 78"/>
+            <animateMotion
+              dur="1s"
+              repeatCount="indefinite"
+              path="M157.21 59.06L161.8 78"
+            />
           </circle>
         </a>
       </svg>
-      <DeviceDetails
-        show={show}
-        target={target}
-        device={device}
-        setNetworkView={setNetworkView}
-      />
     </React.Fragment>
   );
 };

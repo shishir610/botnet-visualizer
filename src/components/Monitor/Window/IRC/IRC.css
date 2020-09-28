@@ -1,0 +1,19 @@
+.commandOptions {
+    position: absolute;
+    bottom: 0px;
+}
+
+.command div {
+    background-color: rgba(65, 64, 64, 0.5);
+}
+
+.command p {
+    line-height: 30px;
+    margin: 0;
+    color: lavenderblush;
+    padding: 5px 0;
+}
+
+.command div:hover{
+    background-color: rgba(65, 64, 64, 0.7);
+}

@@ -6,7 +6,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import DomainIcon from "@material-ui/icons/Domain";
 
-const DeviceDetails = ({ target, show, device, setNetworkView }) => {
+const DeviceDetails = ({ name, target, show, device, setNetworkView }) => {
   const [antivirusActive, setAntivirusActive] = useState(false);
 
   const handleChange = (event) => {
@@ -14,12 +14,23 @@ const DeviceDetails = ({ target, show, device, setNetworkView }) => {
   };
 
   return (
-    <Overlay target={target} show={show} placement="top">
+    <Overlay target={target} show={show} placement="bottom">
       {(props) => (
         <Popover id="popover-basic" {...props}>
           <Container style={{ width: "200px" }}>
-            <Row style={{ margin: "10px" }} className="justify-content-center">
-              {["PC", "Server"].includes(device) && (
+            {device === "PC" && (
+              <Row
+                style={{ margin: "10px" }}
+                className="justify-content-center"
+              >
+                Username: {name}
+              </Row>
+            )}
+            {["PC", "Server"].includes(device) && (
+              <Row
+                style={{ margin: "10px" }}
+                className="justify-content-center"
+              >
                 <Button
                   endIcon={
                     device === "PC" ? <DesktopWindowsIcon /> : <DomainIcon />
@@ -30,10 +41,11 @@ const DeviceDetails = ({ target, show, device, setNetworkView }) => {
                 >
                   Access
                 </Button>
-              )}
-            </Row>
+              </Row>
+            )}
             <Row className="justify-content-center">
               <FormControlLabel
+                style={{ margin: "5px" }}
                 control={
                   <Switch
                     checked={antivirusActive}

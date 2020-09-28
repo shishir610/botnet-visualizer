@@ -3,14 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Monitor.css";
 import Window from "./Window/Window";
 import VirusWindow from "./Window/VirusWindow";
-import IRCWindow from "./Window/IRCWindow"
+import IRCWindow from "./Window/IRC/IRCWindow";
 import Folder from "./Folder/Folder";
 import Views from "../../Data/Views.json";
 
-const Monitor = () => {
+const Monitor = ({ isServer, setNetworkView }) => {
   const [view, setView] = useState("desktop");
-  const [windowShow, setWindowShow] = useState(false);
   const [virus, setVirus] = useState("virus");
+  const [windowShow, setWindowShow] = useState(true);
   const [virusWindow, setVirusWindow] = useState(false);
   const [showIRCWindow, setShowIRCWindow] = useState(false);
 
@@ -30,6 +30,20 @@ const Monitor = () => {
     }
   };
 
+  const handleClose = (name) => {
+    switch (name) {
+      case "window":
+        setWindowShow(false);
+        break;
+      case "virus":
+        setVirusWindow(false);
+        break;
+      case "irc":
+        setShowIRCWindow(false);
+        break;
+    }
+  };
+
   return (
     <Container>
       <Row className="justify-content-center">
@@ -44,19 +58,22 @@ const Monitor = () => {
                     setView={setDifferentView}
                     color="white"
                     disabled={view != "desktop"}
+                    setNetworkView={setNetworkView}
                   />
                 );
               })}
             </Col>
-            <Col xs={1} style={{ margin: "0", padding: "0" }}>
-              <Folder
-                type="chat"
-                name="IRC"
-                setView={setDifferentView}
-                color="white"
-                disabled={view != "desktop"}
-              />
-            </Col>
+            {isServer && (
+              <Col xs={1} style={{ margin: "0", padding: "0" }}>
+                <Folder
+                  type="chat"
+                  name="IRC"
+                  setView={setDifferentView}
+                  color="white"
+                  disabled={view != "desktop"}
+                />
+              </Col>
+            )}
             {windowShow && (
               <Col
                 xs={10}
@@ -71,6 +88,7 @@ const Monitor = () => {
                   name={view[0].toUpperCase() + view.slice(1)}
                   setView={setDifferentView}
                   setVirusClick={setVirusClick}
+                  handleClose={handleClose}
                 />
               </Col>
             )}
@@ -83,7 +101,7 @@ const Monitor = () => {
                   justifyContent: "center",
                 }}
               >
-                <IRCWindow />
+                <IRCWindow handleClose={handleClose} />
               </Col>
             )}
             {virusWindow && (
@@ -94,7 +112,7 @@ const Monitor = () => {
                   top: "25%",
                 }}
               >
-                <VirusWindow name={virus} />
+                <VirusWindow name={virus} handleClose={handleClose} />
               </div>
             )}
           </Row>
