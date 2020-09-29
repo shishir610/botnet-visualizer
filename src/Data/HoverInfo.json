@@ -1,6 +1,12 @@
 {
-  "Server": "Acts as both central server and C&C server for botnet.",
-  "Switch": "This is a Switch",
-  "Router": "This is a Router",
-  "PC": "This is a PC"
+  "Server": "Currently acting as central server.",
+  "Switch": "This is a Switch. Firewall: Default disabled.",
+  "Router": {
+    "AV": "Router: Firewall active.",
+    "NonAV": "Router: Firewall inactive."
+  },
+  "PC": {
+    "AV": "This is a safe PC.",
+    "NonAV": "This PC is prone to attacks."
+  }
 }

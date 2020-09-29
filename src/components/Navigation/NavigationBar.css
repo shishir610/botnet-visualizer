@@ -1,3 +1,9 @@
+.navbar {
+    height: 5vh;
+    background-color: #61ace0;
+    margin-bottom: 10px;
+}
+
 .navTitle{
     font-family: Poppins;
     margin: 0%;

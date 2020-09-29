@@ -4,7 +4,6 @@ import Monitor from './components/Monitor/Monitor'
 import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
 import NavigationBar from './components/Navigation/NavigationBar'
 import './App.css'
-import Info from './components/Popovers/Info'
 
 function App() {
   const [networkView, setNetworkView] = useState(true)
@@ -12,7 +11,7 @@ function App() {
 
   return (
     <Container fluid>
-      {/* <NavigationBar /> */}
+      <NavigationBar />
       <Row>
         {networkView ?
           <NetworkMeshWrapper setNetworkView={setNetworkView} setIsServer={setIsServer}/>

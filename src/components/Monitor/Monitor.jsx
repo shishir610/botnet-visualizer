@@ -46,7 +46,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
 
   return (
     <Container
-      style={{ height: "100vh", alignItems: "center", display: "flex" }}
+      style={{ height: "95vh", alignItems: "center", display: "flex" }}
     >
       <Row className="justify-content-center">
         <Container className="monitor">

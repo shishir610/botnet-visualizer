@@ -16,7 +16,13 @@ let PCREFS = [],
   SWITCHREFS = [],
   ROUTERREFS = [];
 
-function NetworkMesh({ setNetworkView, setIsServer }) {
+function NetworkMesh({
+  setNetworkView,
+  setIsServer,
+  users,
+  routerVuls,
+  userVuls,
+}) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
   const [popoverIndex, setPopoverIndex] = useState(0);
@@ -93,11 +99,9 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
     }
   };
 
-  const togglePopoverShow = () => setPopoverShow(!popoverShow);
-
   return (
     <React.Fragment>
-      <Container style={{ marginTop: "50px" }}>
+      <Container style={{ marginTop: "20px" }}>
         <Row className="justify-content-center">
           <TransformWrapper
             wheel={{ step: 1, disabled: popoverShow }}
@@ -113,6 +117,8 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
                 ServerRef={ServerRef}
                 handleDeviceEnter={handleDeviceEnter}
                 handleDeviceLeave={handleDeviceLeave}
+                routerVuls={routerVuls}
+                userVuls={userVuls}
               />
             </TransformComponent>
           </TransformWrapper>
@@ -125,7 +131,6 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
             width: "200px",
           }}
           show={popoverShow}
-          onClose={togglePopoverShow}
         >
           <Toast.Body>Close the overlay before zooming and panning.</Toast.Body>
         </Toast>
@@ -156,8 +161,6 @@ function NetworkMesh({ setNetworkView, setIsServer }) {
               : DEVICEMAPPER[device]
           }
           device={device}
-          setNetworkView={setNetworkView}
-          setPopoverShow={setPopoverShow}
         />
       )}
     </React.Fragment>
