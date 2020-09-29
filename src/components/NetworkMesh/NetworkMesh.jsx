@@ -161,6 +161,9 @@ function NetworkMesh({
               : DEVICEMAPPER[device]
           }
           device={device}
+          routerVuls={routerVuls}
+          userVuls={userVuls}
+          id={TOTALDEVICES[device] - popoverIndex}
         />
       )}
     </React.Fragment>
