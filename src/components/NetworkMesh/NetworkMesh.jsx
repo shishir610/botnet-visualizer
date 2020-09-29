@@ -22,6 +22,7 @@ function NetworkMesh({
   users,
   routerVuls,
   userVuls,
+  setMalwareToggle
 }) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
@@ -51,7 +52,7 @@ function NetworkMesh({
   const handleDeviceClick = (device, id) => {
     const totalDevices = TOTALDEVICES[device];
     setPopoverIndex(totalDevices - id);
-    setPopoverShow(true);
+    device !== "Switch" && setPopoverShow(true);
     setDevice(device);
     setDeviceName(Candidates[id - 1].name);
     device === "Server" && setIsServer(true);
@@ -62,6 +63,7 @@ function NetworkMesh({
     setPopoverIndex(totalDevices - id);
     setDHShow(true);
     setDevice(device);
+    setPopoverShow(false);
   };
 
   const handleDeviceLeave = () => {
@@ -149,6 +151,13 @@ function NetworkMesh({
           device={device}
           setNetworkView={setNetworkView}
           setPopoverShow={setPopoverShow}
+          AV={
+            device === "PC"
+              ? !userVuls[`PC${TOTALDEVICES[device] - popoverIndex}`]
+              : !routerVuls[`Router${TOTALDEVICES[device] - popoverIndex}`]
+          }
+          setMalwareToggle={setMalwareToggle}
+          id={TOTALDEVICES[device] - popoverIndex}
         />
       )}
       {DHShow && (

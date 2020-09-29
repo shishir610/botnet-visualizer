@@ -16,11 +16,15 @@ const DeviceDetails = ({
   device,
   setNetworkView,
   setPopoverShow,
+  AV,
+  id,
+  setMalwareToggle,
 }) => {
-  const [antivirusActive, setAntivirusActive] = useState(false);
+  const [antivirusActive, setAntivirusActive] = useState(AV);
 
   const handleChange = (event) => {
     setAntivirusActive(event.target.checked);
+    setMalwareToggle(device, id, event.target.checked);
   };
 
   return (
@@ -61,22 +65,24 @@ const DeviceDetails = ({
                 </Button>
               </Row>
             )}
-            <Row className="justify-content-center">
-              <FormControlLabel
-                style={{ margin: "5px" }}
-                control={
-                  <Switch
-                    checked={antivirusActive}
-                    color="primary"
-                    onChange={handleChange}
-                    name="antivirusActive"
-                    value={antivirusActive}
-                  />
-                }
-                label="Antivirus"
-                labelPlacement="start"
-              />
-            </Row>
+            {["Router", "PC"].includes(device) && (
+              <Row className="justify-content-center">
+                <FormControlLabel
+                  style={{ margin: "5px" }}
+                  control={
+                    <Switch
+                      checked={antivirusActive}
+                      color="primary"
+                      onChange={handleChange}
+                      name="antivirusActive"
+                      value={antivirusActive}
+                    />
+                  }
+                  label={device === "PC" ? "Anti-Malware" : "Firewall"}
+                  labelPlacement="start"
+                />
+              </Row>
+            )}
           </Container>
         </Popover>
       )}

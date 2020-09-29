@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const red = "#ffb174";
+const yellow = "#ffa45c";
 const rightDirection = "0;1";
 const reverseDirection = "1;0";
 const run = true;
@@ -27,7 +27,7 @@ const Network = ({
       >
         <style>
           {
-            ".prefix__st0{fill:#6e6e6e}.prefix__st1,.prefix__st2,.prefix__st3{fill:#5dace2;stroke:#afafaf;stroke-width:.5;stroke-miterlimit:10}.prefix__st2,.prefix__st3{fill:#c8ff00;stroke:#717171;stroke-width:.06}.prefix__st3{fill:#4d4d4d;stroke:#d9f1ff;stroke-width:.37}.prefix__st4{fill:#515151}.prefix__st5{fill:#c6c6c6}.prefix__st10{fill:#9cd7ff}.prefix__st11{fill:#afafaf}.prefix__st12{fill:#5dace2}.prefix__st13{fill:none;stroke:#8d8d8d;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st14{fill:#717171}.prefix__st15{fill:gray}.prefix__st16{fill:#61ace0}.prefix__st17{fill:#c9c9c9}.prefix__st18{fill:none;stroke:#717171;stroke-width:.11;stroke-linecap:round;stroke-miterlimit:10}.prefix__st19{fill:#4d4d4d}.prefix__st20{fill:#7fe723;stroke:#7fe723;stroke-width:.8;stroke-miterlimit:10}"
+            ".prefix__st0{fill:#6e6e6e}.prefix__st1,.prefix__st2,.prefix__st3{fill:#5dace2;stroke:#afafaf;stroke-width:.5;stroke-miterlimit:10}.prefix__st2,.prefix__st3{fill:#c8ff00;stroke:#717171;stroke-width:.06}.prefix__st3{fill:#4d4d4d;stroke:#d9f1ff;stroke-width:.37}.prefix__st4{fill:#515151}.prefix__st5{fill:#c6c6c6}.prefix__st10{fill:#9cd7ff}.prefix__st11{fill:#afafaf}.prefix__st12{fill:#5dace2}.prefix__st13{fill:none;stroke:#8d8d8d;stroke-width:.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.prefix__st14{fill:#717171}.prefix__st15{fill:gray}.prefix__st16{fill:#61ace0}.prefix__st17{fill:#c9c9c9}.prefix__st18{fill:none;stroke:#717171;stroke-width:.11;stroke-linecap:round;stroke-miterlimit:10}.prefix__st19{fill:#4d4d4d}.prefix__st20{fill:#7fe723;stroke:#d0d0d0;stroke-width:.8;stroke-miterlimit:10}"
           }
         </style>
         <a
@@ -35,6 +35,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 5)}
           onMouseEnter={() => handleDeviceEnter("Switch", 5)}
           onMouseLeave={handleDeviceLeave}
+          style={{cursor:"default"}}
         >
           <g id="prefix__Switch5" ref={addToRefs} className="Switch">
             <path
@@ -60,6 +61,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 4)}
           onMouseEnter={() => handleDeviceEnter("Switch", 4)}
           onMouseLeave={handleDeviceLeave}
+          style={{cursor:"default"}}
         >
           <g id="prefix__Switch4" ref={addToRefs} className="Switch">
             <path
@@ -85,6 +87,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 3)}
           onMouseEnter={() => handleDeviceEnter("Switch", 3)}
           onMouseLeave={handleDeviceLeave}
+          style={{cursor:"default"}}
         >
           <g id="prefix__Switch3" ref={addToRefs} className="Switch">
             <path
@@ -110,6 +113,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 2)}
           onMouseEnter={() => handleDeviceEnter("Switch", 2)}
           onMouseLeave={handleDeviceLeave}
+          style={{cursor:"default"}}
         >
           <g id="prefix__Switch2" ref={addToRefs} className="Switch">
             <path
@@ -135,6 +139,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 1)}
           onMouseEnter={() => handleDeviceEnter("Switch", 1)}
           onMouseLeave={handleDeviceLeave}
+          style={{cursor:"default"}}
         >
           <g id="prefix__Switch1" ref={addToRefs} className="Switch">
             <path
@@ -213,17 +218,17 @@ const Network = ({
         >
           <g id="prefix__Router10" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router10"] ? { fill: red } : {}}
+              style={routerVuls["Router10"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M157.1 94.17c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router10"] ? { fill: red } : {}}
+              style={routerVuls["Router10"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M158.73 93.42c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router10"] ? { fill: red } : {}}
+              style={routerVuls["Router10"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M160.37 92.67c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -236,7 +241,7 @@ const Network = ({
               d="M167.56 96.15l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router10"] ? { fill: red } : {}}
+              style={routerVuls["Router10"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M164.87 96.15l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -254,17 +259,17 @@ const Network = ({
         >
           <g id="prefix__Router9" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router9"] ? { fill: red } : {}}
+              style={routerVuls["Router9"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M92.79 185.43c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router9"] ? { fill: red } : {}}
+              style={routerVuls["Router9"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M94.42 184.69c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router9"] ? { fill: red } : {}}
+              style={routerVuls["Router9"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M96.05 183.93c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -277,7 +282,7 @@ const Network = ({
               d="M103.25 187.41l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router9"] ? { fill: red } : {}}
+              style={routerVuls["Router9"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M100.56 187.41l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -295,17 +300,17 @@ const Network = ({
         >
           <g id="prefix__Router8" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router8"] ? { fill: red } : {}}
+              style={routerVuls["Router8"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M66.58 295.22c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92s-6.56-.01-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router8"] ? { fill: red } : {}}
+              style={routerVuls["Router8"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M68.22 294.47c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54s-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router8"] ? { fill: red } : {}}
+              style={routerVuls["Router8"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M69.85 293.72c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -318,7 +323,7 @@ const Network = ({
               d="M77.05 297.19l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.23h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router8"] ? { fill: red } : {}}
+              style={routerVuls["Router8"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M74.36 297.19l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.23h-.03.03zm-.15 0h-.01.01z"
             />
@@ -336,17 +341,17 @@ const Network = ({
         >
           <g id="prefix__Router7" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router7"] ? { fill: red } : {}}
+              style={routerVuls["Router7"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M135.63 370.7c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router7"] ? { fill: red } : {}}
+              style={routerVuls["Router7"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M137.26 369.95c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router7"] ? { fill: red } : {}}
+              style={routerVuls["Router7"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M138.9 369.2c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -359,7 +364,7 @@ const Network = ({
               d="M146.09 372.68l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router7"] ? { fill: red } : {}}
+              style={routerVuls["Router7"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M143.4 372.68l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -377,17 +382,17 @@ const Network = ({
         >
           <g id="prefix__Router6" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router6"] ? { fill: red } : {}}
+              style={routerVuls["Router6"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M258.74 390.23c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router6"] ? { fill: red } : {}}
+              style={routerVuls["Router6"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M260.37 389.48c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54s-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router6"] ? { fill: red } : {}}
+              style={routerVuls["Router6"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M262.01 388.73c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -400,7 +405,7 @@ const Network = ({
               d="M269.2 392.21l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router6"] ? { fill: red } : {}}
+              style={routerVuls["Router6"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M266.51 392.21l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -418,17 +423,17 @@ const Network = ({
         >
           <g id="prefix__Router5" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router5"] ? { fill: red } : {}}
+              style={routerVuls["Router5"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M376.22 353.69c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router5"] ? { fill: red } : {}}
+              style={routerVuls["Router5"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M377.85 352.94c-.74-1.66.02-3.61 1.68-4.35s3.61.02 4.35 1.68c.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router5"] ? { fill: red } : {}}
+              style={routerVuls["Router5"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M379.49 352.19c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -441,7 +446,7 @@ const Network = ({
               d="M386.68 355.67l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.02-.16-.09-.32-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router5"] ? { fill: red } : {}}
+              style={routerVuls["Router5"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M383.99 355.67l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -459,17 +464,17 @@ const Network = ({
         >
           <g id="prefix__Router4" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router4"] ? { fill: red } : {}}
+              style={routerVuls["Router4"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M403.44 296.73c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router4"] ? { fill: red } : {}}
+              style={routerVuls["Router4"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M405.08 295.99c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router4"] ? { fill: red } : {}}
+              style={routerVuls["Router4"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M406.71 295.23c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -482,7 +487,7 @@ const Network = ({
               d="M413.91 298.71l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09c.01-.16-.1-.32-.24-.4zm-5.69-.24h-.05.05zm-.28 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router4"] ? { fill: red } : {}}
+              style={routerVuls["Router4"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M411.21 298.71l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.01-.17-.07-.33-.15-.41zm-3.02-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -500,17 +505,17 @@ const Network = ({
         >
           <g id="prefix__Router3" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router3"] ? { fill: red } : {}}
+              style={routerVuls["Router3"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M431.33 129.04c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router3"] ? { fill: red } : {}}
+              style={routerVuls["Router3"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M432.97 128.29c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router3"] ? { fill: red } : {}}
+              style={routerVuls["Router3"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M434.6 127.54c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -523,7 +528,7 @@ const Network = ({
               d="M441.8 131.02l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router3"] ? { fill: red } : {}}
+              style={routerVuls["Router3"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M439.11 131.02l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -541,17 +546,17 @@ const Network = ({
         >
           <g id="prefix__Router2" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router2"] ? { fill: red } : {}}
+              style={routerVuls["Router2"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M340.01 91.45c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92a5.995 5.995 0 00-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router2"] ? { fill: red } : {}}
+              style={routerVuls["Router2"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M341.65 90.7c-.74-1.66.02-3.61 1.68-4.35s3.61.02 4.35 1.68c.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router2"] ? { fill: red } : {}}
+              style={routerVuls["Router2"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M343.28 89.95c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -564,7 +569,7 @@ const Network = ({
               d="M350.48 93.43l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47v-1.09a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router2"] ? { fill: red } : {}}
+              style={routerVuls["Router2"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M347.79 93.43l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.16 0h-.01.01z"
             />
@@ -582,17 +587,17 @@ const Network = ({
         >
           <g id="prefix__Router1" ref={addToRefs} className="Router">
             <path
-              style={routerVuls["Router1"] ? { fill: red } : {}}
+              style={routerVuls["Router1"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M247.81 174.62c-1.15-2.57 0-5.58 2.57-6.73a5.091 5.091 0 016.73 6.72l.82.38c1.35-3.02.01-6.56-3.01-7.92s-6.56-.01-7.92 3.01c-.7 1.56-.7 3.35 0 4.91l.81-.37z"
             />
             <path
-              style={routerVuls["Router1"] ? { fill: red } : {}}
+              style={routerVuls["Router1"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M249.44 173.87c-.74-1.66.02-3.61 1.68-4.35 1.66-.74 3.61.02 4.35 1.68.37.85.37 1.82 0 2.66l.82.37c.94-2.12-.01-4.59-2.12-5.54-2.12-.94-4.59.01-5.54 2.12a4.218 4.218 0 000 3.41l.81-.35z"
             />
             <path
-              style={routerVuls["Router1"] ? { fill: red } : {}}
+              style={routerVuls["Router1"] ? { fill: yellow } : {}}
               className="prefix__st10"
               d="M251.07 173.12c-.32-.76.04-1.64.81-1.96.76-.32 1.64.04 1.96.81.15.37.15.78 0 1.15l.82.38c.53-1.21-.03-2.63-1.25-3.15-1.21-.53-2.63.03-3.15 1.25-.26.61-.26 1.3 0 1.91l.81-.39z"
             />
@@ -605,7 +610,7 @@ const Network = ({
               d="M258.27 176.6l-.02-.01-1.93-.96c-.26-.12-.54-.2-.82-.23 0 0-.88-.07-2.94-.07-1.68 0-3.03.07-3.03.07-.24.01-.61.11-.82.22l-1.87.93c-.2.06-.34.24-.35.45v1.09c0 .24.19.45.43.47 0 0 2.21.18 5.58.18 3.48 0 5.58-.18 5.58-.18.24-.03.43-.23.43-.47V177a.44.44 0 00-.24-.4zm-5.68-.24h-.05.05zm-.29 0h-.02.02z"
             />
             <path
-              style={routerVuls["Router1"] ? { fill: red } : {}}
+              style={routerVuls["Router1"] ? { fill: yellow } : {}}
               className="prefix__st12"
               d="M255.58 176.6l-.01-.01-1.03-1.05c-.12-.11-.28-.19-.44-.23 0 0-.47-.07-1.57-.07-.9 0-1.61.08-1.61.08-.13.01-.32.11-.44.22l-.99 1.02c-.11.06-.18.24-.18.45v1.24c0 .24.11.45.23.47 0 0 1.18.18 2.98.18 1.85 0 2.98-.18 2.98-.18.13-.02.23-.23.23-.47v-1.24c-.02-.17-.07-.33-.15-.41zm-3.03-.24h-.03.03zm-.15 0h-.01.01z"
             />
@@ -655,7 +660,7 @@ const Network = ({
               d="M378.4 387.92c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC45"] ? { fill: red } : {}}
+              style={userVuls["PC45"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M378.51 388.01c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -729,7 +734,7 @@ const Network = ({
               d="M416.12 376.72c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC44"] ? { fill: red } : {}}
+              style={userVuls["PC44"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M416.23 376.8c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -803,7 +808,7 @@ const Network = ({
               d="M427.35 350.4c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC43"] ? { fill: red } : {}}
+              style={userVuls["PC43"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M427.45 350.48c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -877,7 +882,7 @@ const Network = ({
               d="M224.26 355.06c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC42"] ? { fill: red } : {}}
+              style={userVuls["PC42"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M224.36 355.14c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -951,7 +956,7 @@ const Network = ({
               d="M213.75 383.23c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC41"] ? { fill: red } : {}}
+              style={userVuls["PC41"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M213.85 383.32c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1025,7 +1030,7 @@ const Network = ({
               d="M218.87 414.52c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC40"] ? { fill: red } : {}}
+              style={userVuls["PC40"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M218.98 414.6c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1099,7 +1104,7 @@ const Network = ({
               d="M256.12 425.84c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC39"] ? { fill: red } : {}}
+              style={userVuls["PC39"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M256.23 425.93c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1173,7 +1178,7 @@ const Network = ({
               d="M289.87 419.18c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC38"] ? { fill: red } : {}}
+              style={userVuls["PC38"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M289.98 419.27c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1247,7 +1252,7 @@ const Network = ({
               d="M307.29 389.44c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC37"] ? { fill: red } : {}}
+              style={userVuls["PC37"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M307.4 389.53c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1321,7 +1326,7 @@ const Network = ({
               d="M296.98 358.29c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC36"] ? { fill: red } : {}}
+              style={userVuls["PC36"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M297.09 358.38c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1395,7 +1400,7 @@ const Network = ({
               d="M96.57 383.2c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC35"] ? { fill: red } : {}}
+              style={userVuls["PC35"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M96.67 383.29c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1469,7 +1474,7 @@ const Network = ({
               d="M122.96 397.05c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC34"] ? { fill: red } : {}}
+              style={userVuls["PC34"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M123.06 397.14c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1543,7 +1548,7 @@ const Network = ({
               d="M94.99 363.53c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC33"] ? { fill: red } : {}}
+              style={userVuls["PC33"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M95.1 363.62c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1617,7 +1622,7 @@ const Network = ({
               d="M438.23 308.22c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC32"] ? { fill: red } : {}}
+              style={userVuls["PC32"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M438.34 308.31c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1691,7 +1696,7 @@ const Network = ({
               d="M438.2 269.89c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC31"] ? { fill: red } : {}}
+              style={userVuls["PC31"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M438.3 269.98c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1765,7 +1770,7 @@ const Network = ({
               d="M30.76 259.19c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC30"] ? { fill: red } : {}}
+              style={userVuls["PC30"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M30.86 259.28c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1839,7 +1844,7 @@ const Network = ({
               d="M14.08 288.21c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC29"] ? { fill: red } : {}}
+              style={userVuls["PC29"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M14.19 288.29c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1913,7 +1918,7 @@ const Network = ({
               d="M33.38 320.84c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC28"] ? { fill: red } : {}}
+              style={userVuls["PC28"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M33.48 320.93c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -1987,7 +1992,7 @@ const Network = ({
               d="M87.38 323.28c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC27"] ? { fill: red } : {}}
+              style={userVuls["PC27"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M87.48 323.37c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2061,7 +2066,7 @@ const Network = ({
               d="M105.85 260.01c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC26"] ? { fill: red } : {}}
+              style={userVuls["PC26"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M105.95 260.1c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2135,7 +2140,7 @@ const Network = ({
               d="M68.06 247.67c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC25"] ? { fill: red } : {}}
+              style={userVuls["PC25"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M68.16 247.75c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2209,7 +2214,7 @@ const Network = ({
               d="M247.96 201.12c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC24"] ? { fill: red } : {}}
+              style={userVuls["PC24"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M248.07 201.21c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2283,7 +2288,7 @@ const Network = ({
               d="M281.75 188.6c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC23"] ? { fill: red } : {}}
+              style={userVuls["PC23"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M281.86 188.69c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2357,7 +2362,7 @@ const Network = ({
               d="M282.15 154.71c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC22"] ? { fill: red } : {}}
+              style={userVuls["PC22"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M282.26 154.8c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2431,7 +2436,7 @@ const Network = ({
               d="M247.78 133.02c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC21"] ? { fill: red } : {}}
+              style={userVuls["PC21"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M247.89 133.11c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2505,7 +2510,7 @@ const Network = ({
               d="M55.66 175.03c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC20"] ? { fill: red } : {}}
+              style={userVuls["PC20"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M55.76 175.11c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2579,7 +2584,7 @@ const Network = ({
               d="M76.5 207.76c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC19"] ? { fill: red } : {}}
+              style={userVuls["PC19"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M76.6 207.84c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2653,7 +2658,7 @@ const Network = ({
               d="M87.45 149.79c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37V155c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC18"] ? { fill: red } : {}}
+              style={userVuls["PC18"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M87.56 149.88c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2727,7 +2732,7 @@ const Network = ({
               d="M439.28 161.01c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC17"] ? { fill: red } : {}}
+              style={userVuls["PC17"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M439.39 161.09c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2801,7 +2806,7 @@ const Network = ({
               d="M466.47 141.74c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC16"] ? { fill: red } : {}}
+              style={userVuls["PC16"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M466.58 141.83c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2875,7 +2880,7 @@ const Network = ({
               d="M470.53 106.47c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC15"] ? { fill: red } : {}}
+              style={userVuls["PC15"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M470.64 106.55c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -2949,7 +2954,7 @@ const Network = ({
               d="M315.95 63.28c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC14"] ? { fill: red } : {}}
+              style={userVuls["PC14"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M316.06 63.37c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3023,7 +3028,7 @@ const Network = ({
               d="M303.17 84.78c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC13"] ? { fill: red } : {}}
+              style={userVuls["PC13"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M303.28 84.86c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3097,7 +3102,7 @@ const Network = ({
               d="M318.79 113.33c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC12"] ? { fill: red } : {}}
+              style={userVuls["PC12"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M318.89 113.41c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3171,7 +3176,7 @@ const Network = ({
               d="M365.93 112.73c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC11"] ? { fill: red } : {}}
+              style={userVuls["PC11"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M366.04 112.82c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3245,7 +3250,7 @@ const Network = ({
               d="M376.24 87.7c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37V87.7z"
             />
             <path
-              style={userVuls["PC10"] ? { fill: red } : {}}
+              style={userVuls["PC10"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M376.34 87.79c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3319,7 +3324,7 @@ const Network = ({
               d="M369.8 63.57c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC9"] ? { fill: red } : {}}
+              style={userVuls["PC9"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M369.91 63.65c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3393,7 +3398,7 @@ const Network = ({
               d="M341.65 51.54c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC8"] ? { fill: red } : {}}
+              style={userVuls["PC8"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M341.75 51.62c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3467,7 +3472,7 @@ const Network = ({
               d="M120.69 57.22c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC7"] ? { fill: red } : {}}
+              style={userVuls["PC7"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M120.8 57.31c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3541,7 +3546,7 @@ const Network = ({
               d="M106.53 87.16c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC6"] ? { fill: red } : {}}
+              style={userVuls["PC6"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M106.63 87.25c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37H107a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3615,7 +3620,7 @@ const Network = ({
               d="M125.82 119.8c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC5"] ? { fill: red } : {}}
+              style={userVuls["PC5"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M125.93 119.89c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3689,7 +3694,7 @@ const Network = ({
               d="M191.18 119.86c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC4"] ? { fill: red } : {}}
+              style={userVuls["PC4"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M191.29 119.95c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3763,7 +3768,7 @@ const Network = ({
               d="M208.6 90.12c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC3"] ? { fill: red } : {}}
+              style={userVuls["PC3"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M208.71 90.21c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3837,7 +3842,7 @@ const Network = ({
               d="M198.29 58.97c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC2"] ? { fill: red } : {}}
+              style={userVuls["PC2"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M198.4 59.06c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3911,7 +3916,7 @@ const Network = ({
               d="M151.72 46.35c0-.21.17-.37.37-.37h8.7c.21 0 .37.17.37.37v5.21c0 .21-.17.37-.37.37h-8.7a.37.37 0 01-.37-.37v-5.21z"
             />
             <path
-              style={userVuls["PC1"] ? { fill: red } : {}}
+              style={userVuls["PC1"] ? { fill: yellow } : {}}
               className="prefix__st16"
               d="M151.83 46.43c0-.21.17-.37.37-.37h8.49c.21 0 .37.17.37.37v5.04c0 .21-.17.37-.37.37h-8.49a.37.37 0 01-.37-.37v-5.04z"
             />
@@ -3951,11 +3956,11 @@ const Network = ({
             className="prefix__st20"
             d="M179.72 210.44l66.12 34.55"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M179.72 210.44l66.12 34.55" : ""}
+              path={run[0] ? "M179.72 210.44l66.12 34.55" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3969,11 +3974,11 @@ const Network = ({
             className="prefix__st20"
             d="M185.73 295.58l60.29-36.13"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M185.73 295.58l60.29-36.13" : ""}
+              path={run[1] ? "M185.73 295.58l60.29-36.13" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -3987,11 +3992,11 @@ const Network = ({
             className="prefix__st20"
             d="M260.82 269.6l2.7 42.29"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M260.82 269.6l2.7 42.29" : ""}
+              path={run[2] ? "M260.82 269.6l2.7 42.29" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4005,11 +4010,11 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 258.82l56.33 29.84"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M278.41 258.82l56.33 29.84" : ""}
+              path={run[3] ? "M278.41 258.82l56.33 29.84" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4023,11 +4028,11 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 246.18l86.9-36.29"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M278.41 246.18l86.9-36.29" : ""}
+              path={run[4] ? "M278.41 246.18l86.9-36.29" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4041,12 +4046,12 @@ const Network = ({
             className="prefix__st20"
             d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12" : ""
+                run[5] ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -4061,11 +4066,11 @@ const Network = ({
             className="prefix__st20"
             d="M162.57 109.22l13.73 83.74"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M162.57 109.22l13.73 83.74" : ""}
+              path={run[6] ? "M162.57 109.22l13.73 83.74" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4079,11 +4084,11 @@ const Network = ({
             className="prefix__st20"
             d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""}
+              path={run[7] ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4097,11 +4102,11 @@ const Network = ({
             className="prefix__st20"
             d="M89.35 295.89l70.72-.11"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M89.35 295.89l70.72-.11" : ""}
+              path={run[8] ? "M89.35 295.89l70.72-.11" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4115,11 +4120,11 @@ const Network = ({
             className="prefix__st20"
             d="M173.78 305.57l-24 56.26"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M173.78 305.57l-24 56.26" : ""}
+              path={run[9] ? "M173.78 305.57l-24 56.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4133,11 +4138,11 @@ const Network = ({
             className="prefix__st20"
             d="M261.38 329.53l2.14 46.43"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M261.38 329.53l2.14 46.43" : ""}
+              path={run[10] ? "M261.38 329.53l2.14 46.43" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4151,11 +4156,11 @@ const Network = ({
             className="prefix__st20"
             d="M348.86 305.57l26.02 36.95"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M348.86 305.57l26.02 36.95" : ""}
+              path={run[11] ? "M348.86 305.57l26.02 36.95" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4169,11 +4174,11 @@ const Network = ({
             className="prefix__st20"
             d="M361.87 296.89h33.2"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M361.87 296.89h33.2" : ""}
+              path={run[12] ? "M361.87 296.89h33.2" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4187,11 +4192,11 @@ const Network = ({
             className="prefix__st20"
             d="M429.61 140.89l-44.36 52.95"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M429.61 140.89l-44.36 52.95" : ""}
+              path={run[13] ? "M429.61 140.89l-44.36 52.95" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4205,11 +4210,11 @@ const Network = ({
             className="prefix__st20"
             d="M348.07 105.33l24.71 85.9"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M348.07 105.33l24.71 85.9" : ""}
+              path={run[14] ? "M348.07 105.33l24.71 85.9" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4223,11 +4228,11 @@ const Network = ({
             className="prefix__st20"
             d="M382.07 361.83l.5 17.51"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M382.07 361.83l.5 17.51" : ""}
+              path={run[15] ? "M382.07 361.83l.5 17.51" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4241,11 +4246,11 @@ const Network = ({
             className="prefix__st20"
             d="M388.38 359.71l22.06 16.25"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M388.38 359.71l22.06 16.25" : ""}
+              path={run[16] ? "M388.38 359.71l22.06 16.25" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4259,11 +4264,11 @@ const Network = ({
             className="prefix__st20"
             d="M395.07 353.32l26.16.75"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M395.07 353.32l26.16.75" : ""}
+              path={run[17] ? "M395.07 353.32l26.16.75" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4277,11 +4282,11 @@ const Network = ({
             className="prefix__st20"
             d="M237.67 366.98l17.18 14.75"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M237.67 366.98l17.18 14.75" : ""}
+              path={run[18] ? "M237.67 366.98l17.18 14.75" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4295,11 +4300,11 @@ const Network = ({
             className="prefix__st20"
             d="M226.54 388.33l25.4.81"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M226.54 388.33l25.4.81" : ""}
+              path={run[19] ? "M226.54 388.33l25.4.81" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4313,11 +4318,11 @@ const Network = ({
             className="prefix__st20"
             d="M252.98 393.96l-20.37 18.03"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M252.98 393.96l-20.37 18.03" : ""}
+              path={run[20] ? "M252.98 393.96l-20.37 18.03" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4331,11 +4336,11 @@ const Network = ({
             className="prefix__st20"
             d="M261.81 404.65v17.16"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M261.81 404.65v17.16" : ""}
+              path={run[21] ? "M261.81 404.65v17.16" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4349,12 +4354,12 @@ const Network = ({
             className="prefix__st20"
             d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
+                run[22] ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -4369,11 +4374,11 @@ const Network = ({
             className="prefix__st20"
             d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""}
+              path={run[23] ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4387,12 +4392,12 @@ const Network = ({
             className="prefix__st20"
             d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[24] ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -4407,11 +4412,11 @@ const Network = ({
             className="prefix__st20"
             d="M109.37 387.56l20.98-9.67"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M109.37 387.56l20.98-9.67" : ""}
+              path={run[25] ? "M109.37 387.56l20.98-9.67" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4425,11 +4430,11 @@ const Network = ({
             className="prefix__st20"
             d="M136.08 378.95l-4.68 13.57"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M136.08 378.95l-4.68 13.57" : ""}
+              path={run[26] ? "M136.08 378.95l-4.68 13.57" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4443,11 +4448,11 @@ const Network = ({
             className="prefix__st20"
             d="M130.92 371.08l-18.5-3.98"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M130.92 371.08l-18.5-3.98" : ""}
+              path={run[27] ? "M130.92 371.08l-18.5-3.98" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4461,11 +4466,11 @@ const Network = ({
             className="prefix__st20"
             d="M414.87 305.57l17.18 6.32"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M414.87 305.57l17.18 6.32" : ""}
+              path={run[28] ? "M414.87 305.57l17.18 6.32" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4479,11 +4484,11 @@ const Network = ({
             className="prefix__st20"
             d="M420.18 291.89l12.42-11.06"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M420.18 291.89l12.42-11.06" : ""}
+              path={run[29] ? "M420.18 291.89l12.42-11.06" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4497,11 +4502,11 @@ const Network = ({
             className="prefix__st20"
             d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
+              path={run[30] ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4515,11 +4520,11 @@ const Network = ({
             className="prefix__st20"
             d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
+              path={run[31] ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4533,11 +4538,11 @@ const Network = ({
             className="prefix__st20"
             d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
+              path={run[32] ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4551,11 +4556,11 @@ const Network = ({
             className="prefix__st20"
             d="M78.03 305.57l9.16 14.05"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M78.03 305.57l9.16 14.05" : ""}
+              path={run[33] ? "M78.03 305.57l9.16 14.05" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4569,12 +4574,12 @@ const Network = ({
             className="prefix__st20"
             d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[34] ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -4589,11 +4594,11 @@ const Network = ({
             className="prefix__st20"
             d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
+              path={run[35] ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4607,11 +4612,11 @@ const Network = ({
             className="prefix__st20"
             d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
+              path={run[36] ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4625,11 +4630,11 @@ const Network = ({
             className="prefix__st20"
             d="M262.06 179.38l16.35 6.93"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M262.06 179.38l16.35 6.93" : ""}
+              path={run[37] ? "M262.06 179.38l16.35 6.93" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4643,11 +4648,11 @@ const Network = ({
             className="prefix__st20"
             d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""}
+              path={run[38] ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4661,11 +4666,11 @@ const Network = ({
             className="prefix__st20"
             d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""}
+              path={run[39] ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4679,11 +4684,11 @@ const Network = ({
             className="prefix__st20"
             d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
+              path={run[40] ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4697,11 +4702,11 @@ const Network = ({
             className="prefix__st20"
             d="M97.15 193.24l-9.7 10.81"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M97.15 193.24l-9.7 10.81" : ""}
+              path={run[41] ? "M97.15 193.24l-9.7 10.81" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4715,11 +4720,11 @@ const Network = ({
             className="prefix__st20"
             d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""}
+              path={run[42] ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4733,11 +4738,11 @@ const Network = ({
             className="prefix__st20"
             d="M438 139.19l5.98 16.91"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M438 139.19l5.98 16.91" : ""}
+              path={run[43] ? "M438 139.19l5.98 16.91" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4751,11 +4756,11 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 135.63l11.95 5.26"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M448.88 135.63l11.95 5.26" : ""}
+              path={run[44] ? "M448.88 135.63l11.95 5.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4769,11 +4774,11 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 122.76l15.66-10.12"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M448.88 122.76l15.66-10.12" : ""}
+              path={run[45] ? "M448.88 122.76l15.66-10.12" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4787,11 +4792,11 @@ const Network = ({
             className="prefix__st20"
             d="M328.76 72.54l8.71 9.87"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M328.76 72.54l8.71 9.87" : ""}
+              path={run[46] ? "M328.76 72.54l8.71 9.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4805,11 +4810,11 @@ const Network = ({
             className="prefix__st20"
             d="M317.36 89.56l18.41 2.61"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M317.36 89.56l18.41 2.61" : ""}
+              path={run[47] ? "M317.36 89.56l18.41 2.61" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4823,11 +4828,11 @@ const Network = ({
             className="prefix__st20"
             d="M338.7 99.44l-8.38 10.96"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M338.7 99.44l-8.38 10.96" : ""}
+              path={run[48] ? "M338.7 99.44l-8.38 10.96" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4841,11 +4846,11 @@ const Network = ({
             className="prefix__st20"
             d="M353.81 98.68l9.84 11.72"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M353.81 98.68l9.84 11.72" : ""}
+              path={run[49] ? "M353.81 98.68l9.84 11.72" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4859,11 +4864,11 @@ const Network = ({
             className="prefix__st20"
             d="M370.78 91.55l-14.25.23"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M370.78 91.55l-14.25.23" : ""}
+              path={run[50] ? "M370.78 91.55l-14.25.23" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4877,11 +4882,11 @@ const Network = ({
             className="prefix__st20"
             d="M366.43 75l-13.81 7.41"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M366.43 75l-13.81 7.41" : ""}
+              path={run[51] ? "M366.43 75l-13.81 7.41" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4895,11 +4900,11 @@ const Network = ({
             className="prefix__st20"
             d="M346.49 64.21l-.63 16.24"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M346.49 64.21l-.63 16.24" : ""}
+              path={run[52] ? "M346.49 64.21l-.63 16.24" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4913,11 +4918,11 @@ const Network = ({
             className="prefix__st20"
             d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
+              path={run[53] ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4931,11 +4936,11 @@ const Network = ({
             className="prefix__st20"
             d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
+              path={run[54] ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4949,11 +4954,11 @@ const Network = ({
             className="prefix__st20"
             d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
+              path={run[55] ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -4967,12 +4972,12 @@ const Network = ({
             className="prefix__st20"
             d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
+                run[56] ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -4987,11 +4992,11 @@ const Network = ({
             className="prefix__st20"
             d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""}
+              path={run[57] ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"
@@ -5005,12 +5010,12 @@ const Network = ({
             className="prefix__st20"
             d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                run ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[58] ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
               keyPoints={rightDirection}
@@ -5025,11 +5030,11 @@ const Network = ({
             className="prefix__st20"
             d="M157.21 59.06L161.8 78"
           />
-          <circle r="2" fill="lightgreen">
+          <circle r="2" fill={yellow}>
             <animateMotion
               dur={run ? "1s" : ""}
               repeatCount="indefinite"
-              path={run ? "M157.21 59.06L161.8 78" : ""}
+              path={run[59] ? "M157.21 59.06L161.8 78" : ""}
               calcMode="linear"
               keyPoints={rightDirection}
               keyTimes="0;1"

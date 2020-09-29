@@ -21,11 +21,6 @@ const Folder = ({
   setVirusClick,
   setNetworkView,
 }) => {
-  console.log(
-    `folderOrFile ${color === "black" && "folderOrFileWindow"} ${
-      name === "IRC" && "animate__bounce"
-    }`
-  );
   return (
     <div
       className={`folderOrFile ${color === "black" && "folderOrFileWindow"} ${

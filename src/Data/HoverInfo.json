@@ -1,6 +1,6 @@
 {
   "Server": "Currently acting as central server.",
-  "Switch": "This is a Switch. Firewall: Default disabled.",
+  "Switch": "This is a connecting link a.k.a a switch. Firewall: Disabled.",
   "Router": {
     "AV": "Router: Firewall active.",
     "NonAV": "Router: Firewall inactive."
