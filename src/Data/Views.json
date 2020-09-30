@@ -12,8 +12,10 @@
     ["virus", "Virus"],
     ["trojan", "Trojan Horse"]
   ],
-  "trash": [],
-  "popular": [],
+  "serverDesktop": [
+    ["folder", "Malware"],
+    ["chat","IRC"]
+  ],
   "mail": [],
-  "personal": []
+  "empty": []
 }

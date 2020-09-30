@@ -87,30 +87,3 @@
     box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #555;
 }
-
-.chatStart {
-    color: #63de00;
-    font-size: 40px;
-    margin-left: 10px;
-    margin-bottom: 0;
-    line-height: 40px;
-}
-
-.ircTextInput {
-    margin: 0;
-    border-top: 4px solid grey;
-}
-
-input#chatInput {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #63de00;
-    border: none;
-    margin-left: 10px;
-    margin-top: 3px;
-    font-size: 18px;
-    width: 500px;
-}
-
-input#chatInput:focus {
-    outline: none;
-}

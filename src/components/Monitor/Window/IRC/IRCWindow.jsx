@@ -1,17 +1,47 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Candidates from "../../../../Data/Candidates.json";
-import CommandOptions from "./CommandOptions"
+import CommandOptions from "./CommandOptions";
+import Button from "@material-ui/core/Button";
+import { create } from "../../../../Functions/CreateBotClient";
+import MainIRCCOntent from "./MainIRCCOntent";
 
 const IRCWindow = ({ handleClose }) => {
   const chatInput = useRef(null);
+  const runRef = useRef(null);
   const [input, setInput] = useState("");
+  const [commandSelected, setCommandSelected] = useState(null);
+  const [mainContent, setMainContent] = useState([]);
+  const [botBinaryCreated, setBotBinaryCreated] = useState(false);
 
   const handleKeyClick = (event) => {
     if (event.key === "Enter") {
-      console.log("Enter clicked!");
+      runRef.current.click();
     }
   };
+
+  const handleRunClick = () => {
+    switch (input) {
+      case "/createBotBinary":
+        setBotBinaryCreated(true);
+        let runningCommands = create();
+        for (let i = 0; i < runningCommands.length; i++) {
+          setTimeout(() => {
+            setMainContent(runningCommands.slice(0, i + 1));
+          }, 1000 * i);
+        }
+        break;
+    }
+  };
+
+  const handleCommandClick = (name) => {
+    setInput(name);
+    setCommandSelected(commandSelected === null ? true : !commandSelected);
+  };
+
+  useEffect(() => {
+    commandSelected !== null && runRef.current.click();
+  }, [commandSelected]);
 
   return (
     <Container style={{ padding: "0" }} className="ircWindow">
@@ -31,9 +61,13 @@ const IRCWindow = ({ handleClose }) => {
           />
         </a>
       </Row>
-      <Row className="ircMainContent">
+      <Row className="ircMainContent" noGutters>
         <Col style={{ display: "flex", padding: "0" }}>
-          <CommandOptions input={input} />
+          <MainIRCCOntent mainContent={mainContent} />
+          <CommandOptions
+            input={input}
+            handleCommandClick={handleCommandClick}
+          />
         </Col>
         <Col xs={2} id="candidateList">
           <div style={{ color: "tomato" }}>
@@ -61,7 +95,17 @@ const IRCWindow = ({ handleClose }) => {
           type="text"
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyClick}
+          value={input}
         />
+        <Button
+          variant="contained"
+          color="secondary"
+          id="runButton"
+          ref={runRef}
+          onClick={handleRunClick}
+        >
+          RUN
+        </Button>
       </Row>
     </Container>
   );

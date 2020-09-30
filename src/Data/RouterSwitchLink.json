@@ -1,12 +1,42 @@
 {
-    "Router1": 5,
-    "Router2": 1,
-    "Router3": 1,
-    "Router4": 2,
-    "Router5": 2,
-    "Router6": 3,
-    "Router7": 4,
-    "Router8": 4,
-    "Router9": 5,
-    "Router10": 5
+    "Router1": {
+        "Switch": 5,
+        "Path": 55
+    },
+    "Router2": {
+        "Switch": 1,
+        "Path": 46
+    },
+    "Router3": {
+        "Switch": 1,
+        "Path": 47
+    },
+    "Router4": {
+        "Switch": 2,
+        "Path": 48
+    },
+    "Router5": {
+        "Switch": 2,
+        "Path": 49
+    },
+    "Router6": {
+        "Switch": 3,
+        "Path": 50
+    },
+    "Router7": {
+        "Switch": 4,
+        "Path": 51
+    },
+    "Router8": {
+        "Switch": 4,
+        "Path": 52
+    },
+    "Router9": {
+        "Switch": 5,
+        "Path": 53
+    },
+    "Router10":{
+        "Switch":  5,
+        "Path": 54
+    }
 }

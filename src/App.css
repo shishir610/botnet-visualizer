@@ -40,3 +40,7 @@ body {
 .info:hover {
     background-color: #f0f0f0;
 }
+
+.MuiSwitch-track{
+    background-color: red;
+}

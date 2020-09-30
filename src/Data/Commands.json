@@ -1,1 +1,18 @@
-["/createBotnet", "/connect", "/worm", "/trojan", "/ransomware", "/spyware", "/virus"]
+[
+  {
+    "data": "/createBotBinary",
+    "info": "Bot Binary is the malicious program that is used to to spread to other systems."
+  },
+  {
+    "data": "/scanBots",
+    "info": "This sends out the Bot Binary from C&C server to all computers."
+  },
+  {
+    "data": "/stopScan",
+    "info": "Stops the scan for bots."
+  },
+  {
+    "data": "/performDDos",
+    "info": "DDos is a Distributed Denial of Service attack."
+  }
+]

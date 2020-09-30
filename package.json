@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.5.2",
+    "randomcolor": "^0.6.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-dom": "^16.13.1",

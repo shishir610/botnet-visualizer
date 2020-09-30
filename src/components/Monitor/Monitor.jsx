@@ -12,7 +12,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
   const [virus, setVirus] = useState("virus");
   const [windowShow, setWindowShow] = useState(false);
   const [virusWindow, setVirusWindow] = useState(false);
-  const [showIRCWindow, setShowIRCWindow] = useState(false);
+  const [showIRCWindow, setShowIRCWindow] = useState(true);
 
   useEffect(() => {}, []);
 
@@ -51,29 +51,35 @@ const Monitor = ({ isServer, setNetworkView }) => {
       <Row className="justify-content-center">
         <Container className="monitor">
           <Row style={{ height: "600px" }}>
-            <Col xs={1} style={{ margin: "0", padding: "0" }}>
-              {Views["desktop"].map((folder) => {
-                return (
-                  <Folder
-                    type={folder[0]}
-                    name={folder[1]}
-                    setView={setDifferentView}
-                    color="white"
-                    disabled={view != "desktop"}
-                    setNetworkView={setNetworkView}
-                  />
-                );
-              })}
-            </Col>
+            {!isServer && (
+              <Col xs={1} style={{ margin: "0", padding: "0" }}>
+                {Views[isServer ? "empty" : "desktop"].map((folder) => {
+                  return (
+                    <Folder
+                      type={folder[0]}
+                      name={folder[1]}
+                      setView={setDifferentView}
+                      color="white"
+                      disabled={view != "desktop"}
+                      setNetworkView={setNetworkView}
+                    />
+                  );
+                })}
+              </Col>
+            )}
             {isServer && (
               <Col xs={1} style={{ margin: "0", padding: "0" }}>
-                <Folder
-                  type="chat"
-                  name="IRC"
-                  setView={setDifferentView}
-                  color="white"
-                  disabled={view != "desktop"}
-                />
+                {[["chat", "IRC"]].map((folder) => {
+                  return (
+                    <Folder
+                      type={folder[0]}
+                      name={folder[1]}
+                      setView={setDifferentView}
+                      color="white"
+                      disabled={view != "desktop"}
+                    />
+                  );
+                })}
               </Col>
             )}
             {windowShow && (
@@ -96,7 +102,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
             )}
             {showIRCWindow && (
               <Col
-                xs={10}
+                xs={{ span: 10, offset: isServer ? 1 : 0 }}
                 style={{
                   display: "flex",
                   alignItems: "center",

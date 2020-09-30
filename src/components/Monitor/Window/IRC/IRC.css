@@ -7,6 +7,10 @@
     background-color: rgba(65, 64, 64, 0.5);
 }
 
+.commandCol{
+    padding-left: 45px;
+}
+
 .command p {
     line-height: 30px;
     margin: 0;
@@ -16,4 +20,38 @@
 
 .command div:hover{
     background-color: rgba(65, 64, 64, 0.7);
+}
+
+.chatStart {
+    color: #63de00;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.ircTextInput {
+    margin: 0;
+    /* padding-top: 2px; */
+    border-top: 4px solid grey;
+}
+
+input#chatInput {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #63de00;
+    border: none;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 18px;
+    width: 660px;
+}
+
+input#chatInput:focus {
+    outline: none;
+}
+
+#runButton{
+    margin-top: -1px;
+    width: 142px;
+    height: 44px;
 }

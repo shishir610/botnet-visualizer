@@ -7,8 +7,8 @@ import Candidates from "./Data/Candidates.json";
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(true)
-  const [isServer, setIsServer] = useState(false)
+  const [networkView, setNetworkView] = useState(false)
+  const [isServer, setIsServer] = useState(true)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
   const [routerVuls, setRouterVuls] = useState({});

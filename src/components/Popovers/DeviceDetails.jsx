@@ -80,6 +80,9 @@ const DeviceDetails = ({
                   }
                   label={device === "PC" ? "Anti-Malware" : "Firewall"}
                   labelPlacement="start"
+                  style={{
+                    fontFamily: "Poppins"
+                  }}
                 />
               </Row>
             )}
