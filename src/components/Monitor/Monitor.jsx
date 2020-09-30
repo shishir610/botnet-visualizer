@@ -7,7 +7,17 @@ import IRCWindow from "./Window/IRC/IRCWindow";
 import Folder from "./Folder/Folder";
 import Views from "../../Data/Views.json";
 
-const Monitor = ({ isServer, setNetworkView }) => {
+const Monitor = ({
+  isServer,
+  setNetworkView,
+  mainContent,
+  setMainContent,
+  botBinaryCreated,
+  setBotBinaryCreated,
+  serverFiles,
+  setServerFiles,
+  handleScanBots
+}) => {
   const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
   const [windowShow, setWindowShow] = useState(false);
@@ -53,7 +63,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
           <Row style={{ height: "600px" }}>
             {!isServer && (
               <Col xs={1} style={{ margin: "0", padding: "0" }}>
-                {Views[isServer ? "empty" : "desktop"].map((folder) => {
+                {Views["desktop"].map((folder) => {
                   return (
                     <Folder
                       type={folder[0]}
@@ -69,7 +79,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
             )}
             {isServer && (
               <Col xs={1} style={{ margin: "0", padding: "0" }}>
-                {[["chat", "IRC"]].map((folder) => {
+                {serverFiles.map((folder) => {
                   return (
                     <Folder
                       type={folder[0]}
@@ -77,6 +87,7 @@ const Monitor = ({ isServer, setNetworkView }) => {
                       setView={setDifferentView}
                       color="white"
                       disabled={view != "desktop"}
+                      setNetworkView={setNetworkView}
                     />
                   );
                 })}
@@ -109,7 +120,16 @@ const Monitor = ({ isServer, setNetworkView }) => {
                   justifyContent: "center",
                 }}
               >
-                <IRCWindow handleClose={handleClose} />
+                <IRCWindow
+                  handleClose={handleClose}
+                  mainContent={mainContent}
+                  setMainContent={setMainContent}
+                  botBinaryCreated={botBinaryCreated}
+                  setBotBinaryCreated={setBotBinaryCreated}
+                  serverFiles={serverFiles}
+                  setServerFiles={setServerFiles}
+                  handleScanBots={handleScanBots}
+                />
               </Col>
             )}
             {virusWindow && (

@@ -12,9 +12,9 @@
     ["virus", "Virus"],
     ["trojan", "Trojan Horse"]
   ],
-  "serverDesktop": [
-    ["folder", "Malware"],
-    ["chat","IRC"]
+  "server": [
+    ["chat","IRC"],
+    ["undo", "Show Network"]
   ],
   "mail": [],
   "empty": []

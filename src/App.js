@@ -4,15 +4,20 @@ import Monitor from './components/Monitor/Monitor'
 import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
 import NavigationBar from './components/Navigation/NavigationBar'
 import Candidates from "./Data/Candidates.json";
+import Views from "./Data/Views.json"
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(false)
-  const [isServer, setIsServer] = useState(true)
+  const [networkView, setNetworkView] = useState(true)
+  const [isServer, setIsServer] = useState(false)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
   const [routerVuls, setRouterVuls] = useState({});
   const [malwareToggleShow, setMalwareToggleShow] = useState(false);
+  const [mainContent, setMainContent] = useState([]);
+  const [botBinaryCreated, setBotBinaryCreated] = useState(false);
+  const [serverFiles, setServerFiles] = useState(Views["server"])
+
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
   };
@@ -38,6 +43,10 @@ function App() {
     });
     setUsers(newUsers);
   };
+
+  const handleScanBots = () => {
+
+  }
 
   const generateRandomRouters = () => {
     for (let i = 0; i < 10; i++) {
@@ -68,7 +77,17 @@ function App() {
             setMalwareToggle={setMalwareToggle}
           />
           :
-          <Monitor setNetworkView={setNetworkView} isServer={isServer} />
+          <Monitor
+            setNetworkView={setNetworkView}
+            isServer={isServer}
+            mainContent={mainContent}
+            setMainContent={setMainContent}
+            botBinaryCreated={botBinaryCreated}
+            setBotBinaryCreated={setBotBinaryCreated}
+            serverFiles={serverFiles}
+            setServerFiles={setServerFiles}
+            handleScanBots={handleScanBots}
+          />
         }
       </Row>
     </Container>

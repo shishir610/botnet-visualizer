@@ -6,32 +6,49 @@ import Button from "@material-ui/core/Button";
 import { create } from "../../../../Functions/CreateBotClient";
 import MainIRCCOntent from "./MainIRCCOntent";
 
-const IRCWindow = ({ handleClose }) => {
+const IRCWindow = ({
+  handleClose,
+  mainContent,
+  setMainContent,
+  setBotBinaryCreated,
+  botBinaryCreated,
+  serverFiles,
+  setServerFiles,
+  handleScanBots
+}) => {
   const chatInput = useRef(null);
   const runRef = useRef(null);
   const [input, setInput] = useState("");
   const [commandSelected, setCommandSelected] = useState(null);
-  const [mainContent, setMainContent] = useState([]);
-  const [botBinaryCreated, setBotBinaryCreated] = useState(false);
+  const [running, setRunning] = useState(false);
 
   const handleKeyClick = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === "Enter" && !running) {
       runRef.current.click();
     }
   };
 
   const handleRunClick = () => {
+    setInput("");
+    setRunning(true);
     switch (input) {
       case "/createBotBinary":
-        setBotBinaryCreated(true);
         let runningCommands = create();
         for (let i = 0; i < runningCommands.length; i++) {
           setTimeout(() => {
             setMainContent(runningCommands.slice(0, i + 1));
           }, 1000 * i);
         }
+        setBotBinaryCreated(true);
+        setTimeout(() => {
+          setServerFiles([...serverFiles, ["folder", "Bot Binary"]]);
+        }, 7000);
+        break;
+      case "/scanBots":
+        handleScanBots();
         break;
     }
+    setRunning(false);
   };
 
   const handleCommandClick = (name) => {
@@ -40,7 +57,7 @@ const IRCWindow = ({ handleClose }) => {
   };
 
   useEffect(() => {
-    commandSelected !== null && runRef.current.click();
+    commandSelected !== null && !running && runRef.current.click();
   }, [commandSelected]);
 
   return (
@@ -103,6 +120,7 @@ const IRCWindow = ({ handleClose }) => {
           id="runButton"
           ref={runRef}
           onClick={handleRunClick}
+          disabled={running}
         >
           RUN
         </Button>

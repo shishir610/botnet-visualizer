@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-const randomColor = require("randomcolor");
+import RandomColours from "../../../../Data/RandomColours.json";
 
 export default function MainIRCCOntent({ mainContent }) {
   return (
     <Container style={{ color: "white" }}>
-      {mainContent.map((chat) => {
+      {mainContent.map((chat, i) => {
+        console.log(RandomColours[i]);
         return (
           <Row>
             <span>[{chat["time"]}]</span>
@@ -17,10 +18,8 @@ export default function MainIRCCOntent({ mainContent }) {
             <span>{chat["name"]}: </span>
             <span
               style={{
-                color:
-                  Math.floor(0.5 + Math.random()) === 0
-                    ? "white"
-                    : `${randomColor()}`,
+                color: RandomColours[i],
+                paddingLeft: "5px",
               }}
             >
               {chat["message"]}
