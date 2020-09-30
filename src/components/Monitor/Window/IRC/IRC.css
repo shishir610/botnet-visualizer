@@ -55,3 +55,45 @@ input#chatInput:focus {
     width: 142px;
     height: 44px;
 }
+
+.ircWindow {
+    margin: 0;
+    height: 600px;
+    width: 850px;
+    background-color: #000;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+}
+
+.ircHeader {
+    background-color: #fff;
+    margin: 0%;
+    padding: 5px 0 8px 0;
+}
+
+.ircMainContent {
+    height: 510px;
+    margin: 0%;
+}
+
+.mainContentDiv {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.mainContentDiv::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.mainContentDiv::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.mainContentDiv::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}

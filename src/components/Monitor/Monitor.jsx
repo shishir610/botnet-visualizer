@@ -26,6 +26,8 @@ const Monitor = ({
 
   useEffect(() => {}, []);
 
+  console.log(mainContent)
+
   const setVirusClick = (name) => {
     setVirus(name);
     setVirusWindow(true);

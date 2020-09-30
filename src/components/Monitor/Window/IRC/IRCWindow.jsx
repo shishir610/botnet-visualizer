@@ -11,7 +11,6 @@ const IRCWindow = ({
   mainContent,
   setMainContent,
   setBotBinaryCreated,
-  botBinaryCreated,
   serverFiles,
   setServerFiles,
   handleScanBots
@@ -36,7 +35,12 @@ const IRCWindow = ({
         let runningCommands = create();
         for (let i = 0; i < runningCommands.length; i++) {
           setTimeout(() => {
-            setMainContent(runningCommands.slice(0, i + 1));
+            setMainContent(prevState => {
+              return[
+                ...prevState,
+                runningCommands[i]
+              ]
+            })
           }, 1000 * i);
         }
         setBotBinaryCreated(true);
@@ -79,14 +83,14 @@ const IRCWindow = ({
         </a>
       </Row>
       <Row className="ircMainContent" noGutters>
-        <Col style={{ display: "flex", padding: "0" }}>
+        <Col style={{ display: "flex", padding: "0" }} className="mainContentDiv">
           <MainIRCCOntent mainContent={mainContent} />
           <CommandOptions
             input={input}
             handleCommandClick={handleCommandClick}
           />
         </Col>
-        <Col xs={2} id="candidateList">
+        <Col xs={2} className="mainContentDiv">
           <div style={{ color: "tomato" }}>
             <span style={{ color: "white", fontSize: "13px" }}>@ </span>
             <span style={{ fontSize: "15px" }}>b0TmASteR</span>

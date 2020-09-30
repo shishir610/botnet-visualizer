@@ -5,18 +5,20 @@ import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
 import NavigationBar from './components/Navigation/NavigationBar'
 import Candidates from "./Data/Candidates.json";
 import Views from "./Data/Views.json"
+import { ircData } from './Functions/ScanBots'
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(true)
-  const [isServer, setIsServer] = useState(false)
+  const [networkView, setNetworkView] = useState(false)
+  const [isServer, setIsServer] = useState(true)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
   const [routerVuls, setRouterVuls] = useState({});
   const [malwareToggleShow, setMalwareToggleShow] = useState(false);
   const [mainContent, setMainContent] = useState([]);
   const [botBinaryCreated, setBotBinaryCreated] = useState(false);
-  const [serverFiles, setServerFiles] = useState(Views["server"])
+  const [serverFiles, setServerFiles] = useState(Views["server"]);
+  const [packets, setPackets] = useState(Array(45).fill(0))
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
@@ -45,7 +47,17 @@ function App() {
   };
 
   const handleScanBots = () => {
-
+    let runningCommands = ircData();
+    for (let i = 0; i < runningCommands.length; i++) {
+      setTimeout(() => {
+        setMainContent(prevState => {
+          return [
+            ...prevState,
+            runningCommands[i]
+          ]
+        })
+      }, 1000 * i);
+    }
   }
 
   const generateRandomRouters = () => {
