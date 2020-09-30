@@ -3,270 +3,315 @@
     "id": 1,
     "name": "Lucias",
     "color": "#ffefd5",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 10
   },
   {
     "id": 2,
     "name": "Tally",
     "color": "#4166f5",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 10
   },
   {
     "id": 3,
     "name": "Lilias",
     "color": "#fffafa",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 10
   },
   {
     "id": 4,
     "name": "Hugibert",
     "color": "#fe59c2",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 10
   },
   {
     "id": 5,
     "name": "Helene",
     "color": "#ff4500",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 10
   },
   {
     "id": 6,
     "name": "Husein",
     "color": "#fffafa",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 10
   },
   {
     "id": 7,
     "name": "Eal",
     "color": "#87ceeb",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 10
   },
   {
     "id": 8,
     "name": "Hallie",
     "color": "#e0115f",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 9,
     "name": "Cosetta",
     "color": "#c71585",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 10,
     "name": "Bertha",
     "color": "#ff5a36",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 11,
     "name": "Merna",
     "color": "#d2691e",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 12,
     "name": "Trey",
     "color": "#c71585",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 13,
     "name": "Abraham",
     "color": "#39ff14",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 2
   },
   {
     "id": 14,
     "name": "Ches",
     "color": "#ff2800",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 2
   },
   {
     "id": 15,
     "name": "Emilie",
     "color": "#ff5a36",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 3
   },
   {
     "id": 16,
     "name": "Tull",
     "color": "#e97451",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 3
   },
   {
     "id": 17,
     "name": "Alisha",
     "color": "#779ecb",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 3
   },
   {
     "id": 18,
     "name": "Derrik",
     "color": "#ffefd5",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 9
   },
   {
     "id": 19,
     "name": "Katrina",
     "color": "#c04000",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 9
   },
   {
     "id": 20,
     "name": "Willy",
     "color": "#c04000",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 9
   },
   {
     "id": 21,
     "name": "Levey",
     "color": "#ff003f",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 1
   },
   {
     "id": 22,
     "name": "Christin",
     "color": "#c71585",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 1
   },
   {
     "id": 23,
     "name": "Caryl",
     "color": "#ffcba4",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 1
   },
   {
     "id": 24,
     "name": "Christabella",
     "color": "#b2beb5",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 1
   },
   {
     "id": 25,
     "name": "Ansell",
     "color": "#c71585",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 8
   },
   {
     "id": 26,
     "name": "Ronda",
     "color": "#a1caf1",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 8
   },
   {
     "id": 27,
     "name": "Rubin",
     "color": "#b2ec5d",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 8
   },
   {
     "id": 28,
     "name": "Trina",
     "color": "#daa520",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 8
   },
   {
     "id": 29,
     "name": "Cory",
     "color": "#d2691e",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 8
   },
   {
     "id": 30,
     "name": "Cathleen",
     "color": "#a1caf1",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 8
   },
   {
     "id": 31,
     "name": "Bambie",
     "color": "#fc0fc0",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 4
   },
   {
     "id": 32,
     "name": "Maisie",
     "color": "#c19a6b",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 4
   },
   {
     "id": 33,
     "name": "Rinaldo",
     "color": "#a99a86",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 7
   },
   {
     "id": 34,
     "name": "Laurena",
     "color": "#ffd1dc",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 7
   },
   {
     "id": 35,
     "name": "Jocelyn",
     "color": "#d3d3d3",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 7
   },
   {
     "id": 36,
     "name": "Skyler",
     "color": "#d1e231",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 6
   },
   {
     "id": 37,
     "name": "Cariotta",
     "color": "#ff2052",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 6
   },
   {
     "id": 38,
     "name": "Anson",
     "color": "#98777b",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 6
   },
   {
     "id": 39,
     "name": "Jordan",
     "color": "#4166f5",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 6
   },
   {
     "id": 40,
     "name": "Tracie",
     "color": "#1e90ff",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 6
   },
   {
     "id": 41,
     "name": "Jillana",
     "color": "#c19a6b",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 6
   },
   {
     "id": 42,
     "name": "Alfred",
     "color": "#d3003f",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 6
   },
   {
     "id": 43,
     "name": "Franchot",
     "color": "#4997d0",
-    "activeAV" :true
+    "activeAV" :true,
+    "Router": 5
   },
   {
     "id": 44,
     "name": "Jacki",
     "color": "#addfad",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 5
   },
   {
     "id": 45,
     "name": "Kelly",
     "color": "#f64a8a",
-    "activeAV" :false
+    "activeAV" :false,
+    "Router": 5
   }
 ]

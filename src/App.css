@@ -17,9 +17,10 @@ body {
     padding: 10px 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: #f0f0f0;
+    background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.371);
     font-family: Poppins;
+    padding: 10px;
 }
 
 .info:hover .extra-info {

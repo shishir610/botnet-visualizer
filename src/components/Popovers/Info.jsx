@@ -7,13 +7,24 @@ export default function Info({ content, virusWindow }) {
     justifyContent: "flex-end",
     marginRight: "10px",
     marginTop: virusWindow ? "-50px" : "",
-    marginLeft: virusWindow ? "5px" : ""
+    marginLeft: virusWindow ? "5px" : "",
   };
   return (
     <Col xs={12} style={style}>
       <div class="info" style={style}>
         <i class="icon-info-sign"></i>
-        <span class="extra-info">{content}</span>
+        <span
+          class="extra-info"
+          style={
+            virusWindow === undefined
+              ? {
+                  bottom: "-10px",
+                }
+              : {}
+          }
+        >
+          {content}
+        </span>
       </div>
     </Col>
   );

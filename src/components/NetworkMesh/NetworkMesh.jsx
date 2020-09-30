@@ -6,6 +6,7 @@ import "./Network.css";
 import Candidates from "../../Data/Candidates.json";
 import DeviceDetails from "../Popovers/DeviceDetails";
 import DeviceHover from "../Popovers/DeviceHover";
+import ToastNotif from "../Popovers/ToastNotif";
 
 const TOTALDEVICES = {
   PC: 45,
@@ -22,7 +23,7 @@ function NetworkMesh({
   users,
   routerVuls,
   userVuls,
-  setMalwareToggle
+  setMalwareToggle,
 }) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
@@ -125,17 +126,10 @@ function NetworkMesh({
             </TransformComponent>
           </TransformWrapper>
         </Row>
-        <Toast
-          style={{
-            position: "absolute",
-            top: "15px",
-            right: "15px",
-            width: "200px",
-          }}
+        <ToastNotif
           show={popoverShow}
-        >
-          <Toast.Body>Close the overlay before zooming and panning.</Toast.Body>
-        </Toast>
+          content="Close the overlay before zooming and panning."
+        />
       </Container>
       {popoverShow && (
         <DeviceDetails
