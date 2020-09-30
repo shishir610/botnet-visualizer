@@ -24,6 +24,7 @@ function NetworkMesh({
   routerVuls,
   userVuls,
   setMalwareToggle,
+  packets
 }) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
@@ -122,6 +123,7 @@ function NetworkMesh({
                 handleDeviceLeave={handleDeviceLeave}
                 routerVuls={routerVuls}
                 userVuls={userVuls}
+                packets={packets}
               />
             </TransformComponent>
           </TransformWrapper>

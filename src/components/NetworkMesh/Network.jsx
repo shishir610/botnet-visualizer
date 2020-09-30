@@ -1,9 +1,9 @@
 import * as React from "react";
+import PathDirections from '../../Data/PathDirections.json'
 
 const yellow = "#ffa45c";
 const rightDirection = "0;1";
 const reverseDirection = "1;0";
-const run = true;
 
 const Network = ({
   addToRefs,
@@ -13,7 +13,10 @@ const Network = ({
   handleDeviceLeave,
   routerVuls,
   userVuls,
+  packets,
 }) => {
+  const run = packets;
+  console.log(run)
   return (
     <React.Fragment>
       <svg
@@ -35,7 +38,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 5)}
           onMouseEnter={() => handleDeviceEnter("Switch", 5)}
           onMouseLeave={handleDeviceLeave}
-          style={{cursor:"default"}}
+          style={{ cursor: "default" }}
         >
           <g id="prefix__Switch5" ref={addToRefs} className="Switch">
             <path
@@ -61,7 +64,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 4)}
           onMouseEnter={() => handleDeviceEnter("Switch", 4)}
           onMouseLeave={handleDeviceLeave}
-          style={{cursor:"default"}}
+          style={{ cursor: "default" }}
         >
           <g id="prefix__Switch4" ref={addToRefs} className="Switch">
             <path
@@ -87,7 +90,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 3)}
           onMouseEnter={() => handleDeviceEnter("Switch", 3)}
           onMouseLeave={handleDeviceLeave}
-          style={{cursor:"default"}}
+          style={{ cursor: "default" }}
         >
           <g id="prefix__Switch3" ref={addToRefs} className="Switch">
             <path
@@ -113,7 +116,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 2)}
           onMouseEnter={() => handleDeviceEnter("Switch", 2)}
           onMouseLeave={handleDeviceLeave}
-          style={{cursor:"default"}}
+          style={{ cursor: "default" }}
         >
           <g id="prefix__Switch2" ref={addToRefs} className="Switch">
             <path
@@ -139,7 +142,7 @@ const Network = ({
           onClick={() => handleDeviceClick("Switch", 1)}
           onMouseEnter={() => handleDeviceEnter("Switch", 1)}
           onMouseLeave={handleDeviceLeave}
-          style={{cursor:"default"}}
+          style={{ cursor: "default" }}
         >
           <g id="prefix__Switch1" ref={addToRefs} className="Switch">
             <path
@@ -3958,11 +3961,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[59] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[0] ? "M179.72 210.44l66.12 34.55" : ""}
+              path={run[59] ? "M179.72 210.44l66.12 34.55" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[60] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x36_0" />
@@ -3976,11 +3979,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[58] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[1] ? "M185.73 295.58l60.29-36.13" : ""}
+              path={run[58] ? "M185.73 295.58l60.29-36.13" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[59] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_9" />
@@ -3994,11 +3997,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[57] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[2] ? "M260.82 269.6l2.7 42.29" : ""}
+              path={run[57] ? "M260.82 269.6l2.7 42.29" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[58] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_8" />
@@ -4012,11 +4015,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[56] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[3] ? "M278.41 258.82l56.33 29.84" : ""}
+              path={run[56] ? "M278.41 258.82l56.33 29.84" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[57] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_7" />
@@ -4030,11 +4033,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[55] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[4] ? "M278.41 246.18l86.9-36.29" : ""}
+              path={run[55] ? "M278.41 246.18l86.9-36.29" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[56] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_6" />
@@ -4048,13 +4051,15 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[54] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[5] ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12" : ""
+                run[54]
+                  ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
+                  : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[55] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_5" />
@@ -4068,11 +4073,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[53] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[6] ? "M162.57 109.22l13.73 83.74" : ""}
+              path={run[53] ? "M162.57 109.22l13.73 83.74" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[54] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_4" />
@@ -4086,11 +4091,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[52] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[7] ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""}
+              path={
+                run[52] ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[53] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_3" />
@@ -4104,11 +4111,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[51] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[8] ? "M89.35 295.89l70.72-.11" : ""}
+              path={run[51] ? "M89.35 295.89l70.72-.11" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[52] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_2" />
@@ -4122,11 +4129,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[50] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[9] ? "M173.78 305.57l-24 56.26" : ""}
+              path={run[50] ? "M173.78 305.57l-24 56.26" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[51] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_1" />
@@ -4140,11 +4147,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[49] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[10] ? "M261.38 329.53l2.14 46.43" : ""}
+              path={run[49] ? "M261.38 329.53l2.14 46.43" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[50] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_0" />
@@ -4158,11 +4165,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[48] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[11] ? "M348.86 305.57l26.02 36.95" : ""}
+              path={run[48] ? "M348.86 305.57l26.02 36.95" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[49] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_9" />
@@ -4176,11 +4183,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[47] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[12] ? "M361.87 296.89h33.2" : ""}
+              path={run[47] ? "M361.87 296.89h33.2" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[48] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_8" />
@@ -4194,11 +4201,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[46] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[13] ? "M429.61 140.89l-44.36 52.95" : ""}
+              path={run[46] ? "M429.61 140.89l-44.36 52.95" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[47] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_7" />
@@ -4212,11 +4219,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[45] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[14] ? "M348.07 105.33l24.71 85.9" : ""}
+              path={run[45] ? "M348.07 105.33l24.71 85.9" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[46] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_6" />
@@ -4230,11 +4237,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[44] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[15] ? "M382.07 361.83l.5 17.51" : ""}
+              path={run[44] ? "M382.07 361.83l.5 17.51" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[45] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_5" />
@@ -4248,11 +4255,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[43] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[16] ? "M388.38 359.71l22.06 16.25" : ""}
+              path={run[43] ? "M388.38 359.71l22.06 16.25" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[44] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_4" />
@@ -4266,11 +4273,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[42] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[17] ? "M395.07 353.32l26.16.75" : ""}
+              path={run[42] ? "M395.07 353.32l26.16.75" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[43] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_3" />
@@ -4284,11 +4291,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[41] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[18] ? "M237.67 366.98l17.18 14.75" : ""}
+              path={run[41] ? "M237.67 366.98l17.18 14.75" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[42] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_2" />
@@ -4302,11 +4309,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[40] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[19] ? "M226.54 388.33l25.4.81" : ""}
+              path={run[40] ? "M226.54 388.33l25.4.81" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[41] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_1" />
@@ -4320,11 +4327,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[39] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[20] ? "M252.98 393.96l-20.37 18.03" : ""}
+              path={run[39] ? "M252.98 393.96l-20.37 18.03" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[40] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_0" />
@@ -4338,11 +4345,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[38] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[21] ? "M261.81 404.65v17.16" : ""}
+              path={run[38] ? "M261.81 404.65v17.16" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[39] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_9" />
@@ -4356,13 +4363,15 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[37] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[22] ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
+                run[37]
+                  ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
+                  : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[38] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_8" />
@@ -4376,11 +4385,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[36] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[23] ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""}
+              path={
+                run[36] ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[37] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_7" />
@@ -4394,13 +4405,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[35] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[24] ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[35] ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[36] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_6" />
@@ -4414,11 +4425,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[34] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[25] ? "M109.37 387.56l20.98-9.67" : ""}
+              path={run[34] ? "M109.37 387.56l20.98-9.67" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[35] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_5" />
@@ -4432,11 +4443,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[33] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[26] ? "M136.08 378.95l-4.68 13.57" : ""}
+              path={run[33] ? "M136.08 378.95l-4.68 13.57" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[34] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_4" />
@@ -4450,11 +4461,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[32] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[27] ? "M130.92 371.08l-18.5-3.98" : ""}
+              path={run[32] ? "M130.92 371.08l-18.5-3.98" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[33] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_3" />
@@ -4468,11 +4479,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[31] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[28] ? "M414.87 305.57l17.18 6.32" : ""}
+              path={run[31] ? "M414.87 305.57l17.18 6.32" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[32] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_2" />
@@ -4486,11 +4497,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[30] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[29] ? "M420.18 291.89l12.42-11.06" : ""}
+              path={run[30] ? "M420.18 291.89l12.42-11.06" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[31] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_1" />
@@ -4504,11 +4515,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[29] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[30] ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
+              path={
+                run[29] ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[30] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_0" />
@@ -4522,11 +4535,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[28] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[31] ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
+              path={run[28] ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[29] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_9" />
@@ -4540,11 +4553,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[27] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[32] ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
+              path={
+                run[27] ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[28] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_8" />
@@ -4558,11 +4573,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[26] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[33] ? "M78.03 305.57l9.16 14.05" : ""}
+              path={run[26] ? "M78.03 305.57l9.16 14.05" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[27] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_7" />
@@ -4576,13 +4591,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[25] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[34] ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[25] ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[26] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_6" />
@@ -4596,11 +4611,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[24] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[35] ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
+              path={run[24] ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[25] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_5" />
@@ -4614,11 +4629,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[23] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[36] ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
+              path={run[23] ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[24] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_4" />
@@ -4632,11 +4647,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[22] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[37] ? "M262.06 179.38l16.35 6.93" : ""}
+              path={run[22] ? "M262.06 179.38l16.35 6.93" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[23] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_3" />
@@ -4650,11 +4665,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[21] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[38] ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""}
+              path={
+                run[21] ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[22] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_2" />
@@ -4668,11 +4685,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[20] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[39] ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""}
+              path={
+                run[20] ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[21] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_1" />
@@ -4686,11 +4705,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[19] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[40] ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
+              path={run[19] ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[20] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_0" />
@@ -4704,11 +4723,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[18] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[41] ? "M97.15 193.24l-9.7 10.81" : ""}
+              path={run[18] ? "M97.15 193.24l-9.7 10.81" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[19] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_9" />
@@ -4722,11 +4741,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[17] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[42] ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""}
+              path={
+                run[17] ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[18] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_8" />
@@ -4740,11 +4761,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[16] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[43] ? "M438 139.19l5.98 16.91" : ""}
+              path={run[16] ? "M438 139.19l5.98 16.91" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[17] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_7" />
@@ -4758,11 +4779,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[15] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[44] ? "M448.88 135.63l11.95 5.26" : ""}
+              path={run[15] ? "M448.88 135.63l11.95 5.26" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[16] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_6" />
@@ -4776,11 +4797,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[14] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[45] ? "M448.88 122.76l15.66-10.12" : ""}
+              path={run[14] ? "M448.88 122.76l15.66-10.12" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[15] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_5" />
@@ -4794,11 +4815,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[13] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[46] ? "M328.76 72.54l8.71 9.87" : ""}
+              path={run[13] ? "M328.76 72.54l8.71 9.87" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[14] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_4" />
@@ -4812,11 +4833,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[12] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[47] ? "M317.36 89.56l18.41 2.61" : ""}
+              path={run[12] ? "M317.36 89.56l18.41 2.61" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[13] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_3" />
@@ -4830,11 +4851,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[11] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[48] ? "M338.7 99.44l-8.38 10.96" : ""}
+              path={run[11] ? "M338.7 99.44l-8.38 10.96" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[12] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_2" />
@@ -4848,11 +4869,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[10] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[49] ? "M353.81 98.68l9.84 11.72" : ""}
+              path={run[10] ? "M353.81 98.68l9.84 11.72" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[11] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_1" />
@@ -4866,11 +4887,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[9] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[50] ? "M370.78 91.55l-14.25.23" : ""}
+              path={run[9] ? "M370.78 91.55l-14.25.23" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[10] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_0" />
@@ -4884,11 +4905,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[8] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[51] ? "M366.43 75l-13.81 7.41" : ""}
+              path={run[8] ? "M366.43 75l-13.81 7.41" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[9] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x39_" />
@@ -4902,11 +4923,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[7] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[52] ? "M346.49 64.21l-.63 16.24" : ""}
+              path={run[7] ? "M346.49 64.21l-.63 16.24" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[8] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x38_" />
@@ -4920,11 +4941,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[6] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[53] ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""}
+              path={
+                run[6] ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[7] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x37_" />
@@ -4938,11 +4961,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[5] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[54] ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
+              path={run[5] ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[6] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x36_" />
@@ -4956,11 +4979,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[4] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[55] ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""}
+              path={
+                run[4] ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[5] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_" />
@@ -4974,13 +4999,15 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[3] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[56] ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02" : ""
+                run[3]
+                  ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
+                  : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[4] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x34_" />
@@ -4994,11 +5021,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[2] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[57] ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""}
+              path={
+                run[2] ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""
+              }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[3] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x33_" />
@@ -5012,13 +5041,13 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[1] ? "1s" : ""}
               repeatCount="indefinite"
               path={
-                !run[58] ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
+                run[1] ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
               }
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[2] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x32_" />
@@ -5032,11 +5061,11 @@ const Network = ({
           />
           <circle r="2" fill={yellow}>
             <animateMotion
-              dur={run ? "1s" : ""}
+              dur={run[0] ? "1s" : ""}
               repeatCount="indefinite"
-              path={!run[59] ? "M157.21 59.06L161.8 78" : ""}
+              path={run[0] ? "M157.21 59.06L161.8 78" : ""}
               calcMode="linear"
-              keyPoints={rightDirection}
+              keyPoints={PathDirections[1] ? rightDirection : reverseDirection}
               keyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x31_" />

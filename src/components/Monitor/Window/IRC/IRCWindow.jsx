@@ -117,6 +117,7 @@ const IRCWindow = ({
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyClick}
           value={input}
+          autoComplete="off"
         />
         <Button
           variant="contained"

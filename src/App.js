@@ -6,10 +6,15 @@ import NavigationBar from './components/Navigation/NavigationBar'
 import Candidates from "./Data/Candidates.json";
 import Views from "./Data/Views.json"
 import { ircData } from './Functions/ScanBots'
+import SwitchServerLink from './Data/SwitchServerLink.json'
+import RouterSwitchLink from './Data/RouterSwitchLink.json'
 import './App.css'
 
+const SS = Array.from(Object.values(SwitchServerLink))
+const RS = Array.from(Object.values(RouterSwitchLink)).map(ele => { return ele['Path'] })
+
 function App() {
-  const [networkView, setNetworkView] = useState(false)
+  const [networkView, setNetworkView] = useState(true)
   const [isServer, setIsServer] = useState(true)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
@@ -18,7 +23,7 @@ function App() {
   const [mainContent, setMainContent] = useState([]);
   const [botBinaryCreated, setBotBinaryCreated] = useState(false);
   const [serverFiles, setServerFiles] = useState(Views["server"]);
-  const [packets, setPackets] = useState(Array(45).fill(0))
+  const [packets, setPackets] = useState(Array(60).fill(0))
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
@@ -58,7 +63,31 @@ function App() {
         })
       }, 1000 * i);
     }
+    setNetworkView(true)
+    for (let i = 0; i < 10; i++) {
+      let packet
+      if (i % 3 === 0) {
+        packet = packets.map((packet, ind) => {
+          return SS.includes(ind + 1) ? 1 : 0
+        })
+      }
+      else if ((i - 1) % 3 === 0) {
+        packet = packets.map((_, ind) => {
+          return RS.includes(ind + 1) ? 1 : 0
+        })
+      }
+      else {
+        packet = packets.map((_, ind) => {
+          return !RS.includes(ind + 1) && !SS.includes(ind + 1) ? 1 : 0
+        })
+      }
+      setTimeout(() => {
+        setPackets(packet)
+      }, 1000)
+    }
   }
+
+  console.log(packets)
 
   const generateRandomRouters = () => {
     for (let i = 0; i < 10; i++) {
@@ -87,6 +116,7 @@ function App() {
             routerVuls={routerVuls}
             malwareToggleShow={malwareToggleShow}
             setMalwareToggle={setMalwareToggle}
+            packets={packets}
           />
           :
           <Monitor
