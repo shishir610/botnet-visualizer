@@ -10,13 +10,9 @@ import SwitchServerLink from './Data/SwitchServerLink.json'
 import RouterSwitchLink from './Data/RouterSwitchLink.json'
 import './App.css'
 
-const SS = Array.from(Object.values(SwitchServerLink))
-const RS = Array.from(Object.values(RouterSwitchLink)).map(ele => { return ele['Path'] })
-let interval
-
 function App() {
   const [networkView, setNetworkView] = useState(true)
-  const [isServer, setIsServer] = useState(true)
+  const [isServer, setIsServer] = useState(false)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
   const [routerVuls, setRouterVuls] = useState({});
@@ -56,41 +52,18 @@ function App() {
 
   const handleScanBots = () => {
     let runningCommands = ircData();
-    // for (let i = 0; i < runningCommands.length; i++) {
-    //   setTimeout(() => {
-    //     setMainContent(prevState => {
-    //       return [
-    //         ...prevState,
-    //         runningCommands[i]
-    //       ]
-    //     })
-    //   }, 1000 * i);
-    // }
-    // setNetworkView(true)
-    // interval = setInterval(() => {
-    //   handleScanBotsAnim()
-    // }, 1000);
+    for (let i = 0; i < runningCommands.length; i++) {
+      setTimeout(() => {
+        setMainContent(prevState => {
+          return [
+            ...prevState,
+            runningCommands[i]
+          ]
+        })
+      }, 1000 * i);
+    }
+    setScanningBots(true)
   }
-
-  // const handleScanBotsAnim = () => {
-  //   if (scanningBotsCounter.current % 3 === 0) {
-  //     setPackets(packets.map((_, ind) => {
-  //       return SS.includes(ind + 1) ? 1 : 0
-  //     }))
-  //   }
-  //   else if ((scanningBotsCounter.current - 1) % 3 === 0) {
-  //     setPackets(packets.map((_, ind) => {
-  //       return RS.includes(ind + 1) ? 1 : 0
-  //     }))
-  //   }
-  //   else if ((scanningBotsCounter.current - 2) % 3 === 0) {
-  //     setPackets(packets.map((_, ind) => {
-  //       return !RS.includes(ind + 1) && !SS.includes(ind + 1) ? 1 : 0
-  //     }))
-  //   }
-  //   scanningBotsCounter.current += 1
-  // }
-  // console.log(packets)
 
   const generateRandomRouters = () => {
     for (let i = 0; i < 10; i++) {
@@ -104,7 +77,6 @@ function App() {
   useEffect(() => {
     generateRandomUsers();
     generateRandomRouters();
-    handleScanBots()
   }, []);
 
   return (

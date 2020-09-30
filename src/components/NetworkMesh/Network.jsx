@@ -28,22 +28,25 @@ const Network = ({
   const [view, setView] = useState(1);
 
   useEffect(() => {
-    let interval = setInterval(() => {
-      if (counter.current % 3 === 0) {
-        setView(1);
-      } else if ((counter.current - 1) % 3 === 0) {
-        setView(2);
-      } else {
-        setView(3);
-      }
-      counter.current += 1;
-    }, 2100);
+    let interval;
+    if (scanningBots) {
+      interval = setInterval(() => {
+        if (counter.current % 3 === 0) {
+          setView(1);
+        } else if ((counter.current - 1) % 3 === 0) {
+          setView(2);
+        } else {
+          setView(3);
+        }
+        counter.current += 1;
+      }, 2100);
+    }
     return () => {
       clearInterval(interval);
     };
   }, []);
 
-  console.log(view)
+  console.log(view);
 
   return (
     <React.Fragment>
@@ -3987,7 +3990,10 @@ const Network = ({
             className="prefix__st20"
             d="M179.72 210.44l66.12 34.55"
           />
-          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 1 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4005,7 +4011,10 @@ const Network = ({
             className="prefix__st20"
             d="M185.73 295.58l60.29-36.13"
           />
-          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 1 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4023,7 +4032,10 @@ const Network = ({
             className="prefix__st20"
             d="M260.82 269.6l2.7 42.29"
           />
-          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 1 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4041,7 +4053,10 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 258.82l56.33 29.84"
           />
-          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 1 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4059,7 +4074,10 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 246.18l86.9-36.29"
           />
-          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 1 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4077,7 +4095,10 @@ const Network = ({
             className="prefix__st20"
             d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4095,7 +4116,10 @@ const Network = ({
             className="prefix__st20"
             d="M162.57 109.22l13.73 83.74"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4113,12 +4137,16 @@ const Network = ({
             className="prefix__st20"
             d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
               path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
-              calcMode="linear"eyTimes="0;1"
+              calcMode="linear"
+              eyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_3" />
           </circle>
@@ -4129,7 +4157,10 @@ const Network = ({
             className="prefix__st20"
             d="M89.35 295.89l70.72-.11"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4147,7 +4178,10 @@ const Network = ({
             className="prefix__st20"
             d="M173.78 305.57l-24 56.26"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4165,7 +4199,10 @@ const Network = ({
             className="prefix__st20"
             d="M261.38 329.53l2.14 46.43"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4183,7 +4220,10 @@ const Network = ({
             className="prefix__st20"
             d="M348.86 305.57l26.02 36.95"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4201,7 +4241,10 @@ const Network = ({
             className="prefix__st20"
             d="M361.87 296.89h33.2"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4219,7 +4262,10 @@ const Network = ({
             className="prefix__st20"
             d="M429.61 140.89l-44.36 52.95"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4237,7 +4283,10 @@ const Network = ({
             className="prefix__st20"
             d="M348.07 105.33l24.71 85.9"
           />
-          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 2 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4255,7 +4304,10 @@ const Network = ({
             className="prefix__st20"
             d="M382.07 361.83l.5 17.51"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4273,7 +4325,10 @@ const Network = ({
             className="prefix__st20"
             d="M388.38 359.71l22.06 16.25"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4291,7 +4346,10 @@ const Network = ({
             className="prefix__st20"
             d="M395.07 353.32l26.16.75"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4309,7 +4367,10 @@ const Network = ({
             className="prefix__st20"
             d="M237.67 366.98l17.18 14.75"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4327,7 +4388,10 @@ const Network = ({
             className="prefix__st20"
             d="M226.54 388.33l25.4.81"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4345,7 +4409,10 @@ const Network = ({
             className="prefix__st20"
             d="M252.98 393.96l-20.37 18.03"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4363,7 +4430,10 @@ const Network = ({
             className="prefix__st20"
             d="M261.81 404.65v17.16"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4381,7 +4451,10 @@ const Network = ({
             className="prefix__st20"
             d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4399,7 +4472,10 @@ const Network = ({
             className="prefix__st20"
             d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4417,7 +4493,10 @@ const Network = ({
             className="prefix__st20"
             d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4435,7 +4514,10 @@ const Network = ({
             className="prefix__st20"
             d="M109.37 387.56l20.98-9.67"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4453,7 +4535,10 @@ const Network = ({
             className="prefix__st20"
             d="M136.08 378.95l-4.68 13.57"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4471,7 +4556,10 @@ const Network = ({
             className="prefix__st20"
             d="M130.92 371.08l-18.5-3.98"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4489,7 +4577,10 @@ const Network = ({
             className="prefix__st20"
             d="M414.87 305.57l17.18 6.32"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4507,7 +4598,10 @@ const Network = ({
             className="prefix__st20"
             d="M420.18 291.89l12.42-11.06"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4525,7 +4619,10 @@ const Network = ({
             className="prefix__st20"
             d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4543,7 +4640,10 @@ const Network = ({
             className="prefix__st20"
             d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4561,7 +4661,10 @@ const Network = ({
             className="prefix__st20"
             d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4579,7 +4682,10 @@ const Network = ({
             className="prefix__st20"
             d="M78.03 305.57l9.16 14.05"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4597,7 +4703,10 @@ const Network = ({
             className="prefix__st20"
             d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4615,7 +4724,10 @@ const Network = ({
             className="prefix__st20"
             d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4633,7 +4745,10 @@ const Network = ({
             className="prefix__st20"
             d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4651,7 +4766,10 @@ const Network = ({
             className="prefix__st20"
             d="M262.06 179.38l16.35 6.93"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4669,7 +4787,10 @@ const Network = ({
             className="prefix__st20"
             d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4687,7 +4808,10 @@ const Network = ({
             className="prefix__st20"
             d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4705,7 +4829,10 @@ const Network = ({
             className="prefix__st20"
             d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4723,7 +4850,10 @@ const Network = ({
             className="prefix__st20"
             d="M97.15 193.24l-9.7 10.81"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4741,7 +4871,10 @@ const Network = ({
             className="prefix__st20"
             d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4759,7 +4892,10 @@ const Network = ({
             className="prefix__st20"
             d="M438 139.19l5.98 16.91"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4777,7 +4913,10 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 135.63l11.95 5.26"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4795,7 +4934,10 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 122.76l15.66-10.12"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4813,7 +4955,10 @@ const Network = ({
             className="prefix__st20"
             d="M328.76 72.54l8.71 9.87"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4831,7 +4976,10 @@ const Network = ({
             className="prefix__st20"
             d="M317.36 89.56l18.41 2.61"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4849,7 +4997,10 @@ const Network = ({
             className="prefix__st20"
             d="M338.7 99.44l-8.38 10.96"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4867,7 +5018,10 @@ const Network = ({
             className="prefix__st20"
             d="M353.81 98.68l9.84 11.72"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4885,7 +5039,10 @@ const Network = ({
             className="prefix__st20"
             d="M370.78 91.55l-14.25.23"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4903,7 +5060,10 @@ const Network = ({
             className="prefix__st20"
             d="M366.43 75l-13.81 7.41"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4921,7 +5081,10 @@ const Network = ({
             className="prefix__st20"
             d="M346.49 64.21l-.63 16.24"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4939,7 +5102,10 @@ const Network = ({
             className="prefix__st20"
             d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4957,7 +5123,10 @@ const Network = ({
             className="prefix__st20"
             d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4975,7 +5144,10 @@ const Network = ({
             className="prefix__st20"
             d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -4993,7 +5165,10 @@ const Network = ({
             className="prefix__st20"
             d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -5011,7 +5186,10 @@ const Network = ({
             className="prefix__st20"
             d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
@@ -5029,10 +5207,12 @@ const Network = ({
             className="prefix__st20"
             d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
-              
               th="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
               calcMode="linear"
               keyPoints={PathDirections[2] ? rightDirection : reverseDirection}
@@ -5047,7 +5227,10 @@ const Network = ({
             className="prefix__st20"
             d="M157.21 59.06L161.8 78"
           />
-          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
+          <circle
+            r="2"
+            fill={view === 3 && scanningBots ? yellow : "transparent"}
+          >
             <animateMotion
               dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"

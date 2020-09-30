@@ -16,6 +16,14 @@
     ["chat","IRC"],
     ["undo", "Show Network"]
   ],
+  "bot binary" : [
+    ["folder","Debug"],
+    ["cpp","advscan.cpp"],
+    ["cpp","autoscan.cpp"],
+    ["cpp","avirus.cpp"],
+    ["cpp","cdkeys.cpp"],
+    ["cpp","ddos.cpp"]
+  ],
   "mail": [],
   "empty": []
 }

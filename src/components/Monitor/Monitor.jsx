@@ -16,7 +16,7 @@ const Monitor = ({
   setBotBinaryCreated,
   serverFiles,
   setServerFiles,
-  handleScanBots
+  handleScanBots,
 }) => {
   const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
@@ -26,8 +26,6 @@ const Monitor = ({
 
   useEffect(() => {}, []);
 
-  console.log(mainContent)
-
   const setVirusClick = (name) => {
     setVirus(name);
     setVirusWindow(true);
@@ -35,8 +33,11 @@ const Monitor = ({
 
   const setDifferentView = (name) => {
     if (name !== "irc") {
-      setView(name);
-      setWindowShow(true);
+      if (name !== "Debug" && name.slice(name.length - 3) !== "cpp") {
+        setView(name);
+        setWindowShow(true);
+        setShowIRCWindow(false);
+      }
     } else {
       setShowIRCWindow(true);
     }

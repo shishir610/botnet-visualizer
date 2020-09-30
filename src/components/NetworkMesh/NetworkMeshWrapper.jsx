@@ -11,17 +11,6 @@ const NetworkMeshWrapper = ({
   packets,
   scanningBots
 }) => {
-  const update = () => {
-    //THIS IS WHERE THE SIMULATION RUNS
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => update(), 1000);
-    return () => {
-      clearInterval(interval);
-    };
-  });
-
   return (
     <NetworkMesh
       setNetworkView={setNetworkView}

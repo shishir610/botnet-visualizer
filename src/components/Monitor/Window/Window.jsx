@@ -11,6 +11,7 @@ const Window = ({ folders, name, setView, setVirusClick, handleClose }) => {
         folders={folders}
         setView={setView}
         setVirusClick={setVirusClick}
+        name={name}
       />
     </Container>
   );
