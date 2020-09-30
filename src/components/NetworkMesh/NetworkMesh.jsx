@@ -24,7 +24,8 @@ function NetworkMesh({
   routerVuls,
   userVuls,
   setMalwareToggle,
-  packets
+  packets,
+  scanningBots
 }) {
   //State
   const [popoverShow, setPopoverShow] = useState(false);
@@ -124,6 +125,7 @@ function NetworkMesh({
                 routerVuls={routerVuls}
                 userVuls={userVuls}
                 packets={packets}
+                scanningBots={scanningBots}
               />
             </TransformComponent>
           </TransformWrapper>

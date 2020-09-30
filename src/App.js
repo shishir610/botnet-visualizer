@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Monitor from './components/Monitor/Monitor'
 import NetworkMeshWrapper from './components/NetworkMesh/NetworkMeshWrapper'
@@ -12,6 +12,7 @@ import './App.css'
 
 const SS = Array.from(Object.values(SwitchServerLink))
 const RS = Array.from(Object.values(RouterSwitchLink)).map(ele => { return ele['Path'] })
+let interval
 
 function App() {
   const [networkView, setNetworkView] = useState(true)
@@ -24,6 +25,8 @@ function App() {
   const [botBinaryCreated, setBotBinaryCreated] = useState(false);
   const [serverFiles, setServerFiles] = useState(Views["server"]);
   const [packets, setPackets] = useState(Array(60).fill(0))
+  const [scanningBots, setScanningBots] = useState(false)
+  const scanningBotsCounter = useRef(0)
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
@@ -53,41 +56,41 @@ function App() {
 
   const handleScanBots = () => {
     let runningCommands = ircData();
-    for (let i = 0; i < runningCommands.length; i++) {
-      setTimeout(() => {
-        setMainContent(prevState => {
-          return [
-            ...prevState,
-            runningCommands[i]
-          ]
-        })
-      }, 1000 * i);
-    }
-    setNetworkView(true)
-    for (let i = 0; i < 10; i++) {
-      let packet
-      if (i % 3 === 0) {
-        packet = packets.map((packet, ind) => {
-          return SS.includes(ind + 1) ? 1 : 0
-        })
-      }
-      else if ((i - 1) % 3 === 0) {
-        packet = packets.map((_, ind) => {
-          return RS.includes(ind + 1) ? 1 : 0
-        })
-      }
-      else {
-        packet = packets.map((_, ind) => {
-          return !RS.includes(ind + 1) && !SS.includes(ind + 1) ? 1 : 0
-        })
-      }
-      setTimeout(() => {
-        setPackets(packet)
-      }, 1000)
-    }
+    // for (let i = 0; i < runningCommands.length; i++) {
+    //   setTimeout(() => {
+    //     setMainContent(prevState => {
+    //       return [
+    //         ...prevState,
+    //         runningCommands[i]
+    //       ]
+    //     })
+    //   }, 1000 * i);
+    // }
+    // setNetworkView(true)
+    // interval = setInterval(() => {
+    //   handleScanBotsAnim()
+    // }, 1000);
   }
 
-  console.log(packets)
+  // const handleScanBotsAnim = () => {
+  //   if (scanningBotsCounter.current % 3 === 0) {
+  //     setPackets(packets.map((_, ind) => {
+  //       return SS.includes(ind + 1) ? 1 : 0
+  //     }))
+  //   }
+  //   else if ((scanningBotsCounter.current - 1) % 3 === 0) {
+  //     setPackets(packets.map((_, ind) => {
+  //       return RS.includes(ind + 1) ? 1 : 0
+  //     }))
+  //   }
+  //   else if ((scanningBotsCounter.current - 2) % 3 === 0) {
+  //     setPackets(packets.map((_, ind) => {
+  //       return !RS.includes(ind + 1) && !SS.includes(ind + 1) ? 1 : 0
+  //     }))
+  //   }
+  //   scanningBotsCounter.current += 1
+  // }
+  // console.log(packets)
 
   const generateRandomRouters = () => {
     for (let i = 0; i < 10; i++) {
@@ -101,6 +104,7 @@ function App() {
   useEffect(() => {
     generateRandomUsers();
     generateRandomRouters();
+    handleScanBots()
   }, []);
 
   return (
@@ -117,6 +121,7 @@ function App() {
             malwareToggleShow={malwareToggleShow}
             setMalwareToggle={setMalwareToggle}
             packets={packets}
+            scanningBots={scanningBots}
           />
           :
           <Monitor

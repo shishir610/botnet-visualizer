@@ -6,7 +6,6 @@ export default function MainIRCCOntent({ mainContent }) {
   return (
     <Container style={{ color: "white" }}>
       {mainContent.map((chat, i) => {
-        console.log(RandomColours[i]);
         return (
           <Row>
             <span>[{chat["time"]}]</span>

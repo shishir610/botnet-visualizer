@@ -8,7 +8,8 @@ const NetworkMeshWrapper = ({
   userVuls,
   routerVuls,
   setMalwareToggle,
-  packets
+  packets,
+  scanningBots
 }) => {
   const update = () => {
     //THIS IS WHERE THE SIMULATION RUNS
@@ -30,6 +31,7 @@ const NetworkMeshWrapper = ({
       userVuls={userVuls}
       setMalwareToggle={setMalwareToggle}
       packets={packets}
+      scanningBots={scanningBots}
     />
   );
 };

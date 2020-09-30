@@ -1,9 +1,16 @@
-import * as React from "react";
-import PathDirections from '../../Data/PathDirections.json'
+import React, { useEffect, useRef, useState } from "react";
+import PathDirections from "../../Data/PathDirections.json";
+import SwitchServerLink from "../../Data/SwitchServerLink.json";
+import RouterSwitchLink from "../../Data/RouterSwitchLink.json";
 
 const yellow = "#ffa45c";
 const rightDirection = "0;1";
 const reverseDirection = "1;0";
+
+const SS = Array.from(Object.values(SwitchServerLink));
+const RS = Array.from(Object.values(RouterSwitchLink)).map((ele) => {
+  return ele["Path"];
+});
 
 const Network = ({
   addToRefs,
@@ -14,9 +21,30 @@ const Network = ({
   routerVuls,
   userVuls,
   packets,
+  scanningBots,
 }) => {
-  const run = packets;
-  console.log(run)
+  const [run, setRun] = useState([]);
+  const counter = useRef(0);
+  const [view, setView] = useState(1);
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      if (counter.current % 3 === 0) {
+        setView(1);
+      } else if ((counter.current - 1) % 3 === 0) {
+        setView(2);
+      } else {
+        setView(3);
+      }
+      counter.current += 1;
+    }, 2100);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  console.log(view)
+
   return (
     <React.Fragment>
       <svg
@@ -948,7 +976,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M218.85 390.31s-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M218.85 390.31c0-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -1096,7 +1124,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M261.23 432.91s-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M261.23 432.91c0-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -2428,7 +2456,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M252.89 140.1s-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M252.89 1401c0-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -2502,7 +2530,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M60.76 182.1s-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M60.76 1821c0-.28.02-.47.02c-.19 0-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -3390,7 +3418,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M346.75 58.61s-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M346.75 58.61c0-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -3464,7 +3492,7 @@ const Network = ({
             />
             <path
               className="prefix__st0"
-              d="M125.8 64.3s-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
+              d="M125.8 64..5s-.28.02-.47.02-.47-.02-.47-.02v-1.83h.94v1.83z"
             />
             <path
               className="prefix__st0"
@@ -3959,11 +3987,11 @@ const Network = ({
             className="prefix__st20"
             d="M179.72 210.44l66.12 34.55"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[59] ? "1s" : ""}
+              dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[59] ? "M179.72 210.44l66.12 34.55" : ""}
+              path={view === 1 ? "M179.72 210.44l66.12 34.55" : ""}
               calcMode="linear"
               keyPoints={PathDirections[60] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -3977,11 +4005,11 @@ const Network = ({
             className="prefix__st20"
             d="M185.73 295.58l60.29-36.13"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[58] ? "1s" : ""}
+              dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[58] ? "M185.73 295.58l60.29-36.13" : ""}
+              path={view === 1 ? "M185.73 295.58l60.29-36.13" : ""}
               calcMode="linear"
               keyPoints={PathDirections[59] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -3995,11 +4023,11 @@ const Network = ({
             className="prefix__st20"
             d="M260.82 269.6l2.7 42.29"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[57] ? "1s" : ""}
+              dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[57] ? "M260.82 269.6l2.7 42.29" : ""}
+              path={view === 1 ? "M260.82 269.6l2.7 42.29" : ""}
               calcMode="linear"
               keyPoints={PathDirections[58] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4013,11 +4041,11 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 258.82l56.33 29.84"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[56] ? "1s" : ""}
+              dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[56] ? "M278.41 258.82l56.33 29.84" : ""}
+              path={view === 1 ? "M278.41 258.82l56.33 29.84" : ""}
               calcMode="linear"
               keyPoints={PathDirections[57] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4031,11 +4059,11 @@ const Network = ({
             className="prefix__st20"
             d="M278.41 246.18l86.9-36.29"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 1 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[55] ? "1s" : ""}
+              dur={view === 1 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[55] ? "M278.41 246.18l86.9-36.29" : ""}
+              path={view === 1 ? "M278.41 246.18l86.9-36.29" : ""}
               calcMode="linear"
               keyPoints={PathDirections[56] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4049,15 +4077,11 @@ const Network = ({
             className="prefix__st20"
             d="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[54] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[54]
-                  ? "M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
-                  : ""
-              }
+              path="M191.11 196.56c15.52-6.37 31.04-12.75 46.56-19.12"
               calcMode="linear"
               keyPoints={PathDirections[55] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4071,11 +4095,11 @@ const Network = ({
             className="prefix__st20"
             d="M162.57 109.22l13.73 83.74"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[53] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[53] ? "M162.57 109.22l13.73 83.74" : ""}
+              path="M162.57 109.22l13.73 83.74"
               calcMode="linear"
               keyPoints={PathDirections[54] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4089,16 +4113,12 @@ const Network = ({
             className="prefix__st20"
             d="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[52] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[52] ? "M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3" : ""
-              }
-              calcMode="linear"
-              keyPoints={PathDirections[53] ? rightDirection : reverseDirection}
-              keyTimes="0;1"
+              path="M109.9 186.31c17.83 4.43 35.66 8.87 53.49 13.3"
+              calcMode="linear"eyTimes="0;1"
             />
             <mpath xlinkHref="#prefix___x35_3" />
           </circle>
@@ -4109,11 +4129,11 @@ const Network = ({
             className="prefix__st20"
             d="M89.35 295.89l70.72-.11"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[51] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[51] ? "M89.35 295.89l70.72-.11" : ""}
+              path="M89.35 295.89l70.72-.11"
               calcMode="linear"
               keyPoints={PathDirections[52] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4127,11 +4147,11 @@ const Network = ({
             className="prefix__st20"
             d="M173.78 305.57l-24 56.26"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[50] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[50] ? "M173.78 305.57l-24 56.26" : ""}
+              path="M173.78 305.57l-24 56.26"
               calcMode="linear"
               keyPoints={PathDirections[51] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4145,11 +4165,11 @@ const Network = ({
             className="prefix__st20"
             d="M261.38 329.53l2.14 46.43"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[49] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[49] ? "M261.38 329.53l2.14 46.43" : ""}
+              path="M261.38 329.53l2.14 46.43"
               calcMode="linear"
               keyPoints={PathDirections[50] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4163,11 +4183,11 @@ const Network = ({
             className="prefix__st20"
             d="M348.86 305.57l26.02 36.95"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[48] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[48] ? "M348.86 305.57l26.02 36.95" : ""}
+              path="M348.86 305.57l26.02 36.95"
               calcMode="linear"
               keyPoints={PathDirections[49] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4181,11 +4201,11 @@ const Network = ({
             className="prefix__st20"
             d="M361.87 296.89h33.2"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[47] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[47] ? "M361.87 296.89h33.2" : ""}
+              path="M361.87 296.89h33.2"
               calcMode="linear"
               keyPoints={PathDirections[48] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4199,11 +4219,11 @@ const Network = ({
             className="prefix__st20"
             d="M429.61 140.89l-44.36 52.95"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[46] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[46] ? "M429.61 140.89l-44.36 52.95" : ""}
+              path="M429.61 140.89l-44.36 52.95"
               calcMode="linear"
               keyPoints={PathDirections[47] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4217,11 +4237,11 @@ const Network = ({
             className="prefix__st20"
             d="M348.07 105.33l24.71 85.9"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 2 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[45] ? "1s" : ""}
+              dur={view === 2 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[45] ? "M348.07 105.33l24.71 85.9" : ""}
+              path="M348.07 105.33l24.71 85.9"
               calcMode="linear"
               keyPoints={PathDirections[46] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4235,11 +4255,11 @@ const Network = ({
             className="prefix__st20"
             d="M382.07 361.83l.5 17.51"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[44] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[44] ? "M382.07 361.83l.5 17.51" : ""}
+              path="M382.07 361.83l.5 17.51"
               calcMode="linear"
               keyPoints={PathDirections[45] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4253,11 +4273,11 @@ const Network = ({
             className="prefix__st20"
             d="M388.38 359.71l22.06 16.25"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[43] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[43] ? "M388.38 359.71l22.06 16.25" : ""}
+              path="M388.38 359.71l22.06 16.25"
               calcMode="linear"
               keyPoints={PathDirections[44] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4271,11 +4291,11 @@ const Network = ({
             className="prefix__st20"
             d="M395.07 353.32l26.16.75"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[42] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[42] ? "M395.07 353.32l26.16.75" : ""}
+              path="M395.07 353.32l26.16.75"
               calcMode="linear"
               keyPoints={PathDirections[43] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4289,11 +4309,11 @@ const Network = ({
             className="prefix__st20"
             d="M237.67 366.98l17.18 14.75"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[41] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[41] ? "M237.67 366.98l17.18 14.75" : ""}
+              path="M237.67 366.98l17.18 14.75"
               calcMode="linear"
               keyPoints={PathDirections[42] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4307,11 +4327,11 @@ const Network = ({
             className="prefix__st20"
             d="M226.54 388.33l25.4.81"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[40] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[40] ? "M226.54 388.33l25.4.81" : ""}
+              path="M226.54 388.33l25.4.81"
               calcMode="linear"
               keyPoints={PathDirections[41] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4325,11 +4345,11 @@ const Network = ({
             className="prefix__st20"
             d="M252.98 393.96l-20.37 18.03"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[39] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[39] ? "M252.98 393.96l-20.37 18.03" : ""}
+              path="M252.98 393.96l-20.37 18.03"
               calcMode="linear"
               keyPoints={PathDirections[40] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4343,11 +4363,11 @@ const Network = ({
             className="prefix__st20"
             d="M261.81 404.65v17.16"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[38] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[38] ? "M261.81 404.65v17.16" : ""}
+              path="M261.81 404.65v17.16"
               calcMode="linear"
               keyPoints={PathDirections[39] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4361,15 +4381,11 @@ const Network = ({
             className="prefix__st20"
             d="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[37] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[37]
-                  ? "M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.02"
-                  : ""
-              }
+              path="M287.43 415.67c-5.26-3.67-10.52-7.35-15.78-11.0"
               calcMode="linear"
               keyPoints={PathDirections[38] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4383,13 +4399,11 @@ const Network = ({
             className="prefix__st20"
             d="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[36] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[36] ? "M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38" : ""
-              }
+              path="M302.13 392.7c-9.05-.13-18.09-.25-27.14-.38"
               calcMode="linear"
               keyPoints={PathDirections[37] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4403,13 +4417,11 @@ const Network = ({
             className="prefix__st20"
             d="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[35] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[35] ? "M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
-              }
+              path="M292.74 370.2c-6.02 3.84-12.03 7.68-18.05 11.52"
               calcMode="linear"
               keyPoints={PathDirections[36] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4423,11 +4435,11 @@ const Network = ({
             className="prefix__st20"
             d="M109.37 387.56l20.98-9.67"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[34] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[34] ? "M109.37 387.56l20.98-9.67" : ""}
+              path="M109.37 387.56l20.98-9.67"
               calcMode="linear"
               keyPoints={PathDirections[35] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4441,11 +4453,11 @@ const Network = ({
             className="prefix__st20"
             d="M136.08 378.95l-4.68 13.57"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[33] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[33] ? "M136.08 378.95l-4.68 13.57" : ""}
+              path="M136.08 378.95l-4.68 13.57"
               calcMode="linear"
               keyPoints={PathDirections[34] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4459,11 +4471,11 @@ const Network = ({
             className="prefix__st20"
             d="M130.92 371.08l-18.5-3.98"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[32] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[32] ? "M130.92 371.08l-18.5-3.98" : ""}
+              path="M130.92 371.08l-18.5-3.98"
               calcMode="linear"
               keyPoints={PathDirections[33] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4477,11 +4489,11 @@ const Network = ({
             className="prefix__st20"
             d="M414.87 305.57l17.18 6.32"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[31] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[31] ? "M414.87 305.57l17.18 6.32" : ""}
+              path="M414.87 305.57l17.18 6.32"
               calcMode="linear"
               keyPoints={PathDirections[32] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4495,11 +4507,11 @@ const Network = ({
             className="prefix__st20"
             d="M420.18 291.89l12.42-11.06"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[30] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[30] ? "M420.18 291.89l12.42-11.06" : ""}
+              path="M420.18 291.89l12.42-11.06"
               calcMode="linear"
               keyPoints={PathDirections[31] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4513,13 +4525,11 @@ const Network = ({
             className="prefix__st20"
             d="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[29] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[29] ? "M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87" : ""
-              }
+              path="M43.35 271.75c5.94 3.96 11.88 7.91 17.82 11.87"
               calcMode="linear"
               keyPoints={PathDirections[30] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4533,11 +4543,11 @@ const Network = ({
             className="prefix__st20"
             d="M33.25 293.32c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[28] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[28] ? "M33.25 293.32c8.81.09 17.61.17 26.42.26" : ""}
+              path="M33.25 293.32c8.81.09 17.61.17 26.42.26"
               calcMode="linear"
               keyPoints={PathDirections[29] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4551,13 +4561,11 @@ const Network = ({
             className="prefix__st20"
             d="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[27] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[27] ? "M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63" : ""
-              }
+              path="M46.46 318.2c4.84-4.21 9.69-8.42 14.53-12.63"
               calcMode="linear"
               keyPoints={PathDirections[28] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4571,11 +4579,11 @@ const Network = ({
             className="prefix__st20"
             d="M78.03 305.57l9.16 14.05"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[26] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[26] ? "M78.03 305.57l9.16 14.05" : ""}
+              path="M78.03 305.57l9.16 14.05"
               calcMode="linear"
               keyPoints={PathDirections[27] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4589,13 +4597,11 @@ const Network = ({
             className="prefix__st20"
             d="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[25] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[25] ? "M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
-              }
+              path="M101.6 271.93c-6.02 3.84-12.03 7.68-18.05 11.52"
               calcMode="linear"
               keyPoints={PathDirections[26] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4609,11 +4615,11 @@ const Network = ({
             className="prefix__st20"
             d="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[24] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[24] ? "M71.27 261.85c.01 6.33.01 12.65.02 18.98" : ""}
+              path="M71.27 261.85c.01 6.33.01 12.65.02 18.98"
               calcMode="linear"
               keyPoints={PathDirections[25] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4627,11 +4633,11 @@ const Network = ({
             className="prefix__st20"
             d="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[23] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[23] ? "M252.91 180.76c.18 4.9.37 9.79.55 14.69" : ""}
+              path="M252.91 180.76c.18 4.9.37 9.79.55 14.69"
               calcMode="linear"
               keyPoints={PathDirections[24] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4645,11 +4651,11 @@ const Network = ({
             className="prefix__st20"
             d="M262.06 179.38l16.35 6.93"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[22] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[22] ? "M262.06 179.38l16.35 6.93" : ""}
+              path="M262.06 179.38l16.35 6.93"
               calcMode="linear"
               keyPoints={PathDirections[23] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4663,13 +4669,11 @@ const Network = ({
             className="prefix__st20"
             d="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[21] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[21] ? "M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04" : ""
-              }
+              path="M264.28 169.4c4.71-2.68 9.42-5.36 14.14-8.04"
               calcMode="linear"
               keyPoints={PathDirections[22] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4683,13 +4687,11 @@ const Network = ({
             className="prefix__st20"
             d="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[20] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[20] ? "M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96" : ""
-              }
+              path="M251.25 166.07c-.18-6.65-.37-13.3-.55-19.96"
               calcMode="linear"
               keyPoints={PathDirections[21] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4703,11 +4705,11 @@ const Network = ({
             className="prefix__st20"
             d="M69.71 181.32c6.47.28 12.93.55 19.4.83"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[19] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[19] ? "M69.71 181.32c6.47.28 12.93.55 19.4.83" : ""}
+              path="M69.71 181.32c6.47.28 12.93.55 19.4.83"
               calcMode="linear"
               keyPoints={PathDirections[20] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4721,11 +4723,11 @@ const Network = ({
             className="prefix__st20"
             d="M97.15 193.24l-9.7 10.81"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[18] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[18] ? "M97.15 193.24l-9.7 10.81" : ""}
+              path="M97.15 193.24l-9.7 10.81"
               calcMode="linear"
               keyPoints={PathDirections[19] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4739,13 +4741,11 @@ const Network = ({
             className="prefix__st20"
             d="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[17] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[17] ? "M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53" : ""
-              }
+              path="M94.93 162.19c.65 3.51 1.29 7.02 1.94 10.53"
               calcMode="linear"
               keyPoints={PathDirections[18] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4759,11 +4759,11 @@ const Network = ({
             className="prefix__st20"
             d="M438 139.19l5.98 16.91"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[16] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[16] ? "M438 139.19l5.98 16.91" : ""}
+              path="M438 139.19l5.98 16.91"
               calcMode="linear"
               keyPoints={PathDirections[17] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4777,11 +4777,11 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 135.63l11.95 5.26"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[15] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[15] ? "M448.88 135.63l11.95 5.26" : ""}
+              path="M448.88 135.63l11.95 5.26"
               calcMode="linear"
               keyPoints={PathDirections[16] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4795,11 +4795,11 @@ const Network = ({
             className="prefix__st20"
             d="M448.88 122.76l15.66-10.12"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[14] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[14] ? "M448.88 122.76l15.66-10.12" : ""}
+              path="M448.88 122.76l15.66-10.12"
               calcMode="linear"
               keyPoints={PathDirections[15] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4813,11 +4813,11 @@ const Network = ({
             className="prefix__st20"
             d="M328.76 72.54l8.71 9.87"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[13] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[13] ? "M328.76 72.54l8.71 9.87" : ""}
+              path="M328.76 72.54l8.71 9.87"
               calcMode="linear"
               keyPoints={PathDirections[14] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4831,11 +4831,11 @@ const Network = ({
             className="prefix__st20"
             d="M317.36 89.56l18.41 2.61"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[12] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[12] ? "M317.36 89.56l18.41 2.61" : ""}
+              path="M317.36 89.56l18.41 2.61"
               calcMode="linear"
               keyPoints={PathDirections[13] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4849,11 +4849,11 @@ const Network = ({
             className="prefix__st20"
             d="M338.7 99.44l-8.38 10.96"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[11] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[11] ? "M338.7 99.44l-8.38 10.96" : ""}
+              path="M338.7 99.44l-8.38 10.96"
               calcMode="linear"
               keyPoints={PathDirections[12] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4867,11 +4867,11 @@ const Network = ({
             className="prefix__st20"
             d="M353.81 98.68l9.84 11.72"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[10] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[10] ? "M353.81 98.68l9.84 11.72" : ""}
+              path="M353.81 98.68l9.84 11.72"
               calcMode="linear"
               keyPoints={PathDirections[11] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4885,11 +4885,11 @@ const Network = ({
             className="prefix__st20"
             d="M370.78 91.55l-14.25.23"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[9] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[9] ? "M370.78 91.55l-14.25.23" : ""}
+              path="M370.78 91.55l-14.25.23"
               calcMode="linear"
               keyPoints={PathDirections[10] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4903,11 +4903,11 @@ const Network = ({
             className="prefix__st20"
             d="M366.43 75l-13.81 7.41"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[8] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[8] ? "M366.43 75l-13.81 7.41" : ""}
+              path="M366.43 75l-13.81 7.41"
               calcMode="linear"
               keyPoints={PathDirections[9] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4921,11 +4921,11 @@ const Network = ({
             className="prefix__st20"
             d="M346.49 64.21l-.63 16.24"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[7] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[7] ? "M346.49 64.21l-.63 16.24" : ""}
+              path="M346.49 64.21l-.63 16.24"
               calcMode="linear"
               keyPoints={PathDirections[8] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4939,13 +4939,11 @@ const Network = ({
             className="prefix__st20"
             d="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[6] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[6] ? "M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87" : ""
-              }
+              path="M135.79 70.71c5.94 3.96 11.88 7.91 17.82 11.87"
               calcMode="linear"
               keyPoints={PathDirections[7] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4959,11 +4957,11 @@ const Network = ({
             className="prefix__st20"
             d="M125.7 92.28c8.81.09 17.61.17 26.42.26"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[5] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[5] ? "M125.7 92.28c8.81.09 17.61.17 26.42.26" : ""}
+              path="M125.7 92.28c8.81.09 17.61.17 26.42.26"
               calcMode="linear"
               keyPoints={PathDirections[6] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4977,13 +4975,11 @@ const Network = ({
             className="prefix__st20"
             d="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[4] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[4] ? "M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63" : ""
-              }
+              path="M138.91 117.16c4.84-4.21 9.69-8.42 14.53-12.63"
               calcMode="linear"
               keyPoints={PathDirections[5] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -4997,15 +4993,11 @@ const Network = ({
             className="prefix__st20"
             d="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[3] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[3]
-                  ? "M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
-                  : ""
-              }
+              path="M188.74 116.35c-5.26-3.67-10.52-7.35-15.78-11.02"
               calcMode="linear"
               keyPoints={PathDirections[4] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -5019,13 +5011,11 @@ const Network = ({
             className="prefix__st20"
             d="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[2] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={
-                run[2] ? "M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38" : ""
-              }
+              path="M203.44 93.38c-9.05-.13-18.09-.25-27.14-.38"
               calcMode="linear"
               keyPoints={PathDirections[3] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -5039,13 +5029,11 @@ const Network = ({
             className="prefix__st20"
             d="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[1] ? "1s" : ""}
-              repeatCount="indefinite"
-              path={
-                run[1] ? "M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52" : ""
-              }
+              dur={view === 3 ? "2s" : ""}
+              
+              th="M194.05 70.88c-6.02 3.84-12.03 7.68-18.05 11.52"
               calcMode="linear"
               keyPoints={PathDirections[2] ? rightDirection : reverseDirection}
               keyTimes="0;1"
@@ -5059,11 +5047,11 @@ const Network = ({
             className="prefix__st20"
             d="M157.21 59.06L161.8 78"
           />
-          <circle r="2" fill={yellow}>
+          <circle r="2" fill={view === 3 ? yellow : 'transparent'}>
             <animateMotion
-              dur={run[0] ? "1s" : ""}
+              dur={view === 3 ? "2s" : ""}
               repeatCount="indefinite"
-              path={run[0] ? "M157.21 59.06L161.8 78" : ""}
+              path="M157.21 59.06L161.8 78"
               calcMode="linear"
               keyPoints={PathDirections[1] ? rightDirection : reverseDirection}
               keyTimes="0;1"
