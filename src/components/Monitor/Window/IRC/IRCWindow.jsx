@@ -14,7 +14,8 @@ const IRCWindow = ({
   serverFiles,
   setServerFiles,
   handleScanBots,
-  handleStopScan
+  handleStopScan,
+  bots
 }) => {
   const chatInput = useRef(null);
   const runRef = useRef(null);
@@ -99,7 +100,7 @@ const IRCWindow = ({
             <span style={{ color: "white", fontSize: "13px" }}>@ </span>
             <span style={{ fontSize: "15px" }}>b0TmASteR</span>
           </div>
-          {Candidates.filter((candidate) => !candidate.activeAV).map(
+          {bots.map(
             (candidate) => {
               return (
                 <div style={{ color: candidate.color }}>

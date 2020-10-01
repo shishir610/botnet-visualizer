@@ -8,7 +8,7 @@ export default function Info({ content, virusWindow, virusWindowWindow }) {
     marginRight: "10px",
     marginTop: virusWindow ? "-50px" : virusWindowWindow ? "-30px" : "-5px",
     marginLeft: virusWindow ? "5px" : virusWindowWindow ? "-80px" : "-20px",
-    zIndex: 1000000
+    zIndex: virusWindow || virusWindowWindow ? 0 : 1000000
   };
   return (
     <Col xs={12} style={style}>

@@ -3,6 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import RandomColours from "../../../../Data/RandomColours.json";
 
 export default function MainIRCCOntent({ mainContent }) {
+  console.log(mainContent);
   return (
     <Container style={{ color: "white" }}>
       {mainContent.map((chat, i) => {

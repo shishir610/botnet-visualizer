@@ -25,6 +25,7 @@ function App() {
   const [randomize, setRandomize] = useState(false)
   const [botVulnerability, setBotVulnerability] = useState(0.5)
   const [workableBots, setWorkableBots] = useState([])
+  const [bots, setBots] = useState([])
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
@@ -61,8 +62,33 @@ function App() {
   }, [users, randomize])
 
   const startAddingBots = () => {
+    setBots([])
     interval = setInterval(() => {
-      console.log(workableBots)
+      if (workableBots.length === 0) {
+        clearInterval(interval)
+      } else {
+        for (let i = 0; i < workableBots.length; i++) {
+          let rand = Math.random() <= botVulnerability
+          if (rand) {
+            let newBots = bots
+            newBots.push(workableBots[i])
+            setBots(newBots)
+
+            let newMainContent = mainContent
+            newMainContent.push({
+              time: `03:45:0${i}`,
+              type: "BOT",
+              name: workableBots[i]['name'],
+              message: `b0T ${workableBots[i]['name']} has been added to the botnet`,
+            })
+            setMainContent(newMainContent)
+
+            let newWorkableBots = workableBots
+            newWorkableBots.splice(i, 1)
+            setWorkableBots(newWorkableBots)
+          }
+        }
+      }
     }, 3000);
   }
 
@@ -84,6 +110,12 @@ function App() {
 
   const handleStopScan = () => {
     setScanningBots(false)
+    setMainContent([...mainContent, {
+      time: "03:50:00",
+      type: "Master",
+      name: "@b0TmASteR",
+      message: "/stopScan",
+    }])
     clearInterval(interval)
   }
 
@@ -131,6 +163,7 @@ function App() {
             handleScanBots={handleScanBots}
             inject={inject}
             handleStopScan={handleStopScan}
+            bots={bots}
           />
         }
       </Row>

@@ -18,12 +18,13 @@ const Monitor = ({
   setServerFiles,
   handleScanBots,
   inject,
-  handleStopScan
+  handleStopScan,
+  bots
 }) => {
   const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
-  const [windowShow, setWindowShow] = useState(true);
-  const [virusWindow, setVirusWindow] = useState(true);
+  const [windowShow, setWindowShow] = useState(false);
+  const [virusWindow, setVirusWindow] = useState(false);
   const [showIRCWindow, setShowIRCWindow] = useState(false);
 
   useEffect(() => {}, []);
@@ -135,6 +136,7 @@ const Monitor = ({
                   setServerFiles={setServerFiles}
                   handleScanBots={handleScanBots}
                   handleStopScan={handleStopScan}
+                  bots={bots}
                 />
               </Col>
             )}
