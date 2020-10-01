@@ -36,7 +36,7 @@ const Monitor = ({
 
   const setDifferentView = (name) => {
     if (name !== "irc") {
-      if (name !== "Debug" && name.slice(name.length - 3) !== "cpp") {
+      if (name !== "debug" && name.slice(name.length - 3) !== "cpp") {
         setView(name);
         setWindowShow(true);
         setShowIRCWindow(false);

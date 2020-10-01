@@ -107,7 +107,7 @@ function NetworkMesh({
   return (
     <React.Fragment>
       <Container style={{ marginTop: "20px" }}>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center" >
           <TransformWrapper
             wheel={{ step: 1, disabled: popoverShow }}
             doubleClick={{ step: 10, disabled: popoverShow }}
