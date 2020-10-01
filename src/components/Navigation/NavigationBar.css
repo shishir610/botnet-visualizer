@@ -1,12 +1,19 @@
 .navbar {
     height: 5vh;
-    background-color: #61ace0;
+    background-color: #30e3cb0c;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.3);
     margin-bottom: 10px;
+    border-bottom: 1px solid #30e3cb3d;
 }
 
-.navTitle{
+.navTitle {
     font-family: Poppins;
     margin: 0%;
-    color: darkblue;
-    font-size: 20px;
+    color: #545871;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+* {
+    outline: none !important;
 }

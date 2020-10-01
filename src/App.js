@@ -22,6 +22,7 @@ function App() {
   const [serverFiles, setServerFiles] = useState(Views["server"]);
   const [packets, setPackets] = useState(Array(60).fill(0))
   const [scanningBots, setScanningBots] = useState(false)
+  const [randomize, setRandomize] = useState(false)
   const scanningBotsCounter = useRef(0)
 
   const randomBool = () => {
@@ -77,11 +78,11 @@ function App() {
   useEffect(() => {
     generateRandomUsers();
     generateRandomRouters();
-  }, []);
+  }, [randomize]);
 
   return (
     <Container fluid>
-      <NavigationBar />
+      <NavigationBar setRandomize={setRandomize}/>
       <Row>
         {networkView ?
           <NetworkMeshWrapper

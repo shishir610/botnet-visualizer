@@ -1,5 +1,6 @@
 .react-transform-component{
     border: 1px dotted #0e153a;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    background-color: #d5e0de27;
 }

@@ -1,10 +1,7 @@
 {
   "desktop": [
     ["folder", "Malware"],
-    ["antivirus", "Antivirus"],
-    ["folder", "Personal"],
     ["mail", "Mail"],
-    ["trash", "Trash"],
     ["undo", "Show Network"]
   ],
   "malware": [
