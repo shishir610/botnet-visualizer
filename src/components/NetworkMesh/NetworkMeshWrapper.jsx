@@ -4,12 +4,12 @@ import NetworkMesh from "./NetworkMesh";
 const NetworkMeshWrapper = ({
   setNetworkView,
   setIsServer,
-  users,
   userVuls,
   routerVuls,
   setMalwareToggle,
   packets,
-  scanningBots
+  scanningBots,
+  users
 }) => {
   return (
     <NetworkMesh

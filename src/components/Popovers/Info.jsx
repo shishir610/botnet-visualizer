@@ -6,8 +6,9 @@ export default function Info({ content, virusWindow, virusWindowWindow }) {
     display: "flex",
     justifyContent: "flex-end",
     marginRight: "10px",
-    marginTop: virusWindow ? "-50px" : virusWindowWindow ? "-30px" : "",
-    marginLeft: virusWindow ? "5px" : virusWindowWindow ? "-80px" : "",
+    marginTop: virusWindow ? "-50px" : virusWindowWindow ? "-30px" : "-5px",
+    marginLeft: virusWindow ? "5px" : virusWindowWindow ? "-80px" : "-20px",
+    zIndex: 1000000
   };
   return (
     <Col xs={12} style={style}>

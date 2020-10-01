@@ -9,7 +9,7 @@ import { ircData } from './Functions/ScanBots'
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(false)
+  const [networkView, setNetworkView] = useState(true)
   const [isServer, setIsServer] = useState(false)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
@@ -47,7 +47,7 @@ function App() {
       newUserVuls[name] = rand;
       setUserVuls(newUserVuls);
       return {
-        ...users,
+        ...users[i],
         activeAV: rand,
       };
     });
@@ -98,6 +98,7 @@ function App() {
             setMalwareToggle={setMalwareToggle}
             packets={packets}
             scanningBots={scanningBots}
+            users={users}
           />
           :
           <Monitor
