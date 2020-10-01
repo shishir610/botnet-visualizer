@@ -171,6 +171,7 @@ function NetworkMesh({
           routerVuls={routerVuls}
           userVuls={userVuls}
           id={TOTALDEVICES[device] - popoverIndex}
+          scanningBots={scanningBots}
         />
       )}
     </React.Fragment>

@@ -6,12 +6,10 @@ import NavigationBar from './components/Navigation/NavigationBar'
 import Candidates from "./Data/Candidates.json";
 import Views from "./Data/Views.json"
 import { ircData } from './Functions/ScanBots'
-import SwitchServerLink from './Data/SwitchServerLink.json'
-import RouterSwitchLink from './Data/RouterSwitchLink.json'
 import './App.css'
 
 function App() {
-  const [networkView, setNetworkView] = useState(true)
+  const [networkView, setNetworkView] = useState(false)
   const [isServer, setIsServer] = useState(false)
   const [users, setUsers] = useState(Candidates);
   const [userVuls, setUserVuls] = useState({});
@@ -23,11 +21,16 @@ function App() {
   const [packets, setPackets] = useState(Array(60).fill(0))
   const [scanningBots, setScanningBots] = useState(false)
   const [randomize, setRandomize] = useState(false)
-  const scanningBotsCounter = useRef(0)
+  const [botVulnerability, setBotVulnerability] = useState(0.1)
+
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
   };
+
+  const inject = (add) => {
+    setBotVulnerability(botVulnerability + add / 100)
+  }
 
   const setMalwareToggle = (device, id, bool) => {
     let newVuls = device === "PC" ? userVuls : routerVuls;
@@ -82,7 +85,7 @@ function App() {
 
   return (
     <Container fluid>
-      <NavigationBar setRandomize={setRandomize}/>
+      <NavigationBar setRandomize={setRandomize} vul={botVulnerability} />
       <Row>
         {networkView ?
           <NetworkMeshWrapper
@@ -107,6 +110,7 @@ function App() {
             serverFiles={serverFiles}
             setServerFiles={setServerFiles}
             handleScanBots={handleScanBots}
+            inject={inject}
           />
         }
       </Row>

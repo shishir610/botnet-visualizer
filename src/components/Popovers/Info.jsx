@@ -1,13 +1,13 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-export default function Info({ content, virusWindow }) {
+export default function Info({ content, virusWindow, virusWindowWindow }) {
   const style = {
     display: "flex",
     justifyContent: "flex-end",
     marginRight: "10px",
-    marginTop: virusWindow ? "-50px" : "",
-    marginLeft: virusWindow ? "5px" : "",
+    marginTop: virusWindow ? "-50px" : virusWindowWindow ? "-30px" : "",
+    marginLeft: virusWindow ? "5px" : virusWindowWindow ? "-80px" : "",
   };
   return (
     <Col xs={12} style={style}>

@@ -8,16 +8,21 @@ export default function DeviceHover({
   device,
   routerVuls,
   userVuls,
-  id
+  id,
+  scanningBots,
 }) {
-  const checker = device === "PC" ? userVuls : routerVuls
-  const type = checker[`${device}${id}`] ? 'NonAV' : 'AV'
+  const checker = device === "PC" ? userVuls : routerVuls;
+  const type = checker[`${device}${id}`] ? "NonAV" : "AV";
   let content = HoverIcon[device];
   content = ["Router", "PC"].includes(device) ? content[type] : content;
   return (
     <div>
       <Overlay show={show} target={target} placement="top">
-        <Tooltip id="device-hover">{content}</Tooltip>
+        <Tooltip id="device-hover">
+          {scanningBots && device === "Server"
+            ? "This is now acting as the C&C server."
+            : content}
+        </Tooltip>
       </Overlay>
     </div>
   );

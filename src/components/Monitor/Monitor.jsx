@@ -17,11 +17,12 @@ const Monitor = ({
   serverFiles,
   setServerFiles,
   handleScanBots,
+  inject
 }) => {
   const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
-  const [windowShow, setWindowShow] = useState(false);
-  const [virusWindow, setVirusWindow] = useState(false);
+  const [windowShow, setWindowShow] = useState(true);
+  const [virusWindow, setVirusWindow] = useState(true);
   const [showIRCWindow, setShowIRCWindow] = useState(false);
 
   useEffect(() => {}, []);
@@ -98,7 +99,7 @@ const Monitor = ({
             )}
             {windowShow && (
               <Col
-                xs={10}
+                xs={{ span: 10, offset: !isServer ? 1 : 0 }}
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -139,11 +140,11 @@ const Monitor = ({
               <div
                 style={{
                   position: "absolute",
-                  left: "40%",
+                  left: "42%",
                   top: "25%",
                 }}
               >
-                <VirusWindow name={virus} handleClose={handleClose} />
+                <VirusWindow name={virus} handleClose={handleClose} inject={inject}/>
               </div>
             )}
           </Row>

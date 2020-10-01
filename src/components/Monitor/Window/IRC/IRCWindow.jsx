@@ -13,7 +13,8 @@ const IRCWindow = ({
   setBotBinaryCreated,
   serverFiles,
   setServerFiles,
-  handleScanBots
+  handleScanBots,
+  handleStopScan
 }) => {
   const chatInput = useRef(null);
   const runRef = useRef(null);
@@ -35,12 +36,9 @@ const IRCWindow = ({
         let runningCommands = create();
         for (let i = 0; i < runningCommands.length; i++) {
           setTimeout(() => {
-            setMainContent(prevState => {
-              return[
-                ...prevState,
-                runningCommands[i]
-              ]
-            })
+            setMainContent((prevState) => {
+              return [...prevState, runningCommands[i]];
+            });
           }, 1000 * i);
         }
         setBotBinaryCreated(true);
@@ -51,6 +49,11 @@ const IRCWindow = ({
       case "/scanBots":
         handleScanBots();
         break;
+      case "/stopScan":
+        handleStopScan();
+        break;
+      case "/performDDos":
+        break
     }
     setRunning(false);
   };
@@ -83,7 +86,10 @@ const IRCWindow = ({
         </a>
       </Row>
       <Row className="ircMainContent" noGutters>
-        <Col style={{ display: "flex", padding: "0" }} className="mainContentDiv">
+        <Col
+          style={{ display: "flex", padding: "0" }}
+          className="mainContentDiv"
+        >
           <MainIRCCOntent mainContent={mainContent} />
           <CommandOptions
             input={input}
