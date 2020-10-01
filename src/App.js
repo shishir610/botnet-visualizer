@@ -8,6 +8,8 @@ import Views from "./Data/Views.json"
 import { ircData } from './Functions/ScanBots'
 import './App.css'
 
+let interval;
+
 function App() {
   const [networkView, setNetworkView] = useState(true)
   const [isServer, setIsServer] = useState(false)
@@ -21,8 +23,8 @@ function App() {
   const [packets, setPackets] = useState(Array(60).fill(0))
   const [scanningBots, setScanningBots] = useState(false)
   const [randomize, setRandomize] = useState(false)
-  const [botVulnerability, setBotVulnerability] = useState(0.1)
-
+  const [botVulnerability, setBotVulnerability] = useState(0.5)
+  const [workableBots, setWorkableBots] = useState([])
 
   const randomBool = () => {
     return Math.floor(0.5 + Math.random()) === 0;
@@ -54,6 +56,16 @@ function App() {
     setUsers(newUsers);
   };
 
+  useEffect(() => {
+    setWorkableBots(users.filter(user => routerVuls[`Router${user['Router']}`]).filter(user => user['activeAV']))
+  }, [users, randomize])
+
+  const startAddingBots = () => {
+    interval = setInterval(() => {
+      console.log(workableBots)
+    }, 3000);
+  }
+
   const handleScanBots = () => {
     let runningCommands = ircData();
     for (let i = 0; i < runningCommands.length; i++) {
@@ -67,6 +79,12 @@ function App() {
       }, 1000 * i);
     }
     setScanningBots(true)
+    startAddingBots()
+  }
+
+  const handleStopScan = () => {
+    setScanningBots(false)
+    clearInterval(interval)
   }
 
   const generateRandomRouters = () => {
@@ -85,7 +103,7 @@ function App() {
 
   return (
     <Container fluid>
-      <NavigationBar setRandomize={setRandomize} vul={botVulnerability} />
+      <NavigationBar setRandomize={setRandomize} vul={botVulnerability} setNetworkView={setNetworkView} />
       <Row>
         {networkView ?
           <NetworkMeshWrapper
@@ -112,6 +130,7 @@ function App() {
             setServerFiles={setServerFiles}
             handleScanBots={handleScanBots}
             inject={inject}
+            handleStopScan={handleStopScan}
           />
         }
       </Row>

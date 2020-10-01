@@ -17,7 +17,8 @@ const Monitor = ({
   serverFiles,
   setServerFiles,
   handleScanBots,
-  inject
+  inject,
+  handleStopScan
 }) => {
   const [view, setView] = useState("malware");
   const [virus, setVirus] = useState("virus");
@@ -133,6 +134,7 @@ const Monitor = ({
                   serverFiles={serverFiles}
                   setServerFiles={setServerFiles}
                   handleScanBots={handleScanBots}
+                  handleStopScan={handleStopScan}
                 />
               </Col>
             )}

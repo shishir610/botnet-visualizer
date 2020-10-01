@@ -4,6 +4,7 @@
     "name": "Lucias",
     "color": "#ffefd5",
     "activeAV" :false,
+    "infected": false,
     "Router": 10
   },
   {
@@ -11,6 +12,7 @@
     "name": "Tally",
     "color": "#4166f5",
     "activeAV" :true,
+    "infected": false,
     "Router": 10
   },
   {
@@ -18,6 +20,7 @@
     "name": "Lilias",
     "color": "#fffafa",
     "activeAV" :false,
+    "infected": false,
     "Router": 10
   },
   {
@@ -25,6 +28,7 @@
     "name": "Hugibert",
     "color": "#fe59c2",
     "activeAV" :false,
+    "infected": false,
     "Router": 10
   },
   {
@@ -32,6 +36,7 @@
     "name": "Helene",
     "color": "#ff4500",
     "activeAV" :true,
+    "infected": false,
     "Router": 10
   },
   {
@@ -39,6 +44,7 @@
     "name": "Husein",
     "color": "#fffafa",
     "activeAV" :false,
+    "infected": false,
     "Router": 10
   },
   {
@@ -46,6 +52,7 @@
     "name": "Eal",
     "color": "#87ceeb",
     "activeAV" :true,
+    "infected": false,
     "Router": 10
   },
   {
@@ -53,6 +60,7 @@
     "name": "Hallie",
     "color": "#e0115f",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -60,6 +68,7 @@
     "name": "Cosetta",
     "color": "#c71585",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -67,6 +76,7 @@
     "name": "Bertha",
     "color": "#ff5a36",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -74,6 +84,7 @@
     "name": "Merna",
     "color": "#d2691e",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -81,6 +92,7 @@
     "name": "Trey",
     "color": "#c71585",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -88,6 +100,7 @@
     "name": "Abraham",
     "color": "#39ff14",
     "activeAV" :true,
+    "infected": false,
     "Router": 2
   },
   {
@@ -95,6 +108,7 @@
     "name": "Ches",
     "color": "#ff2800",
     "activeAV" :false,
+    "infected": false,
     "Router": 2
   },
   {
@@ -102,6 +116,7 @@
     "name": "Emilie",
     "color": "#ff5a36",
     "activeAV" :false,
+    "infected": false,
     "Router": 3
   },
   {
@@ -109,6 +124,7 @@
     "name": "Tull",
     "color": "#e97451",
     "activeAV" :true,
+    "infected": false,
     "Router": 3
   },
   {
@@ -116,6 +132,7 @@
     "name": "Alisha",
     "color": "#779ecb",
     "activeAV" :true,
+    "infected": false,
     "Router": 3
   },
   {
@@ -123,6 +140,7 @@
     "name": "Derrik",
     "color": "#ffefd5",
     "activeAV" :false,
+    "infected": false,
     "Router": 9
   },
   {
@@ -130,6 +148,7 @@
     "name": "Katrina",
     "color": "#c04000",
     "activeAV" :false,
+    "infected": false,
     "Router": 9
   },
   {
@@ -137,6 +156,7 @@
     "name": "Willy",
     "color": "#c04000",
     "activeAV" :false,
+    "infected": false,
     "Router": 9
   },
   {
@@ -144,6 +164,7 @@
     "name": "Levey",
     "color": "#ff003f",
     "activeAV" :true,
+    "infected": false,
     "Router": 1
   },
   {
@@ -151,6 +172,7 @@
     "name": "Christin",
     "color": "#c71585",
     "activeAV" :true,
+    "infected": false,
     "Router": 1
   },
   {
@@ -158,6 +180,7 @@
     "name": "Caryl",
     "color": "#ffcba4",
     "activeAV" :false,
+    "infected": false,
     "Router": 1
   },
   {
@@ -165,6 +188,7 @@
     "name": "Christa",
     "color": "#b2beb5",
     "activeAV" :false,
+    "infected": false,
     "Router": 1
   },
   {
@@ -172,6 +196,7 @@
     "name": "Ansell",
     "color": "#c71585",
     "activeAV" :true,
+    "infected": false,
     "Router": 8
   },
   {
@@ -179,6 +204,7 @@
     "name": "Ronda",
     "color": "#a1caf1",
     "activeAV" :false,
+    "infected": false,
     "Router": 8
   },
   {
@@ -186,6 +212,7 @@
     "name": "Rubin",
     "color": "#b2ec5d",
     "activeAV" :true,
+    "infected": false,
     "Router": 8
   },
   {
@@ -193,6 +220,7 @@
     "name": "Trina",
     "color": "#daa520",
     "activeAV" :false,
+    "infected": false,
     "Router": 8
   },
   {
@@ -200,6 +228,7 @@
     "name": "Cory",
     "color": "#d2691e",
     "activeAV" :true,
+    "infected": false,
     "Router": 8
   },
   {
@@ -207,6 +236,7 @@
     "name": "Cathleen",
     "color": "#a1caf1",
     "activeAV" :false,
+    "infected": false,
     "Router": 8
   },
   {
@@ -214,6 +244,7 @@
     "name": "Bambie",
     "color": "#fc0fc0",
     "activeAV" :true,
+    "infected": false,
     "Router": 4
   },
   {
@@ -221,6 +252,7 @@
     "name": "Maisie",
     "color": "#c19a6b",
     "activeAV" :true,
+    "infected": false,
     "Router": 4
   },
   {
@@ -228,6 +260,7 @@
     "name": "Rinaldo",
     "color": "#a99a86",
     "activeAV" :false,
+    "infected": false,
     "Router": 7
   },
   {
@@ -235,6 +268,7 @@
     "name": "Laurena",
     "color": "#ffd1dc",
     "activeAV" :false,
+    "infected": false,
     "Router": 7
   },
   {
@@ -242,6 +276,7 @@
     "name": "Jocelyn",
     "color": "#d3d3d3",
     "activeAV" :false,
+    "infected": false,
     "Router": 7
   },
   {
@@ -249,6 +284,7 @@
     "name": "Skyler",
     "color": "#d1e231",
     "activeAV" :true,
+    "infected": false,
     "Router": 6
   },
   {
@@ -256,6 +292,7 @@
     "name": "Cariotta",
     "color": "#ff2052",
     "activeAV" :false,
+    "infected": false,
     "Router": 6
   },
   {
@@ -263,6 +300,7 @@
     "name": "Anson",
     "color": "#98777b",
     "activeAV" :false,
+    "infected": false,
     "Router": 6
   },
   {
@@ -270,6 +308,7 @@
     "name": "Jordan",
     "color": "#4166f5",
     "activeAV" :true,
+    "infected": false,
     "Router": 6
   },
   {
@@ -277,6 +316,7 @@
     "name": "Tracie",
     "color": "#1e90ff",
     "activeAV" :true,
+    "infected": false,
     "Router": 6
   },
   {
@@ -284,6 +324,7 @@
     "name": "Jillana",
     "color": "#c19a6b",
     "activeAV" :false,
+    "infected": false,
     "Router": 6
   },
   {
@@ -291,6 +332,7 @@
     "name": "Alfred",
     "color": "#d3003f",
     "activeAV" :false,
+    "infected": false,
     "Router": 6
   },
   {
@@ -298,6 +340,7 @@
     "name": "Franchot",
     "color": "#4997d0",
     "activeAV" :true,
+    "infected": false,
     "Router": 5
   },
   {
@@ -305,6 +348,7 @@
     "name": "Jacki",
     "color": "#addfad",
     "activeAV" :false,
+    "infected": false,
     "Router": 5
   },
   {
@@ -312,6 +356,7 @@
     "name": "Kelly",
     "color": "#f64a8a",
     "activeAV" :false,
+    "infected": false,
     "Router": 5
   }
 ]

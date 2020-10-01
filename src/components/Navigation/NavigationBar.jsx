@@ -3,6 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import "./NavigationBar.css";
 import { Button, Chip, Tooltip } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import LoopIcon from "@material-ui/icons/Loop";
 
 const theme = createMuiTheme({
   palette: {
@@ -12,13 +13,13 @@ const theme = createMuiTheme({
   },
 });
 
-const NavigationBar = ({ setRandomize, vul }) => {
+const NavigationBar = ({ setRandomize, vul, setNetworkView }) => {
   return (
     <Row className="navbar" style={{ padding: "0" }}>
       <Container>
         <Row style={{ justifyContent: "space-between", width: "100%" }}>
           <div>
-            <p className="navTitle">Malware Visualizer</p>
+            <p className="navTitle">Botnet Visualizer</p>
           </div>
           <div>
             <ThemeProvider theme={theme}>
@@ -41,9 +42,26 @@ const NavigationBar = ({ setRandomize, vul }) => {
                 variant="outlined"
                 color="primary"
                 onClick={() => setRandomize((prevState) => !prevState)}
-                style={{ fontWeight: "300", marginLeft: "10px" }}
+                style={{
+                  fontWeight: "300",
+                  marginLeft: "10px",
+                  borderRadius: "20px",
+                }}
               >
                 Randomize!
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => setNetworkView((prevState) => !prevState)}
+                style={{
+                  fontWeight: "300",
+                  marginLeft: "10px",
+                  borderRadius: "20px",
+                }}
+                startIcon={<LoopIcon />}
+              >
+                Switch View
               </Button>
             </ThemeProvider>
           </div>

@@ -52,8 +52,6 @@ const IRCWindow = ({
       case "/stopScan":
         handleStopScan();
         break;
-      case "/performDDos":
-        break
     }
     setRunning(false);
   };

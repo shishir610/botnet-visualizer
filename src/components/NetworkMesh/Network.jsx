@@ -58,8 +58,6 @@ const Network = ({
     }
   }, [])
 
-  console.log(routerMapper)
-
   return (
     <React.Fragment>
       <svg

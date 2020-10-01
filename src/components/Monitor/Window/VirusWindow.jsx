@@ -5,9 +5,9 @@ import MalwareInfo from "../../../Data/MalwareInfo.json";
 import Info from "../../Popovers/Info";
 
 const BOTVUL = {
-  worm: 1,
-  virus: 2,
-  trojan: 3,
+  worm: 3,
+  virus: 4,
+  trojan: 5,
 };
 
 const VirusWindow = ({ name, handleClose, inject }) => {
