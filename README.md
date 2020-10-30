@@ -7,7 +7,7 @@ This project aims to visualize a Botnet in the best way possible. The visualizat
 1. Network - Seeing how the data flows from a C&C server to various hosts.
 2. IRC Channel - Where, you, the bot herder can deploy commands and create your own botnet. 
 
-Find the deployment [here](https://heuristic-feynman-31c85f.netlify.app/)
+Find the deployment [here](https://botnet.netlify.app/)
 
 Find the video [here](https://www.youtube.com/watch?v=Rapj7TxFM3c)
 
