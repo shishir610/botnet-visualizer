@@ -1,4 +1,4 @@
-This project won an **honorory mention** at AlgoExpert's Summer-Fall 2020 SWE Project Contest
+This project won an [**honorory mention**](https://www.algoexpert.io/swe-project-contests/2020-summer) at AlgoExpert's Summer-Fall 2020 SWE Project Contest
 
 # Botnet Visualizer
 
